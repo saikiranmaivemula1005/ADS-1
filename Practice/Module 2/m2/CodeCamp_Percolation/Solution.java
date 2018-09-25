@@ -1,7 +1,7 @@
 import java.util.Scanner;
  class Percolation {
 
-    private boolean[][] opened;
+    private boolean[][] grid;
     private int top = 0;
     private int bottom;
     private int size;
@@ -10,18 +10,18 @@ import java.util.Scanner;
     /**
      * Creates N-by-N grid, with all sites blocked.
      */
-    public Percolation(int N) {
-        size = N;
+    public Percolation(int n) {
+        size = n;
         bottom = size * size + 1;
         qf = new WeightedQuickUnion(size * size + 2);
-        opened = new boolean[size][size];
+        grid = new boolean[size][size];
     }
 
     /**
      * Opens site (row i, column j) if it is not already.
      */
     public void open(int i, int j) {
-        opened[i - 1][j - 1] = true;
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
             qf.Union(getQFIndex(i, j), top);
         }
@@ -47,7 +47,7 @@ import java.util.Scanner;
      * Is site (row i, column j) open?
      */
     public boolean isOpen(int i, int j) {
-        return opened[i - 1][j - 1];
+        return grid[i - 1][j - 1];
     }
 
     /**
