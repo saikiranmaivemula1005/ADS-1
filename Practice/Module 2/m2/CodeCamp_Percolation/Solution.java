@@ -4,13 +4,13 @@ import java.util.Scanner;
 	int openSites;
 	WeightedQuickUnion wqu;
 	int size;
-   public Percolation(int size)  {
+    Percolation(int size)  {
    	grid = new int[size][size];
    	openSites = 0;
    	wqu = new WeightedQuickUnion((size * size) + 2);
    	size = size;
    }              // create n-by-n grid, with all sites blocked
-   public void open(int row, int col) {
+    void open(int row, int col) {
    		row = row - 1;
    		col = col - 1;
    		grid[row][col] = 1;
@@ -45,16 +45,16 @@ import java.util.Scanner;
    int component(int i, int j) {
    		return ((i * size) + j) + 1;
    }
-   public boolean isOpen(int row, int col) {
+    boolean isOpen(int row, int col) {
    		return grid[row - 1][col - 1] == 1;
    }
-   public boolean isFull(int row, int col) {
+    boolean isFull(int row, int col) {
    	return grid[row - 1][col - 1] == 0;
    }
-   public int numberOfOpenSites() {
+    int numberOfOpenSites() {
    		return openSites;
    }
-   public boolean percolates() {
+    boolean percolates() {
    	return wqu.connected(0, (size * size)  +1);
    }
 }
