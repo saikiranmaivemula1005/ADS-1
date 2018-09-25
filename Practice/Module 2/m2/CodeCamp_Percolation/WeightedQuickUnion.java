@@ -5,6 +5,7 @@ class WeightedQuickUnion {
 	WeightedQuickUnion(int n) {
 		count = n;
 		id = new int[n];
+		size = new int[n];
 		for (int i = 0; i < n; i++) {
 			id[i] = i;
 		}
