@@ -1,16 +1,30 @@
 import java.util.Scanner;
  class Percolation {
-
+/**
+ * grid matrix.
+ */
     private boolean[][] grid;
+    /**
+     * top variable.
+     */
     private int top = 0;
+    /**
+     * bottom variable.
+     */
     private int bottom;
+    /**
+     * size variable.
+     */
     private int size;
+    /**
+     * variable for weighted quick union.
+     */
     private WeightedQuickUnion qf;
 
     /**
-     * Creates N-by-N grid, with all sites blocked.
+     * constructor for percolation class.
      */
-    public Percolation(int n) {
+    public Percolation(final int n) {
         size = n;
         bottom = size * size + 1;
         qf = new WeightedQuickUnion(size * size + 2);
@@ -18,63 +32,83 @@ import java.util.Scanner;
     }
 
     /**
-     * Opens site (row i, column j) if it is not already.
+     * open method for percolation class.
      */
-    public void open(int i, int j) {
+    public void open(final int i, final int j) {
         grid[i - 1][j - 1] = true;
         if (i == 1) {
-            qf.Union(getQFIndex(i, j), top);
+            qf.Union(component(i, j), top);
         }
         if (i == size) {
-            qf.Union(getQFIndex(i, j), bottom);
+            qf.Union(component(i, j), bottom);
         }
 
         if (j > 1 && isOpen(i, j - 1)) {
-            qf.Union(getQFIndex(i, j), getQFIndex(i, j - 1));
+            qf.Union(component(i, j), component(i, j - 1));
         }
         if (j < size && isOpen(i, j + 1)) {
-            qf.Union(getQFIndex(i, j), getQFIndex(i, j + 1));
+            qf.Union(component(i, j), component(i, j + 1));
         }
         if (i > 1 && isOpen(i - 1, j)) {
-            qf.Union(getQFIndex(i, j), getQFIndex(i - 1, j));
+            qf.Union(component(i, j), component(i - 1, j));
         }
         if (i < size && isOpen(i + 1, j)) {
-            qf.Union(getQFIndex(i, j), getQFIndex(i + 1, j));
+            qf.Union(component(i, j), component(i + 1, j));
         }
     }
 
     /**
-     * Is site (row i, column j) open?
+     * checks if the given block is open or not.
      */
-    public boolean isOpen(int i, int j) {
+    public boolean isOpen(final int i, final int j) {
         return grid[i - 1][j - 1];
     }
 
     /**
-     * Is site (row i, column j) full?
+     * checks if block is full or not.
      */
-    public boolean isFull(int i, int j) {
+    public boolean isFull(final int i, final int j) {
         if (0 < i && i <= size && 0 < j && j <= size) {
-            return qf.connected(top, getQFIndex(i , j));
+            return qf.connected(top, component(i , j));
         } else {
             throw new IndexOutOfBoundsException();
         }
     }
 
     /**
-     * Does the system percolate?
+     * checks for percolation.
      */
     public boolean percolates() {
         return qf.connected(top, bottom);
     }
-
-    private int getQFIndex(int i, int j) {
+    /**
+     * method to find the component at given indices.
+     *
+     * @param      i  integer variable.
+     * @param      j  integer variable.
+     *
+     * @return returns the component value.
+     */
+    private int component(final int i, final int j) {
         return size * (i - 1) + j;
     }
 }
-
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
+	/**
+	 * constructor for solution class.
+	 */
+	Solution() {
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
