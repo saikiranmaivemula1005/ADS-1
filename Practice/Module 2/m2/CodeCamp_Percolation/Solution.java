@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
  class Percolation {
 /**
  * grid matrix.
