@@ -15,10 +15,10 @@ import java.util.Scanner;
    		col = col - 1;
    		grid[row][col] = 1;
    		openSites++;
-   		if (row == 0) {
+   		if (row == 1) {
    			wqu.Union(0, component(row, col));
    		}
-   		if (row == size - 1) {
+   		if (row == size) {
    			wqu.Union((size * size) + 1, component(row, col));
    		}
    		if (row < size) {
