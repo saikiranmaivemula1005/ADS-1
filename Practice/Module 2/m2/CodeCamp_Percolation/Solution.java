@@ -1,63 +1,78 @@
 import java.util.Scanner;
  class Percolation {
-	int[][] grid;
-	int openSites;
-	WeightedQuickUnion wqu;
-	int size;
-    Percolation(int size)  {
-   	grid = new int[size][size];
-   	openSites = 0;
-   	wqu = new WeightedQuickUnion((size * size) + 2);
-   	size = size;
-   }              // create n-by-n grid, with all sites blocked
-    void open(int row, int col) {
-   		row = row - 1;
-   		col = col - 1;
-   		grid[row][col] = 1;
-   		openSites++;
-   		if (row == 1) {
-   			wqu.Union(0, component(row, col));
-   		}
-   		if (row == size) {
-   			wqu.Union((size * size) + 1, component(row, col));
-   		}
-   		if (row < size) {
-   			if (grid[row + 1][col] == 1) {
-   				wqu.Union(component(row, col), component((row + 1), col));
-   			}
-   		}
-   		if (row >1) {
-   			if (grid[row - 1][col] == 1) {
-   				wqu.Union(component(row, col), component((row - 1), col));
-   			}
-   		}
-   		if (col <= size) {
-   			if (grid[row][col + 1] == 1) {
-   				wqu.Union(component(row, col), component(row, (col + 1)));
-   			}
-   		}
-   		if (col > 1) {
-   			if (grid[row][col - 1] == 1) {
-   				wqu.Union(component(row, col), component(row, (col - 1)));
-   			}
-   		}
-   }
-   int component(int i, int j) {
-   		return ((i * size) + j) + 1;
-   }
-    boolean isOpen(int row, int col) {
-   		return grid[row - 1][col - 1] == 1;
-   }
-    boolean isFull(int row, int col) {
-   	return grid[row - 1][col - 1] == 0;
-   }
-    int numberOfOpenSites() {
-   		return openSites;
-   }
-    boolean percolates() {
-   	return wqu.connected(0, (size * size)  +1);
-   }
+
+    private boolean[][] opened;
+    private int top = 0;
+    private int bottom;
+    private int size;
+    private WeightedQuickUnion qf;
+
+    /**
+     * Creates N-by-N grid, with all sites blocked.
+     */
+    public Percolation(int N) {
+        size = N;
+        bottom = size * size + 1;
+        qf = new WeightedQuickUnion(size * size + 2);
+        opened = new boolean[size][size];
+    }
+
+    /**
+     * Opens site (row i, column j) if it is not already.
+     */
+    public void open(int i, int j) {
+        opened[i - 1][j - 1] = true;
+        if (i == 1) {
+            qf.Union(getQFIndex(i, j), top);
+        }
+        if (i == size) {
+            qf.Union(getQFIndex(i, j), bottom);
+        }
+
+        if (j > 1 && isOpen(i, j - 1)) {
+            qf.Union(getQFIndex(i, j), getQFIndex(i, j - 1));
+        }
+        if (j < size && isOpen(i, j + 1)) {
+            qf.Union(getQFIndex(i, j), getQFIndex(i, j + 1));
+        }
+        if (i > 1 && isOpen(i - 1, j)) {
+            qf.Union(getQFIndex(i, j), getQFIndex(i - 1, j));
+        }
+        if (i < size && isOpen(i + 1, j)) {
+            qf.Union(getQFIndex(i, j), getQFIndex(i + 1, j));
+        }
+    }
+
+    /**
+     * Is site (row i, column j) open?
+     */
+    public boolean isOpen(int i, int j) {
+        return opened[i - 1][j - 1];
+    }
+
+    /**
+     * Is site (row i, column j) full?
+     */
+    public boolean isFull(int i, int j) {
+        if (0 < i && i <= size && 0 < j && j <= size) {
+            return qf.connected(top, getQFIndex(i , j));
+        } else {
+            throw new IndexOutOfBoundsException();
+        }
+    }
+
+    /**
+     * Does the system percolate?
+     */
+    public boolean percolates() {
+        return qf.connected(top, bottom);
+    }
+
+    private int getQFIndex(int i, int j) {
+        return size * (i - 1) + j;
+    }
 }
+
 class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
