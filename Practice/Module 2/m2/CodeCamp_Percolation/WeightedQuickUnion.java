@@ -22,7 +22,6 @@ class WeightedQuickUnion {
 	public int find(int a) {
 		while (a != id[a]) {
 			a = id[a];
-			//return a;
 		}
 		return a;
 	}
