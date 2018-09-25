@@ -22,9 +22,9 @@ class WeightedQuickUnion {
 	public int find(int a) {
 		while (a != id[a]) {
 			a = id[a];
-			return a;
+			//return a;
 		}
-		return 0;
+		return a;
 	}
 	public void Union(int a, int b) {
 		if (find(a) == find(b)) {
