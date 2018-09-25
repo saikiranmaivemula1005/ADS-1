@@ -23,6 +23,7 @@ import java.util.Scanner;
 
     /**
      * constructor for percolation class.
+     * @param n integer variable.
      */
     public Percolation(final int n) {
         size = n;
@@ -32,6 +33,8 @@ import java.util.Scanner;
     }
 
     /**
+     * @param i integer variable.
+     * @param j integer variable.
      * open method for percolation class.
      */
     public void open(final int i, final int j) {
@@ -59,6 +62,9 @@ import java.util.Scanner;
 
     /**
      * checks if the given block is open or not.
+     * @param i integer variable.
+     * @param j integer variable.
+     * @return returns true if the given block is open.
      */
     public boolean isOpen(final int i, final int j) {
         return grid[i - 1][j - 1];
@@ -66,10 +72,13 @@ import java.util.Scanner;
 
     /**
      * checks if block is full or not.
+     * @param i integer variable.
+     * @param j integer variable.
+     * @return returns true if the given block is full.
      */
     public boolean isFull(final int i, final int j) {
         if (0 < i && i <= size && 0 < j && j <= size) {
-            return qf.connected(top, component(i , j));
+            return qf.connected(top, component(i, j));
         } else {
             throw new IndexOutOfBoundsException();
         }
@@ -77,6 +86,7 @@ import java.util.Scanner;
 
     /**
      * checks for percolation.
+     * @return returns true if percolation is possible.
      */
     public boolean percolates() {
         return qf.connected(top, bottom);
@@ -100,7 +110,7 @@ class Solution {
 	/**
 	 * constructor for solution class.
 	 */
-	Solution() {
+	protected Solution() {
 
 	}
 	/**
