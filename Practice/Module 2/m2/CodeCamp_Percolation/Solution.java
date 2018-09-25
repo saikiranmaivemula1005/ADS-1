@@ -25,7 +25,7 @@ import java.util.Scanner;
      * constructor for percolation class.
      * @param n integer variable.
      */
-    public Percolation(final int n) {
+     Percolation(final int n) {
         size = n;
         bottom = size * size + 1;
         qf = new WeightedQuickUnion(size * size + 2);
@@ -107,24 +107,25 @@ import java.util.Scanner;
  * Class for solution.
  */
 class Solution {
-	/**
-	 * constructor for solution class.
-	 */
-	protected Solution() {
+    /**
+     * constructor for solution class.
+     */
+    protected Solution() {
 
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int size = sc.nextInt();
-		Percolation p = new Percolation(size);
-		while (sc.hasNext()) {
-			p.open(sc.nextInt(), sc.nextInt());
-		}
-		System.out.println(p.percolates());
-	}
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        Percolation p = new Percolation(size);
+        while (sc.hasNext()) {
+            p.open(sc.nextInt(), sc.nextInt());
+        }
+        System.out.println(p.percolates());
+    }
 }
+
