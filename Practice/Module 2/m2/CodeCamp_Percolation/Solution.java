@@ -26,7 +26,7 @@ import java.util.Scanner;
    				wqu.Union(component(row, col), component((row + 1), col));
    			}
    		}
-   		if (row >1) {
+   		if (row >=1) {
    			if (grid[row - 1][col] == 1) {
    				wqu.Union(component(row, col), component((row - 1), col));
    			}
@@ -36,7 +36,7 @@ import java.util.Scanner;
    				wqu.Union(component(row, col), component(row, (col + 1)));
    			}
    		}
-   		if (col > 1) {
+   		if (col >= 1) {
    			if (grid[row][col - 1] == 1) {
    				wqu.Union(component(row, col), component(row, (col - 1)));
    			}
