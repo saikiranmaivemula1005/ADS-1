@@ -21,22 +21,22 @@ import java.util.Scanner;
    		if (row == size - 1) {
    			wqu.Union((size * size) + 1, component(row, col));
    		}
-   		if (row > 0) {
+   		if (row <= size-1) {
    			if (grid[row + 1][col] == 1) {
    				wqu.Union(component(row, col), component((row + 1), col));
    			}
    		}
-   		if (row <= size - 1) {
+   		if (row >1) {
    			if (grid[row - 1][col] == 1) {
    				wqu.Union(component(row, col), component((row - 1), col));
    			}
    		}
-   		if (col > 0) {
+   		if (col <= size-1) {
    			if (grid[row][col + 1] == 1) {
    				wqu.Union(component(row, col), component(row, (col + 1)));
    			}
    		}
-   		if (col < size - 1) {
+   		if (col > 1) {
    			if (grid[row][col - 1] == 1) {
    				wqu.Union(component(row, col), component(row, (col - 1)));
    			}
