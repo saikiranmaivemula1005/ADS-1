@@ -21,7 +21,10 @@ class Solution {
 
 			}
 			Arrays.sort(outputArray);
-			System.out.println(Arrays.toString(outputArray));
+			// 
+			for(String i : outputArray) {
+				System.out.print(i + " ");
+			}
 		}
 	}
 }
