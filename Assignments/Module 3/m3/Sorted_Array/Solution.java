@@ -20,6 +20,7 @@ class Solution {
 				outputArray[outputArraysize] = secondArray[j];
 
 			}
+			Arrays.sort(outputArray);
 			System.out.println(Arrays.toString(outputArray));
 		}
 	}
