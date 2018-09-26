@@ -22,9 +22,10 @@ class Solution {
 			}
 			Arrays.sort(outputArray);
 			// 
-			for(int i : outputArray) {
+			for(int i = 0; i < outputArray.length - 1; i++) {
 				System.out.print(i + ",");
 			}
+			System.out.println(outputArray[outputArray.length]);
 		}
 	}
 }
