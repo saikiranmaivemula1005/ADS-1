@@ -23,7 +23,7 @@ class Solution {
 			Arrays.sort(outputArray);
 			// 
 			for(int i : outputArray) {
-				System.out.print(i + " ");
+				System.out.print(i + ",");
 			}
 		}
 	}
