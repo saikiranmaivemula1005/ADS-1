@@ -15,7 +15,7 @@ class Solution {
 				outputArray[i] = firstArray[i];
 			}
 			int outputArraysize  = firstArray.length;
-			for (int j = 0; j < size2 + 1; j++) {
+			for (int j = 0; j < size2 - 1; j++) {
 				outputArraysize++;
 				outputArray[outputArraysize] = secondArray[j];
 
