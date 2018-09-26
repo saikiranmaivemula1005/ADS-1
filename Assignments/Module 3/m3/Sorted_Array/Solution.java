@@ -10,7 +10,14 @@ class Solution {
 			String[] secondArray = sc.nextLine().split(",");
 			System.out.println(Arrays.toString(firstArray));
 			System.out.println(Arrays.toString(secondArray));
+			String[] outputArray = new String[size1 + size2];
+			for (int i = 0; i < size1; i++) {
+				outputArray[i] = firstArray[i];
+			}
+			for (int j = 0; j < size2; j++) {
+				outputArray[j] = secondArray[j];
+			}
+			System.out.println(Arrays.toString(outputArray));
 		}
-
 	}
 }
