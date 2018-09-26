@@ -14,10 +14,10 @@ class Solution {
 			for (int i = 0; i < size1; i++) {
 				outputArray[i] = firstArray[i];
 			}
-			int outputArraysize  = firstArray.length - 1;
-			for (int j = 0; j < size2 - 1; j++) {
-				outputArraysize++;
-				outputArray[outputArraysize] = secondArray[j];
+			// int outputArraysize  = firstArray.length - 1;
+			int t = size1;
+			for (int j = 0; j < size2; j++) {
+				outputArray[t++] = secondArray[j];
 
 			}
 			Arrays.sort(outputArray);
