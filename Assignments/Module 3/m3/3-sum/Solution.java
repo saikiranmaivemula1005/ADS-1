@@ -31,7 +31,7 @@ class Solution {
 			 j  < length && array[i] + array[j] < 0; j++) {
 				int k = b.binarySearch(
 					array, j + 1, length - 1,
-					 - array[i] - array[j]);
+					 -array[i] - array[j]);
 				if (k != -1) {
 					count++;
 				}
