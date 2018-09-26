@@ -1,5 +1,20 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * constructor for solution class.
+	 */
+	protected Solution() {
+
+	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		while (sc.hasNext()){
@@ -22,7 +37,7 @@ class Solution {
 			}
 			Arrays.sort(outputArray);
 			// 
-			for(int i = 0; i < outputArray.length - 1; i++) {
+			for (int i = 0; i < outputArray.length - 1; i++) {
 				System.out.print(outputArray[i] + ",");
 			}
 			System.out.print(outputArray[outputArray.length - 1]);
