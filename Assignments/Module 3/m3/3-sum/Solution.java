@@ -15,7 +15,7 @@ class Solution {
 		for (int i = 0; i < length; i++) {
 			for (int j = i + 1; j  < length && array[i] + array[j] == 0; j++) {
 				int k = Arrays.binarySearch(array, j + 1, length, array[i] - array[j]);
-				if (k > j) {
+				if (k >= j) {
 					count++;
 				}
 			}
