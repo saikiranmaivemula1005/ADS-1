@@ -25,6 +25,7 @@ class Solution {
 			for(int i = 0; i < outputArray.length - 1; i++) {
 				System.out.print(outputArray[i] + ",");
 			}
+			System.out.print(outputArray[outputArray.length]);
 		}
 	}
 }
