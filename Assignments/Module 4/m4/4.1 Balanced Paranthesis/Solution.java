@@ -21,10 +21,20 @@ class Solution {
 		// System.out.println(numberOfLines);
 		while (sc.hasNext()) {
 			String line = sc.next();
-			System.out.println(checkbalanced(line));
+			Node n = new Node(line);
+			System.out.println(n.checkbalanced(line));
 		}
 	}
-	public static String checkbalanced(String input) {
-		return input;
+}
+class Node {
+	String item;
+	Node next;
+	Node(String value) {
+		item = value;
+		next = null;
 	}
+	public boolean checkbalanced(String input) {
+		return (next == null);
+	}
+
 }
