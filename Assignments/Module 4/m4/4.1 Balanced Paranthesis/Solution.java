@@ -52,6 +52,12 @@ class Stack {
  * Class for balanced paranthesis.
  */
 class balancedParanthesis {
+	/**
+	 * constructor for the class.
+	 */
+	protected balancedParanthesis() {
+
+	}
     /**
      * Checks if matching pair exist or not.
      * @param      inputOne  first string
