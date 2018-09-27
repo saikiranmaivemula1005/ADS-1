@@ -22,7 +22,12 @@ class Solution {
 		while (sc.hasNext()) {
 			String line = sc.next();
 			Node n = new Node(line);
-			System.out.println(n.checkbalanced(line));
+			if (n.checkbalanced(line)) {
+				System.out.println("YES");
+			}
+			else {
+				System.out.println("NO");
+			}
 		}
 	}
 }
