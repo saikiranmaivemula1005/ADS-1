@@ -25,78 +25,74 @@ class Stack {
         array = new String[n];
     }
     /**
-     * push method which pushes the element into stack.
-     * @param      x     element to be pushed.
+     * push method to push the element into stack.
+     * @param      input     variable of string type.
      */
-    void push(final String x) {
-        array[++top] = x;
+    void push(final String input) {
+        array[++top] = input;
     }
     /**
-     * pop method which pops the element from stack.
-     * @return     element which is popped.
+     * pop method to pop the element from stack.
+     * @return     returns the element that is popped.
      */
     String pop() {
-        String ele = array[top];
+        String element = array[top];
         top--;
-        return ele;
+        return element;
     }
     /**
-     * Determines if empty.
+     * checks if stack is  empty.
      * @return     True if empty, False otherwise.
      */
-    boolean isEmpty() {
-        if (top == -1) {
-            return true;
-        }
-        return false;
+    boolean isStackEmpty() {
+        return (top == -1);
     }
 }
 /**
- * Class for is balanced.
+ * Class for balanced paranthesis.
  */
-class IsBalanced {
+class balancedParanthesis {
     /**
-     * Determines if matching pair.
-     * @param      str1  The string 1
-     * @param      str2  The string 2
-     * @return     True if matching pair, False otherwise.
+     * Checks if matching pair exist or not.
+     * @param      inputOne  first string
+     * @param      inputTwo  second string
+     * @return     True if matching pair exist.
      */
-    boolean isMatchingPair(final String str1, final String str2) {
-        if (str1.equals("(") && str2.equals(")")) {
+    boolean isMatching(final String inputOne, final String inputTwo) {
+        if (inputOne.equals("(") && inputTwo.equals(")")) {
             return true;
         }
-        if (str1.equals("{") && str2.equals("}")) {
+        if (inputOne.equals("{") && inputTwo.equals("}")) {
             return true;
         }
-        if (str1.equals("[") && str2.equals("]")) {
+        if (inputOne.equals("[") && inputTwo.equals("]")) {
             return true;
         }
         return false;
     }
     /**
-     * areBalanced method to check
-       whether the parenthesis are balanced or not.
+     * checkBalanced method.
      * @param      array   The array
      * @return     True if balanced, False otherwise.
      */
-    boolean areBalanced(final String[] array) {
-        Stack st = new Stack(array.length);
+    boolean checkBalanced(final String[] array) {
+        Stack stack = new Stack(array.length);
         for (int i = 0; i < array.length; i++) {
             if (array[i].equals("{")
                 || array[i].equals("(") || array[i].equals("[")) {
-                st.push(array[i]);
+                stack.push(array[i]);
             }
             if (array[i].equals("}")
                 || array[i].equals(")") || array[i].equals("]")) {
-                if (st.isEmpty()) {
+                if (stack.isStackEmpty()) {
                     return false;
                 }
-                if (!isMatchingPair(st.pop(), array[i])) {
+                if (!isMatching(stack.pop(), array[i])) {
                     return false;
                 }
             }
         }
-        return st.isEmpty();
+        return stack.isStackEmpty();
     }
 }
 /**
@@ -115,17 +111,17 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int noofinputs = Integer.parseInt(sc.nextLine());
-        while (noofinputs != 0) {
+        int numberOfLines = Integer.parseInt(sc.nextLine());
+        while (numberOfLines != 0) {
             String line = sc.nextLine();
             String[] array = line.split("");
-            IsBalanced b = new IsBalanced();
-            if (b.areBalanced(array)) {
+            balancedParanthesis b = new balancedParanthesis();
+            if (b.checkBalanced(array)) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
             }
-            noofinputs--;
+            numberOfLines--;
         }
     }
 }
