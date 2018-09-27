@@ -39,7 +39,9 @@ class Node {
 		next = null;
 	}
 	public boolean checkbalanced(String input) {
-		System.out.println(input);
+		// System.out.println(input);
+		String[] tokens = input.split("");
+		System.out.println(Arrays.toString(tokens));
 		return (next == null);
 	}
 
