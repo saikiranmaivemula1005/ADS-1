@@ -21,7 +21,7 @@ class Solution {
 		// System.out.println(numberOfLines);
 		while (sc.hasNext()) {
 			String line = sc.next();
-			checkbalanced(line);
+			System.out.println(checkbalanced(line));
 		}
 	}
 	public static String checkbalanced(String input) {
