@@ -18,7 +18,7 @@ class Solution {
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int numberOfLines = sc.nextInt();
-		System.out.println(numberOfLines);
+		// System.out.println(numberOfLines);
 		while (sc.hasNext()) {
 			String line = sc.next();
 			checkbalanced(line);
