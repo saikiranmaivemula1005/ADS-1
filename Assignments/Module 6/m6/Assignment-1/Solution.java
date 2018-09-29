@@ -27,6 +27,7 @@ class AddLargeNumbers {
         Node node = new Node();
         LinkedList list = new LinkedList();
         String[] tokens = number.split("");
+        System.out.println(tokens[0]);
         for (int i = 0; i < number.length(); i++) {
             list.insert(tokens[i]);
         }
