@@ -35,11 +35,11 @@ class LinkedList {
     }
     String get(int i) {
         Node node = head;
-        while (node.next != null ) {
-            node = node.next;
-            return node.data;
-        }
-        return "";
+        // while (node.next != null ) {
+        //     return node.data;
+        //     node = node.next;
+        // }
+        return node.data;
     }
 }
 class Stack{
@@ -110,16 +110,13 @@ class AddLargeNumbers {
             // System.out.print(list2.get(i) + " ");
             j++;
         }
-        if (list1.size() > list2.size()) {
-            outputListsize = list1.size();
+        if (s1.size() > s2.size()) {
+            outputListsize = s1.size();
         } else {
-            outputListsize = list2.size();
+            outputListsize = s2.size();
         }
-        for (int i = 0; i < list1.size(); i++) {
-            outputList.insert(s1.get(i) + s2.get(i));
-        }
-        for (int i = 0; i < outputListsize + 1; i++) {
-        System.out.println(outputList.get(i));            
+        for (int i = 0; i < s2.size(); i++) {
+            System.out.print(s2.get(i) + " ");
         }
         return outputList;
     }
