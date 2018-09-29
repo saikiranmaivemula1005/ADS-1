@@ -5,6 +5,7 @@ class Node {
 }
 class LinkedList {
     Node head;
+    int count = 0;
     void insert(String data) {
         Node node = new Node();
         node.data = data;
@@ -15,6 +16,7 @@ class LinkedList {
             Node n = head;
             while (n.next != null) {
                 n = n.next;
+                count++;
             }
             n.next = node;
         }
@@ -27,6 +29,17 @@ class LinkedList {
             node = node.next;
         }
         System.out.print(node.data);
+    }
+    int size() {
+        return count;
+    }
+    String get(int i) {
+        Node node = head;
+        while (node.next != null ) {
+            node = node.next;
+            return node.data;
+        }
+        return "";
     }
 }
 class Stack{
@@ -51,11 +64,6 @@ class Stack{
     }
     int size() {
         return n;
-    }
-    void show() {
-        for (int i = 0; i < n; i++) {
-            System.out.print(array[i]);
-        }
     }
 }
 class AddLargeNumbers {
@@ -82,28 +90,27 @@ class AddLargeNumbers {
         return s;
     }
 
-    public static String addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList outputList = new LinkedList();
-        String s = "a";
-        Node node = new Node();
-        // list1.show();
-        System.out.println();
-        // list2.show();
-        Stack stack1 = new Stack();
-        Stack stack2 = new Stack();
-        while (node.next != null) {
-            for (int i = 0; i < stack1.size(); i++) {
-                stack1.push(node.data);
-                node = node.next;
-            }
+        Stack s1 = new Stack();
+        Stack s2 = new Stack();
+        int j = 0;
+        for (int i = 0; i < list1.size(); i++){
+            s1.push(list1.get(i));
+            System.out.print(list1.get(i) + " ");
+            j++;
         }
         System.out.println();
-        stack1.show();
-        System.out.println();
+        for (int i = 0; i < list2.size(); i++){
+            s2.push(list2.get(i));
+            System.out.print(list2.get(i) + " ");
+            j++;
+        }
 
 
 
-        return s;
+
+        return outputList;
     }
 }
 
@@ -124,8 +131,8 @@ public class Solution {
             case "addLargeNumbers":
                  pDigits = AddLargeNumbers.numberToDigits(p);
                  qDigits = AddLargeNumbers.numberToDigits(q);
-                String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                // System.out.println(AddLargeNumbers.digitsToNumber(result));
+                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
         }
     }
