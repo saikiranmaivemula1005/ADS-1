@@ -58,7 +58,7 @@ class LinkedList {
      * @return returns the value at that node.
      */
     String get(final int index) {
-        Node x = new Node();
+        Node x = head;
        if (index < size() && index > 0) {
         for (int i = 0; i < index; i++) {
             x = x.next;
