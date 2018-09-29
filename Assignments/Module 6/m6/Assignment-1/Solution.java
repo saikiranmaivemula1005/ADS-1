@@ -20,20 +20,28 @@ class LinkedList {
         }
 
     }
+    void show() {
+        Node node = head;
+        while (node.next != null) {
+            System.out.println(node.data);
+            node = node.next;
+        }
+        System.out.print(node.data);
+    }
 }
 class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
-        // Node node = new Node();
+        Node node = new Node();
         LinkedList list = new LinkedList();
         String[] tokens = number.split("");
         for (int i = 0; i < number.length(); i++) {
             list.insert(tokens[i]);
-            System.out.println(list);
+             list.show();
         }
-        // System.out.println(node.toString());
         return list;
     }
+
 
     public static String digitsToNumber(LinkedList list) {
         return "";
