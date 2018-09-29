@@ -46,6 +46,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(LinkedList list) {
         String s = "";
         Node n = new Node();
+        System.out.println(list.show());
         while(n.next != null) {
             System.out.println(n.data);
             s += n.data;
