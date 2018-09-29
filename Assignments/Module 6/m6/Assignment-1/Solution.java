@@ -1,11 +1,22 @@
 import java.util.Scanner;
+/**
+ * Class for node.
+ */
 class Node {
     String data;
     Node next;
 }
+/**
+ * class for linkedist.
+ */
 class LinkedList {
     Node head;
     int count = 0;
+    /**
+     * method to insert data.
+     *
+     * @param      data  The data
+     */
     void insert(String data) {
         Node node = new Node();
         node.data = data;
@@ -20,8 +31,10 @@ class LinkedList {
             }
             n.next = node;
         }
-
     }
+    /**
+     * method to display elements.
+     */
     void show() {
         Node node = head;
         while (node.next != null) {
@@ -30,17 +43,36 @@ class LinkedList {
         }
         System.out.print(node.data);
     }
+    /**
+     * method to return size.
+     *
+     * @return returns size of linked list. 
+     */
     int size() {
         return count;
     }
-    String get(int i) {
+    /**
+     * method to get the element at that index.
+     *
+     * @param      i integer parameter
+     *
+     * @return returns the value at that node.
+     */
+    String get(int index) {
         Node node = head;
+        String s = "";
         node = node.next;
+        for (int i = 0; i < size(); i++) {
+            if (index == i) {
+                s =  node.data;
+                node = node.next;
+            }
+        }
         // while (node.next != null ) {
-        //     return node.data;
+        //     s = node.data;
         //     node = node.next;
         // }
-        return node.data;
+        return s;
     }
 }
 class Stack{
