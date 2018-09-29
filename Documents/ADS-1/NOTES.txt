@@ -1,0 +1,135 @@
+DAY - 1:
+
+Algorithm is to solve a problem
+Data structure is to store information.
+ADS - 1 : datatypes, sorting, searching.
+ADS - 2 : graphs, strings,advanced
+why study algorithms?
+1.Impact is broad and far-reaching.
+2.To solve problems.
+3.For intellectual stimulation.
+4.They may unlock the secrets of life and of the universe.
+5.For fun and profit.
+
+****************************************************************
+
+Union find problem:
+Steps to develop a usable algorithm.
+
+Dynamic connectivity:
+> Given a set of N objects.
+	> union command - to connect objects.
+	> find/connected query - check the path is connected or not?
+
+Applications involve manipulating objects of all types.
+
+Modeling the connections:
+> 1.Reflexive: connected to itself (p=p);
+  2.Symmetric : p=q; q=p.
+  3.Transitive : p=q;q=r >> p=r.
+Implementing operations:
+> Find query : check for connection.
+> Union command : connect 2 objects.
+
+Union-find data type(API):
+Create a class named "UF" and declare the union and connected methods.
+
+****************************************************************************
+
+Quick-find (eager approach)
+Data structure:
+	Integer array.
+	p and q are connected if they have same id.
+Find:
+	Check if p and q are same.
+Union:
+	Connect p and q.
+
+Java implementation for quick-find.
+
+Quick-find is too slow.
+	> Cost model.
+	> Union is too expensive.
+
+********************************************************************************
+
+
+Quick-Union (Lazy approach)
+
+Data structure:
+	Integer array id[] of size n.
+	id[i] is parent of i
+	Root of i is id[id[...id[i]...]]]
+Find:
+	check if p and q have same root.
+Union:
+	To merge components containing p and q,
+	 set the id of p's root to id of q's root.
+
+Java implementation of Quick-Union.
+
+***********************************************************************
+
+Improvements in Quick-union:
+1.Weighting:
+	Avoid tall trees
+	see the size of each tree
+Here, we take a new array for size "sz[]"
+
+Check for the size of the roots and update the new root the root
+which has more size.
+
+**********************************************************************
+
+Applications:
+
+Union-find:
+	Percolation
+	Dynamic connectivity
+Monte Carlo Simulation.
+
+**********************************************************************
+
+DAY-3:
+
+
+Best case: Lower bound on cost.
+	Determined by "easisest" input.
+	Provides a goal for all input.
+Worst case: Upper bound on cost.
+	Determined by "most difficult" input.	
+	Provides guarantee for all inputs.
+Average case: Expected cost for random input.
+	Needs a model for "random" input.
+	Provides a way to predict performance.
+
+Notations in theory of algorithms.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
