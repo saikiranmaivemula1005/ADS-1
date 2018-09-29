@@ -24,6 +24,9 @@ class Stack {
         top = -1;
         array = new String[n];
     }
+    int size() {
+        return n;
+    }
     /**
      * push method to push the element into stack.
      * @param      input     variable of string type.
@@ -70,6 +73,10 @@ public final class Solution {
             String line = sc.nextLine();
             String[] array = line.split("");
             balancedParanthesis b = new balancedParanthesis();
+            Stack s = new Stack(array.length);
+            for (int i = 0; i< array.length; i++){
+                System.out.println(s.size());
+            }
             if (b.checkBalanced(array)) {
                 System.out.println("YES");
             } else {

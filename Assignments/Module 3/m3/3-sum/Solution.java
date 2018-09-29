@@ -1,4 +1,4 @@
-import java.util.Scanner;
+1import java.util.Scanner;
 import java.util.Arrays;
 /**
  * Class for solution.
