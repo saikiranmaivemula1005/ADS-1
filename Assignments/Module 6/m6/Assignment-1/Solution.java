@@ -3,15 +3,27 @@ import java.util.Scanner;
  * Class for node.
  */
 class Node {
-    String data;
-    Node next;
+    /**
+     * data of string type.
+     */
+     String data;
+    /**
+     * next variable of node type.
+     */
+     Node next;
 }
 /**
  * class for linkedist.
  */
 class LinkedList {
-    Node head;
-    int count = 0;
+    /**
+     * head of node type.
+     */
+    private Node head;
+    /**
+     * count of integer type.
+     */
+    private int count = 0;
     /**
      * method to insert data.
      *
@@ -46,7 +58,7 @@ class LinkedList {
     /**
      * method to return size.
      *
-     * @return returns size of linked list. 
+     * @return returns size of linked list.
      */
     int size() {
         return count;
@@ -54,7 +66,7 @@ class LinkedList {
     /**
      * method to get the element at that index.
      *
-     * @param      i integer parameter
+     * @param      index integer parameter
      *
      * @return returns the value at that node.
      */
@@ -78,14 +90,21 @@ class LinkedList {
 /**
  * class for stack.
  */
-class Stack{
-    String[] array;
-    int n;
+class Stack {
+    /**
+     * array of string type.
+     */
+    private String[] array;
+    /**
+     * integer variable.
+     */
+    private int n;
     /**
      * Constructor for stack class.
      */
     Stack() {
-        array = new String[100000000];
+        final int variable = 100000000;
+        array = new String[variable];
         n = 0;
     }
     /**
@@ -114,7 +133,7 @@ class Stack{
      * @return     True if empty, False otherwise.
      */
     boolean isEmpty() {
-        return (n==0);
+        return (n == 0);
     }
     /**
      * returns size of stack.
@@ -217,7 +236,7 @@ public class Solution {
     /**
      * constructor for solution class.
      */
-    Solution() {
+    protected Solution() {
 
     }
     /**
@@ -230,7 +249,7 @@ public class Solution {
         String input = sc.nextLine();
         String p = sc.nextLine();
         String q = sc.nextLine();
-        switch (input){
+        switch (input) {
             case "numberToDigits":
                 LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
                 LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
@@ -241,10 +260,11 @@ public class Solution {
             case "addLargeNumbers":
                  pDigits = AddLargeNumbers.numberToDigits(p);
                  qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                LinkedList result = 
+                AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
+                default:
         }
-    }
-    
+    }  
 }
