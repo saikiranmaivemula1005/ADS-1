@@ -217,7 +217,7 @@ class AddLargeNumbers {
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
             outputList.insert(x[i]);
-            System.out.print(x[i] + " ");
+            System.out.print(x[i] + "11");
         }
         return outputList;
     }
