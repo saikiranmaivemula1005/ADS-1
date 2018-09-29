@@ -57,7 +57,8 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList outputList = new LinkedList();
-        
+        list1.show();
+        list2.show();
 
 
         return outputList;
