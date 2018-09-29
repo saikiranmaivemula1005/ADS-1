@@ -207,19 +207,18 @@ class AddLargeNumbers {
             // System.out.print(list2.get(i) + " ");
             j++;
         }
-        if (s1.size() > s2.size()) {
-            outputListsize = s1.size();
-        } else {
-            outputListsize = s2.size();
-        }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
-            s3.push(s1.pop() + s2.pop());
-            x[i] = s3.get(i);
+           System.out.println(s1.pop());
+            s2.pop();
         }
-        for (int i = 0; i < s1.size() + s2.size(); i++) {
-            outputList.insert(x[i]);
-            System.out.print(x[i] + " ");
-        }
+        // for (int i = 0; ) {
+        //     s3.push(s1.pop() + s2.pop());
+        //     x[i] = s3.get(i);
+        // }
+        // for (int i = 0; i < s1.size() + s2.size(); i++) {
+        //     outputList.insert(x[i]);
+        //     System.out.print(x[i] + " ");
+        // }
         return outputList;
     }
 }
