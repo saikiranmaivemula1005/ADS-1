@@ -159,13 +159,18 @@ class Stack {
  */
 class AddLargeNumbers {
     /**
+     * constructor for the class.
+     */
+    protected AddLargeNumbers() {
+
+    }
+    /**
      * convert number to digits.
      *
      * @param      number  string variable
      *
      * @return  returns the list of digits.
      */
-    
     public static LinkedList numberToDigits(final String number) {
         Node node = new Node();
         LinkedList list = new LinkedList();
@@ -187,7 +192,7 @@ class AddLargeNumbers {
         String s = "";
         Node n = new Node();
         list.show();
-        while(n.next != null) {
+        while (n.next != null) {
             s += n.data;
         }
 
@@ -201,7 +206,8 @@ class AddLargeNumbers {
      *
      * @return returns the addition of given numbers.
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList
+     list1, final LinkedList list2) {
         LinkedList outputList = new LinkedList();
         int outputListsize = 0;
         Stack s1 = new Stack();
@@ -260,11 +266,11 @@ public class Solution {
             case "addLargeNumbers":
                  pDigits = AddLargeNumbers.numberToDigits(p);
                  qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = 
+                LinkedList result =
                 AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
                 default:
         }
-    }  
+    }
 }
