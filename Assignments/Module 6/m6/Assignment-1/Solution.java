@@ -29,6 +29,35 @@ class LinkedList {
         System.out.print(node.data);
     }
 }
+class Stack{
+    String[] array;
+    int n;
+    Stack() {
+        array = new String[10];
+        n = 0;
+    }
+    void push(String item) {
+        array[n++] = item;
+    }
+    String pop() {
+        if (isEmpty()) {
+            return null;
+        }
+        String s = array[--n];
+        return s;
+    }
+    boolean isEmpty() {
+        return (n==0);
+    }
+    int size() {
+        return n;
+    }
+    void show() {
+        for (int i = 0; i < n; i++) {
+            System.out.print(array[i]);
+        }
+    }
+}
 class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
@@ -37,7 +66,6 @@ class AddLargeNumbers {
         String[] tokens = number.split("");
         for (int i = 0; i < number.length(); i++) {
             list.insert(tokens[i]);
-             // list.show();
         }
         return list;
     }
@@ -48,20 +76,34 @@ class AddLargeNumbers {
         Node n = new Node();
         list.show();
         while(n.next != null) {
-            System.out.println(n.data);
             s += n.data;
         }
 
         return s;
     }
 
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static String addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList outputList = new LinkedList();
-        list1.show();
-        list2.show();
+        String s = "a";
+        Node node = new Node();
+        // list1.show();
+        System.out.println();
+        // list2.show();
+        Stack stack1 = new Stack();
+        Stack stack2 = new Stack();
+        while (node.next != null) {
+            for (int i = 0; i < stack1.size(); i++) {
+                stack1.push(node.data);
+                node = node.next;
+            }
+        }
+        System.out.println();
+        stack1.show();
+        System.out.println();
 
 
-        return outputList;
+
+        return s;
     }
 }
 
@@ -82,8 +124,8 @@ public class Solution {
             case "addLargeNumbers":
                  pDigits = AddLargeNumbers.numberToDigits(p);
                  qDigits = AddLargeNumbers.numberToDigits(q);
-                LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
-                System.out.println(AddLargeNumbers.digitsToNumber(result));
+                String result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
+                // System.out.println(AddLargeNumbers.digitsToNumber(result));
                 break;
         }
     }
