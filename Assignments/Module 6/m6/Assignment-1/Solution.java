@@ -209,7 +209,7 @@ class AddLargeNumbers {
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
            System.out.println(s1.pop());
-            s2.pop();
+            System.out.println(s2.pop());
         }
         // for (int i = 0; ) {
         //     s3.push(s1.pop() + s2.pop());
