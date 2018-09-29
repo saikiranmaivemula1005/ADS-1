@@ -8,9 +8,16 @@ class AddLargeNumbers {
     /**
      * Constructs the object.
      */
-    AddLargeNumbers() {
+    protected AddLargeNumbers() {
 
     }
+    /**
+     * convert number to digits.
+     *
+     * @param      number  The number
+     *
+     * @return   returns the linked list.
+     */
    public static LinkedList numberToDigits(final String number) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         char[] charA = number.toCharArray();
@@ -127,4 +134,5 @@ public class Solution {
         }
     }
 }
+
 
