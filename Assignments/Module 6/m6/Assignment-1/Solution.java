@@ -189,7 +189,8 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(final LinkedList
      list1, final LinkedList list2) {
         LinkedList outputList = new LinkedList();
-        String[] x = new String[10];
+        final int ten = 10;
+        String[] x = new String[ten];
         int outputListsize = 0;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
@@ -217,7 +218,7 @@ class AddLargeNumbers {
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
             outputList.insert(x[i]);
-            System.out.print(x[i] + "11");
+            System.out.print(x[i] + " ");
         }
         return outputList;
     }
