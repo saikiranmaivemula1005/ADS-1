@@ -212,7 +212,7 @@ class AddLargeNumbers {
             outputListsize = s2.size();
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
-            s3.push(s1.get(i) + s2.get(i));
+            s3.push(s1.pop() + s2.pop());
             x[i] = s3.get(i);
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
