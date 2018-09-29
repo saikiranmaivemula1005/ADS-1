@@ -35,6 +35,7 @@ class LinkedList {
     }
     String get(int i) {
         Node node = head;
+        node = node.next;
         // while (node.next != null ) {
         //     return node.data;
         //     node = node.next;
