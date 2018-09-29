@@ -37,14 +37,20 @@ class AddLargeNumbers {
         String[] tokens = number.split("");
         for (int i = 0; i < number.length(); i++) {
             list.insert(tokens[i]);
-             list.show();
+             // list.show();
         }
         return list;
     }
 
 
     public static String digitsToNumber(LinkedList list) {
-        return "";
+        String s = "";
+        Node n = new Node();
+        while(n.next != null) {
+            System.out.println(n.data);
+        }
+
+        return s;
     }
 
     // public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
