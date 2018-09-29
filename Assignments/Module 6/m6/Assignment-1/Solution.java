@@ -23,7 +23,7 @@ class LinkedList {
     void show() {
         Node node = head;
         while (node.next != null) {
-            System.out.println(node.data);
+            System.out.print(node.data);
             node = node.next;
         }
         System.out.print(node.data);
@@ -46,7 +46,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(LinkedList list) {
         String s = "";
         Node n = new Node();
-        System.out.println(list.show());
+        list.show();
         while(n.next != null) {
             System.out.println(n.data);
             s += n.data;
