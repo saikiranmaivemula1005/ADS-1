@@ -24,13 +24,14 @@ class LinkedList {
 class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
-        LinkedList node = new LinkedList();
+        Node node = new Node();
+        LinkedList list = new LinkedList();
         String[] tokens = number.split("");
         for (int i = 0; i < number.length(); i++) {
-            node.insert(tokens[i]);
+            list.insert(tokens[i]);
         }
         System.out.println(node.toString());
-        return node;
+        return list;
     }
 
     public static String digitsToNumber(LinkedList list) {
