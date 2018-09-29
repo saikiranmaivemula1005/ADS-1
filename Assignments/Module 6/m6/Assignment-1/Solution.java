@@ -65,7 +65,6 @@ class LinkedList {
         }
         }
         return x.data;
-        
     }
 }
 /**
@@ -193,29 +192,26 @@ class AddLargeNumbers {
         int outputListsize = 0;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
+        int j = 0;
         for (int i = 0; i < list1.size(); i++) {
-            System.out.print(list1.get(i) + " ");
+            s1.push(list1.get(i));
+            // System.out.print(list1.get(i) + " ");
+            j++;
         }
-        // int j = 0;
-        // for (int i = 0; i < list1.size(); i++) {
-        //     s1.push(list1.get(i));
-        //     // System.out.print(list1.get(i) + " ");
-        //     j++;
-        // }
-        // System.out.println();
-        // for (int i = 0; i < list2.size(); i++) {
-        //     s2.push(list2.get(i));
-        //     // System.out.print(list2.get(i) + " ");
-        //     j++;
-        // }
-        // if (s1.size() > s2.size()) {
-        //     outputListsize = s1.size();
-        // } else {
-        //     outputListsize = s2.size();
-        // }
-        // for (int i = 0; i < s2.size(); i++) {
-        //     System.out.print(s2.get(i) + " ");
-        // }
+        System.out.println();
+        for (int i = 0; i < list2.size(); i++) {
+            s2.push(list2.get(i));
+            // System.out.print(list2.get(i) + " ");
+            j++;
+        }
+        if (s1.size() > s2.size()) {
+            outputListsize = s1.size();
+        } else {
+            outputListsize = s2.size();
+        }
+        for (int i = 0; i < s2.size(); i++) {
+            System.out.print(s2.get(i) + " ");
+        }
         return outputList;
     }
 }
