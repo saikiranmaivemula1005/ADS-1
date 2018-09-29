@@ -215,7 +215,8 @@ class AddLargeNumbers {
              System.out.println(s3.pop());
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
-            outputList.insert(s3.get(i));
+            outputList.insert(s3.get(i).replace("null", "1"));
+
         }
 
         return outputList;
