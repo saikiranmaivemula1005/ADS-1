@@ -29,7 +29,7 @@ class AddLargeNumbers {
         for (int i = 0; i < number.length(); i++) {
             node.insert(tokens[i]);
         }
-        System.out.println(node);
+        System.out.println(node.toString());
         return node;
     }
 
