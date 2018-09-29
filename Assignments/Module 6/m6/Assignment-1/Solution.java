@@ -46,7 +46,7 @@ class Stack{
     String[] array;
     int n;
     Stack() {
-        array = new String[10];
+        array = new String[100000000];
         n = 0;
     }
     void push(String item) {
@@ -64,6 +64,9 @@ class Stack{
     }
     int size() {
         return n;
+    }
+    String get(int i) {
+        return array[i];
     }
 }
 class AddLargeNumbers {
@@ -92,24 +95,32 @@ class AddLargeNumbers {
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
         LinkedList outputList = new LinkedList();
+        int outputListsize = 0;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         int j = 0;
-        for (int i = 0; i < list1.size(); i++){
+        for (int i = 0; i < list1.size(); i++) {
             s1.push(list1.get(i));
-            System.out.print(list1.get(i) + " ");
+            // System.out.print(list1.get(i) + " ");
             j++;
         }
         System.out.println();
-        for (int i = 0; i < list2.size(); i++){
+        for (int i = 0; i < list2.size(); i++) {
             s2.push(list2.get(i));
-            System.out.print(list2.get(i) + " ");
+            // System.out.print(list2.get(i) + " ");
             j++;
         }
-
-
-
-
+        if (list1.size() > list2.size()) {
+            outputListsize = list1.size();
+        } else {
+            outputListsize = list2.size();
+        }
+        for (int i = 0; i < list1.size(); i++) {
+            outputList.insert(s1.get(i) + s2.get(i));
+        }
+        for (int i = 0; i < outputListsize + 1; i++) {
+        System.out.println(outputList.get(i));            
+        }
         return outputList;
     }
 }
