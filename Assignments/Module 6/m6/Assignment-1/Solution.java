@@ -1,8 +1,11 @@
 import java.util.Scanner;
 import java.util.LinkedList;
 import java.util.Stack;
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
-   public static LinkedList numberToDigits(String number) {
+   public static LinkedList numberToDigits(final String number) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         char[] charA = number.toCharArray();
         for (Character i : charA) {
@@ -11,12 +14,25 @@ class AddLargeNumbers {
         return list;
 
     }
-
-    public static String digitsToNumber(LinkedList list) {
+    /**
+     * convert digits to numbers.
+     *
+     * @param      list  The list
+     *
+     * @return  returns the string
+     */
+    public static String digitsToNumber(final LinkedList list) {
         return list.toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "");
     }
-
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    /**
+     * Adds large numbers.
+     *
+     * @param      list1  The list 1
+     * @param      list2  The list 2
+     *
+     * @return    returns the addition of two numbers.
+     */
+    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         Stack<Integer> stk1 = new Stack<Integer>();
         Stack<Integer> stk2 = new Stack<Integer>();
