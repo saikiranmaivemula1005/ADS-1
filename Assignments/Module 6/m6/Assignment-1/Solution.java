@@ -219,6 +219,7 @@ class AddLargeNumbers {
 
         }
 
+        outputList.show();
         return outputList;
     }
 }
