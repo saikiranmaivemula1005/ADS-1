@@ -192,6 +192,7 @@ class AddLargeNumbers {
         int outputListsize = 0;
         Stack s1 = new Stack();
         Stack s2 = new Stack();
+        Stack s3 = new Stack();
         int j = 0;
         for (int i = 0; i < list1.size(); i++) {
             s1.push(list1.get(i));
@@ -210,8 +211,13 @@ class AddLargeNumbers {
             outputListsize = s2.size();
         }
         for (int i = 0; i < s1.size() + s2.size(); i++) {
-            outputList.insert(s1.get(i) + s2.get(i));
+            s3.push(s1.get(i) + s2.get(i));
+            s3.pop();
         }
+        for (int i = 0; i < s1.size() + s2.size(); i++) {
+            outputList.insert(s3.get(i));
+        }
+
         return outputList;
     }
 }
