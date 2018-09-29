@@ -48,6 +48,7 @@ class AddLargeNumbers {
         Node n = new Node();
         while(n.next != null) {
             System.out.println(n.data);
+            s += n.data;
         }
 
         return s;
