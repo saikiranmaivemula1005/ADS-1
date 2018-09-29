@@ -5,6 +5,12 @@ import java.util.Stack;
  * Class for add large numbers.
  */
 class AddLargeNumbers {
+    /**
+     * Constructs the object.
+     */
+    AddLargeNumbers() {
+
+    }
    public static LinkedList numberToDigits(final String number) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         char[] charA = number.toCharArray();
@@ -22,7 +28,8 @@ class AddLargeNumbers {
      * @return  returns the string
      */
     public static String digitsToNumber(final LinkedList list) {
-        return list.toString().replaceAll("\\[", "").replaceAll("]", "").replaceAll(", ", "");
+        return list.toString().replaceAll("\\[", "").
+        replaceAll("]", "").replaceAll(", ", "");
     }
     /**
      * Adds large numbers.
@@ -32,7 +39,8 @@ class AddLargeNumbers {
      *
      * @return    returns the addition of two numbers.
      */
-    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
+    public static LinkedList addLargeNumbers(final
+     LinkedList list1, final LinkedList list2) {
         LinkedList<Integer> list = new LinkedList<Integer>();
         Stack<Integer> stk1 = new Stack<Integer>();
         Stack<Integer> stk2 = new Stack<Integer>();
