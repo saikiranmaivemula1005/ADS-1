@@ -30,7 +30,7 @@ class AddLargeNumbers {
         for (int i = 0; i < number.length(); i++) {
             list.insert(tokens[i]);
         }
-        System.out.println(node.toString());
+        // System.out.println(node.toString());
         return list;
     }
 
