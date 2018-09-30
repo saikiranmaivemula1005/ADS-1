@@ -77,7 +77,7 @@ class CircularLinkedList<T> {
    *
    * @return  returns the removed element.
    */
-  public T remove(T element) {
+  public T remove(final T element) {
     //if single element present
     if (headNode.next.equals(headNode) && headNode.data.equals(element)) {
       T tempOne = headNode.data;
