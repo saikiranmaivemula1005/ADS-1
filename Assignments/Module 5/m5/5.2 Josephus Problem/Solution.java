@@ -9,8 +9,13 @@ class CircularLinkedList<T> {
    * generic type node.
    */
   private Node<T> headNode = null;
+  /**
+   * generic node.
+   */
   private Node<T> endNode = null;
-  //for getnext method.
+  /**
+   * generic node.
+   */
   private Node<T> currentNode = null;
   /**
    * Class for node.
@@ -52,6 +57,11 @@ class CircularLinkedList<T> {
       endNode = newnode;
     }
   }
+  /**
+   * Gets the next node.
+   *
+   * @return     The next.
+   */
   public T getNext() {
     if (currentNode == null) {
       currentNode = headNode;
@@ -60,6 +70,13 @@ class CircularLinkedList<T> {
     currentNode = tempOne.next;
     return tempOne.data;
   }
+  /**
+   * removes the element.
+   *
+   * @param      element  The element
+   *
+   * @return  returns the removed element.
+   */
   public T remove(T element) {
     //if single element present
     if (headNode.next.equals(headNode) && headNode.data.equals(element)) {
