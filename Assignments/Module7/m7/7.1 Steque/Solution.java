@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Stack;
 class Node {
 	int data;
 	Node next;
@@ -65,12 +64,6 @@ class Steque {
 		System.out.println(temp.data);
 	}
 }
-
-
-
-
-
-
 class Solution {
 	protected Solution() {
 
@@ -78,7 +71,7 @@ class Solution {
 	public static void main(String[] args) {
 		Steque s = new Steque();
 		Scanner sc = new Scanner(System.in);
-		int numberOfCases = sc.nextInt();
+		int numberOfCases = Integer.parseInt(sc.nextLine());
 		while (sc.hasNext()) {
 			String line = sc.nextLine();
 			String[] tokens = line.split(" ");
