@@ -22,6 +22,7 @@ class Steque {
 			System.out.print(stack[i] + ", ");
 		}
 		System.out.print(stack[size - 1]);
+		System.out.println();
 		size--;
 	}
 	int size() {
@@ -38,6 +39,7 @@ class Steque {
 			System.out.print(stack[i] + ", ");
 		}
 		System.out.print(stack[size - 1]);
+		System.out.println();
 		}
 	}
 }
