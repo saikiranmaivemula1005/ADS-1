@@ -8,11 +8,7 @@ class Steque {
 	int front = 0;
 	int[] stack = new int[10];
 	void push(int element) {
-		for (int i = size; i >= 0; i--) {
-			stack[i + 1] = stack[i];
-		}
-		stack[0] = element;
-		size++;
+		stack[size++] = element;
 	}
 	void pop() {
 		if (size() == 0) {
@@ -29,7 +25,11 @@ class Steque {
 		return size;
 	}
 	void enqueue(int element) {
-		stack[size++] = element;
+		for (int i = size; i >= 0; i--) {
+			stack[i + 1] = stack[i];
+		}
+		stack[0] = element;
+		size++;
 	}
 	void print() {
 		if (size() < 0) {
