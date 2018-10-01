@@ -35,10 +35,10 @@ class Steque {
 		if (size() < 0) {
 			System.out.println("Steque is empty.");
 		} else {
-		for (int i = 0; i < size - 1; i++) {
+		for (int i = size; i > 1; i--) {
 			System.out.print(stack[i] + ", ");
 		}
-		System.out.print(stack[size - 1]);
+		System.out.print(stack[0]);
 		System.out.println();
 		}
 	}
