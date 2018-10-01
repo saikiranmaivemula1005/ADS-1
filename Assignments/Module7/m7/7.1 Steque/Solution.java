@@ -15,7 +15,8 @@ class Steque {
     /**
      * This method is used to add the given elements at the head
      * of the linked list.
-     *
+     *All operations in this method take constant time.
+     *So, time complexity is O(1).
      * @param      element  The element
      */
     void push(final int element) {
@@ -34,6 +35,8 @@ class Steque {
     /**
      * This method is used to pop or remove the elements from head
      * in the linked list.
+     *All operations in this method take constant time.
+     *So, time complexity is O(1).
      */
     void pop() {
         head = head.next;
@@ -42,7 +45,8 @@ class Steque {
     /**
      * This method is used to add the elements at the end of the
      * stack.
-     *
+     *All operations in this method take constant time.
+     *So, time complexity is O(1).
      * @param      element  The element
      */
     void enqueue(final int element) {
@@ -64,15 +68,17 @@ class Steque {
     }
     /**
      * This method is used to check whether the stack is empty or not.
-     *
+     *All operations in this method take constant time.
+     *So, time complexity is O(1).
      * @return returns true if stack is empty, false otherwise.
      */
     boolean isEmpty() {
         return (size == 0);
     }
     /**
-     * method to display the stack elements.
-     *
+     *This method is used to display the stack elements.
+     *All operations in this method take constant time.
+     *So, time complexity is O(1).
      * @throws     Exception throws exception if stack is empty.
      */
     void print() throws Exception {
@@ -103,7 +109,8 @@ class Solution {
     }
     /**
      * main method for solution class.
-     *
+     *Here, while loop runs for the given "N" number
+     *of tasks. So, the time complexity = O(N).
      * @param      args       The arguments
      *
      * @throws     Exception  exception if stack is empty.
