@@ -1,25 +1,17 @@
 import java.util.Scanner;
 /**
- * Class for node to create and access the linked list 
- * that is used to store and access elements as a stack.
- */
-class Node {
-    /**
-     * data variable of integer type.
-     */
-     int data;
-    /**
-     * next variable of node type to store the pointer of next node.
-     */
-     Node next;
-}
-/**
  * Class for steque that implements the methods
  * push,pop,enqueue,isEmpty and print the stack methods.
  */
 class Steque {
-    Node head;
-    int size = 0;
+    /**
+     * head of node type used to store the first element in the linked list.
+     */
+    private Node head;
+    /**
+     * size of integer type used to store the size of stack.
+     */
+    private int size = 0;
     /**
      * This method is used to add the given elements at the head 
      * of the linked list.
@@ -145,12 +137,9 @@ class Solution {
                         s.enqueue(Integer.parseInt(tokens[1]));
                         s.print();
                         break;
-                    default:
-                        
+                    default:           
                 }
             }
-            
-            //numberOfCases--;
         }
 
     }
