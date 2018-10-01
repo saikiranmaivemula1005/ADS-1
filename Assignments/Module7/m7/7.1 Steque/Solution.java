@@ -75,8 +75,9 @@ class Solution {
 		while (sc.hasNext()) {
 			String line = sc.nextLine();
 			if (line.equals("") || line.equals(null)) {
+				s = new Steque();
 				System.out.println("");
-				break;
+				//break;
 			} else {
 				//s = new Steque();
 				String[] tokens = line.split(" ");
