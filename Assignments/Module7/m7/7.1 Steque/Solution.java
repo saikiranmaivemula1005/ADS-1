@@ -76,37 +76,36 @@ class Solution {
 
 	}
 	public static void main(String[] args) {
-		Steque s = new Steque();
 		Scanner sc = new Scanner(System.in);
 		int numberOfCases = sc.nextInt();
 		for (int i = 0; i < numberOfCases; i++) {
-		while (sc.hasNext()) {
-			String line = sc.nextLine();
-				if (line.equals("")) {
-					break;
-				} else {
-				String[] tokens = line.split(" ");
-				switch (tokens[0]) {
-					case "push":
-						s.push(Integer.parseInt(tokens[1]));
-						s.print();
+			Steque s = new Steque();
+			while (sc.hasNext()) {
+				String line = sc.nextLine();
+					if (line.equals("")) {
 						break;
-					case "pop":
-						s.pop();
-						s.print();
-						break;
-					case "enqueue":
-						s.enqueue(Integer.parseInt(tokens[1]));
-						s.print();
-						break;
-					default:
-						
+					} else {
+						String[] tokens = line.split(" ");
+						switch (tokens[0]) {
+							case "push":
+								s.push(Integer.parseInt(tokens[1]));
+								s.print();
+								break;
+							case "pop":
+								s.pop();
+								s.print();
+								break;
+							case "enqueue":
+								s.enqueue(Integer.parseInt(tokens[1]));
+								s.print();
+								break;
+							default:				
+						}
+					numberOfCases--;
 					}
-				numberOfCases--;
-				}
 
+			}
 		}
-	}
 
 	}
 }
