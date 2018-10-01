@@ -20,10 +20,6 @@ class Steque {
 		}
 	}
 	void pop() {
-		if (size <= 0) {
-			System.out.println("Steque is empty.");
-			return;
-		}
 		head = head.next;
 		size--;
 	}
@@ -45,10 +41,10 @@ class Steque {
 		}
 	}
 	void print() {
-		// if (size <= 0) {
-		// 	System.out.println("Steque is empty.");
-		// 	return;
-		// }
+		if (size <= 0) {
+			System.out.println("Steque is empty.");
+			return;
+		}
 		if (head.next == null) {
 			System.out.println(head.data);
 			return;
