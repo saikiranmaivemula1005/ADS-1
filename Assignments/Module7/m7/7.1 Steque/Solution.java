@@ -15,17 +15,15 @@ class Steque {
 		size++;
 	}
 	void pop() {
+		size--;
 		if (size() == 0) {
 			System.out.println("Steque is empty.");
 		}
-		int temp = 1;
-		for (; temp < size - 1; temp++) {
-			System.out.print(stack[temp] + ", ");
+		for (int i = 1; i < size - 1; i++) {
+			System.out.print(stack[i] + ", ");
 		}
 		System.out.print(stack[size - 1]);
-		temp++;
 		System.out.println();
-		size--;
 	}
 	int size() {
 		return size;
