@@ -55,7 +55,7 @@ class Solution {
 		Steque s = new Steque();
 		Scanner sc = new Scanner(System.in);
 		int numberOfCases = sc.nextInt();
-		while (numberOfCases != 0) {
+		while (sc.hasNext()) {
 			String line = sc.nextLine();
 			String[] tokens = line.split(" ");
 			switch (tokens[0]) {
