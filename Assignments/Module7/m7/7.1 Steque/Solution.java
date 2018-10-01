@@ -85,13 +85,14 @@ class Solution {
 					    if (!s.isEmpty()) {
 					        s.pop();
 					        if (!s.isEmpty()) {
-					        s.print();   		
-					        } else {
-					        	System.out.println("Steque is empty.");
-					        }	
-					    } else {
-					    	System.out.println("Steque is empty.");
+					       		s.print();   		
+					    //     	} else {
+					    //     		System.out.println("Steque is empty.");
+					    //    	}	
+					    // } else {
+					    // 	System.out.println("Steque is empty.");
 					    }
+					}
 						break;
 					case "enqueue":
 						s.enqueue(Integer.parseInt(tokens[1]));
