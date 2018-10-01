@@ -74,24 +74,38 @@ class Solution {
 		int numberOfCases = Integer.parseInt(sc.nextLine());
 		while (sc.hasNext()) {
 			String line = sc.nextLine();
-			String[] tokens = line.split(" ");
-			switch (tokens[0]) {
-				case "push":
-					s.push(Integer.parseInt(tokens[1]));
-					s.print();
-					break;
-				case "pop":
-					s.pop();
-					s.print();
-					break;
-				case "enqueue":
-					s.enqueue(Integer.parseInt(tokens[1]));
-					s.print();
-					break;
-				default:
-					
+			if (line.equals("") || line.equals(null)) {
+				System.out.println("");
+				break;
+			} else {
+				String[] tokens = line.split(" ");
+				switch (tokens[0]) {
+					case "push":
+						s.push(Integer.parseInt(tokens[1]));
+						s.print();
+						break;
+					case "pop":
+					    if (!s.isEmpty()) {
+					        s.pop();
+					        if (!s.isEmpty()) {
+					        s.print();   		
+					        } else {
+					        	System.out.println("Steque is empty.");
+					        }	
+					    } else {
+					    	System.out.println("Steque is empty.");
+					    }
+						break;
+					case "enqueue":
+						s.enqueue(Integer.parseInt(tokens[1]));
+						s.print();
+						break;
+					default:
+						
+				}
 			}
-			numberOfCases--;
+			
+			//numberOfCases--;
 		}
 
 	}
