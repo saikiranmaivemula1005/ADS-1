@@ -72,8 +72,9 @@ class Steque {
     }
     /**
      * This method is used to print the stack.
+     * @exception steque is empy exception.
      */
-    void print() throws Exception{
+    void print() throws Exception {
         if (isEmpty()) {
             throw new Exception("Steque is empty.");
         }
@@ -103,6 +104,7 @@ class Solution {
      * main method for solution class.
      *
      * @param      args  The arguments
+     * @exception steque is empty exception
      */
     public static void main(final String[] args) throws Exception {
         Steque s = new Steque();
