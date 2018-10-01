@@ -99,8 +99,6 @@ class Solution {
 							break;
 						default:				
 					}
-				numberOfCases--;
-
 			}
 		}
 
