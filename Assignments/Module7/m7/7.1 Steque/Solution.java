@@ -22,12 +22,9 @@ class Steque {
 	void pop() {
 		if (size == 0) {
 			System.out.println("Steque is empty.");
+			return;
 		}
-		Node node = new Node();
-		Node temp = head;
-		temp = temp.next;
-		head.next = null;
-		head = temp;
+		head = head.next;
 		size--;
 	}
 	void enqueue(int element) {
