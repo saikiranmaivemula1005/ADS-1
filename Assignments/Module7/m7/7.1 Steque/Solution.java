@@ -78,7 +78,7 @@ class Solution {
 				System.out.println("");
 				break;
 			} else {
-				s = new Steque();
+				//s = new Steque();
 				String[] tokens = line.split(" ");
 				switch (tokens[0]) {
 					case "push":
