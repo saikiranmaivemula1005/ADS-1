@@ -67,6 +67,7 @@ class Solution {
 					break;
 				case "pop":
 					s.pop();
+					s.print();
 					break;
 				case "enqueue":
 					s.enqueue(Integer.parseInt(tokens[1]));
