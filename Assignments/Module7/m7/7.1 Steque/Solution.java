@@ -13,7 +13,7 @@ class Steque {
      */
     private int size = 0;
     /**
-     * This method is used to add the given elements at the head 
+     * This method is used to add the given elements at the head
      * of the linked list.
      *
      * @param      element  The element
@@ -125,10 +125,10 @@ class Solution {
                         if (!s.isEmpty()) {
                             s.pop();
                             if (!s.isEmpty()) {
-                                s.print();          
+                                s.print();
                                 } else {
                                     System.out.println("Steque is empty.");
-                            }   
+                            }
                         } else {
                             System.out.println("Steque is empty.");
                         }
@@ -137,7 +137,7 @@ class Solution {
                         s.enqueue(Integer.parseInt(tokens[1]));
                         s.print();
                         break;
-                    default:           
+                    default:
                 }
             }
         }
