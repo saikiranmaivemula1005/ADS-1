@@ -18,11 +18,12 @@ class Steque {
 		if (size() == 0) {
 			System.out.println("Steque is empty.");
 		}
-		for (int i = 1; i < size - 1; i++) {
-			System.out.print(stack[i] + ", ");
-			stack[i + 1] = stack[i];
+		int temp = 1;
+		for (; temp < size - 1; temp++) {
+			System.out.print(stack[temp] + ", ");
 		}
 		System.out.print(stack[size - 1]);
+		temp++;
 		System.out.println();
 		size--;
 	}
