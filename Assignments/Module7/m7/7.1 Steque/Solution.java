@@ -32,7 +32,7 @@ class Steque {
 		stack[size++] = element;
 	}
 	void print() {
-		if (size() == 0) {
+		if (size() < 0) {
 			System.out.println("Steque is empty.");
 		} else {
 		for (int i = 0; i < size - 1; i++) {
