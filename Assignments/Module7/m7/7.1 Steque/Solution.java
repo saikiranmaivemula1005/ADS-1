@@ -1,11 +1,8 @@
 import java.util.Scanner;
+import java.util.Stack;
 class Node {
 	int data;
 	Node next;
-	Node() {
-		data = 0;
-		next = new Node();
-	}
 }
 class Steque {
 	Node head;
@@ -68,38 +65,41 @@ class Steque {
 		System.out.println(temp.data);
 	}
 }
+
+
+
+
+
+
 class Solution {
 	protected Solution() {
 
 	}
-	public static void main(final String[] args) {
+	public static void main(String[] args) {
+		Steque s = new Steque();
 		Scanner sc = new Scanner(System.in);
 		int numberOfCases = sc.nextInt();
-			Steque s = new Steque();
-			while (sc.hasNext()) {
-				String line = sc.next();
-				if (line.equals("")) {
+		while (sc.hasNext()) {
+			String line = sc.nextLine();
+			String[] tokens = line.split(" ");
+			switch (tokens[0]) {
+				case "push":
+					s.push(Integer.parseInt(tokens[1]));
+					s.print();
 					break;
-				}
-					String[] tokens = line.split(" ");
-					switch (tokens[0]) {
-						case "push":
-							s.push(Integer.parseInt(tokens[1]));
-							s.print();
-							break;
-						case "pop":
-							s.pop();
-							s.print();
-							break;
-						case "enqueue":
-							s.enqueue(Integer.parseInt(tokens[1]));
-							s.print();
-							break;
-						default:
-						break;				
-					}
-					numberOfCases--;
+				case "pop":
+					s.pop();
+					s.print();
+					break;
+				case "enqueue":
+					s.enqueue(Integer.parseInt(tokens[1]));
+					s.print();
+					break;
+				default:
+					
 			}
+			numberOfCases--;
 		}
 
 	}
+}
