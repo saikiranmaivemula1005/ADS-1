@@ -8,37 +8,36 @@ class Steque {
 	int front = 0;
 	int[] stack = new int[10];
 	void push(int element) {
-		stack[size++] = element;
-	}
-	void pop() {
-		if (size() == 0) {
-			System.out.println("Steque is empty.");
-		}
-		size--;
-		// for (int i = 1; i < size - 1; i++) {
-		// 	System.out.print(stack[i] + ", ");
-		// }
-		// System.out.print(stack[size - 1]);
-		// System.out.println();
-	}
-	int size() {
-		return size;
-	}
-	void enqueue(int element) {
 		for (int i = size; i >= 0; i--) {
 			stack[i + 1] = stack[i];
 		}
 		stack[0] = element;
 		size++;
 	}
+	void pop() {
+		if (size() == 0) {
+			System.out.println("Steque is empty.");
+		}
+		for (int i = 1; i < size - 1; i++) {
+			System.out.print(stack[i] + ", ");
+		}
+		System.out.print(stack[size - 1]);
+		System.out.println();
+	}
+	int size() {
+		return size;
+	}
+	void enqueue(int element) {
+		stack[size++] = element;
+	}
 	void print() {
 		if (size() < 0) {
 			System.out.println("Steque is empty.");
 		} else {
-		for (int i = size; i > 1; i--) {
+		for (int i = 0; i < size - 1; i++) {
 			System.out.print(stack[i] + ", ");
 		}
-		System.out.print(stack[0]);
+		System.out.print(stack[size - 1]);
 		System.out.println();
 		}
 	}
@@ -67,7 +66,6 @@ class Solution {
 					break;
 				case "pop":
 					s.pop();
-					s.print();
 					break;
 				case "enqueue":
 					s.enqueue(Integer.parseInt(tokens[1]));
