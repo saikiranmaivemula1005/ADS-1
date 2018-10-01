@@ -73,10 +73,9 @@ class Steque {
     /**
      * This method is used to print the stack.
      */
-    void print() {
+    void print() throws Exception{
         if (isEmpty()) {
-            System.out.println("Steque is empty.");
-            return;
+            throw new Exception("Steque is empty.");
         }
         if (head.next == null) {
             System.out.println(head.data);
@@ -105,7 +104,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args) {
+    public static void main(final String[] args) throws Exception {
         Steque s = new Steque();
         Scanner sc = new Scanner(System.in);
         int numberOfCases = Integer.parseInt(sc.nextLine());
