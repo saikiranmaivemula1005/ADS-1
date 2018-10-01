@@ -76,7 +76,6 @@ class Solution {
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int numberOfCases = sc.nextInt();
-		for (int i = 0; i < numberOfCases; i++) {
 			Steque s = new Steque();
 			while (sc.hasNext()) {
 				String line = sc.next();
@@ -103,4 +102,3 @@ class Solution {
 		}
 
 	}
-}
