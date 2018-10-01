@@ -73,10 +73,8 @@ class Solution {
 			String line = sc.nextLine();
 			if (line.equals("")) {
 				s = new Steque();
-				// System.out.println("");
-				break;
+				System.out.println("");
 			} else {
-				//s = new Steque();
 				String[] tokens = line.split(" ");
 				switch (tokens[0]) {
 					case "push":
