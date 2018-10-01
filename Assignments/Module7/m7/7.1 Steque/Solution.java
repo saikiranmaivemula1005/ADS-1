@@ -42,10 +42,7 @@ class Steque {
 	}
 
 	boolean isEmpty() {
-		if (size == 0) {
-			return true;
-		}
-		return false;
+		return (size == 0);
 	}
 	void print() {
 		if (isEmpty()) {
@@ -74,7 +71,7 @@ class Solution {
 		int numberOfCases = Integer.parseInt(sc.nextLine());
 		while (sc.hasNext()) {
 			String line = sc.nextLine();
-			if (line.equals("") || line.equals(null)) {
+			if (line.equals("")) {
 				s = new Steque();
 				System.out.println("");
 				//break;
