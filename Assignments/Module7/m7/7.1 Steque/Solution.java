@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Stack;
 class Node {
 	int data;
 	Node next;
@@ -96,7 +95,8 @@ class Solution {
 							s.enqueue(Integer.parseInt(tokens[1]));
 							s.print();
 							break;
-						default:				
+						default:
+						break;				
 					}
 					numberOfCases--;
 			}
