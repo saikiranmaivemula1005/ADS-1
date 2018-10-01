@@ -40,8 +40,15 @@ class Steque {
 			node.next = null;
 		}
 	}
+
+	boolean isEmpty() {
+		if (size == 0) {
+			return true;
+		}
+		return false;
+	}
 	void print() {
-		if (size <= 0) {
+		if (isEmpty()) {
 			System.out.println("Steque is empty.");
 			return;
 		}
