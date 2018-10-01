@@ -82,27 +82,26 @@ class Solution {
 			Steque s = new Steque();
 			while (sc.hasNext()) {
 				String line = sc.nextLine();
-					if (line.equals("")) {
-						break;
-					} else {
-						String[] tokens = line.split(" ");
-						switch (tokens[0]) {
-							case "push":
-								s.push(Integer.parseInt(tokens[1]));
-								s.print();
-								break;
-							case "pop":
-								s.pop();
-								s.print();
-								break;
-							case "enqueue":
-								s.enqueue(Integer.parseInt(tokens[1]));
-								s.print();
-								break;
-							default:				
-						}
-					numberOfCases--;
+				if (line.equals("")) {
+					break;
+				}
+					String[] tokens = line.split(" ");
+					switch (tokens[0]) {
+						case "push":
+							s.push(Integer.parseInt(tokens[1]));
+							s.print();
+							break;
+						case "pop":
+							s.pop();
+							s.print();
+							break;
+						case "enqueue":
+							s.enqueue(Integer.parseInt(tokens[1]));
+							s.print();
+							break;
+						default:				
 					}
+				numberOfCases--;
 
 			}
 		}
