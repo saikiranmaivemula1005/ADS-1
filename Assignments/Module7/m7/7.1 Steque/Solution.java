@@ -25,6 +25,7 @@ class Steque {
 		System.out.print(stack[size - 1]);
 		System.out.println();
 		size--;
+		temp++;
 	}
 	int size() {
 		return size;
