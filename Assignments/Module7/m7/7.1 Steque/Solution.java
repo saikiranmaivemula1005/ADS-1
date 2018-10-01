@@ -49,7 +49,7 @@ class Steque {
 		}
 	}
 	void print() {
-		if (size == 0) {
+		if (size <= 0) {
 			System.out.println("Steque is empty.");
 			return;
 		}
@@ -89,6 +89,7 @@ class Solution {
 					break;
 				case "pop":
 					s.pop();
+					s.print();
 					break;
 				case "enqueue":
 					s.enqueue(Integer.parseInt(tokens[1]));
