@@ -1,45 +1,68 @@
 import java.util.Scanner;
 import java.util.Stack;
+class Node {
+	int data;
+	Node next;
+}
 class Steque {
-	Steque () {
-
-	}
+	Node head;
 	int size = 0;
-	int front = 0;
-	int[] stack = new int[10];
 	void push(int element) {
-		for (int i = size; i >= 0; i--) {
-			stack[i + 1] = stack[i];
-		}
-		stack[0] = element;
+		Node node = new Node();
 		size++;
+		if (head == null) {
+			node.data = element;
+			node.next = null;
+			head = node;
+		} else {
+			node.data = element;
+			node.next = head;
+			head = node;
+		}
 	}
 	void pop() {
-		if (size() == 0) {
+		if (size == 0) {
 			System.out.println("Steque is empty.");
 		}
-		for (int i = 1; i < size - 1; i++) {
-			System.out.print(stack[i] + ", ");
-		}
-		System.out.print(stack[size - 1]);
-		System.out.println();
-	}
-	int size() {
-		return size;
+		Node node = new Node();
+		Node temp = head;
+		temp = temp.next;
+		head.next = null;
+		head = temp;
+		size--;
 	}
 	void enqueue(int element) {
-		stack[size++] = element;
+		Node node = new Node();
+		size++;
+		if (head == null) {
+			node.data = element;
+			node.next = null;
+			head = node;
+		} else {
+			Node temp = head;
+			while (temp.next != null) {
+				temp = temp.next;
+			}
+			node.data = element;
+			temp.next = node;
+			node.next = null;
+		}
 	}
 	void print() {
-		if (size() < 0) {
+		if (size == 0) {
 			System.out.println("Steque is empty.");
-		} else {
-		for (int i = 0; i < size - 1; i++) {
-			System.out.print(stack[i] + ", ");
+			return;
 		}
-		System.out.print(stack[size - 1]);
-		System.out.println();
+		if (head.next == null) {
+			System.out.println(head.data);
+			return;
 		}
+		Node temp = head;
+		while (temp.next != null) {
+			System.out.print(temp.data + ", ");
+			temp = temp.next;
+		}
+		System.out.println(temp.data);
 	}
 }
 
