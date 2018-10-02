@@ -13,11 +13,11 @@ class Solution {
 		while (sc.hasNext()) {
 			String line = sc.next();
 			String[] tokens = line.split(",");
-			for (int i = 0; i < 10; i++) {
+			for (int i = 0; i < tokens.length; i++) {
 				elements[i] = Integer.parseInt(tokens[1]);
 			}
-	}
-	System.out.println(Arrays.toString(elements));
-			isort.sort(elements);
 		}
+		System.out.println(Arrays.toString(elements));
+		isort.sort(elements);
+	}
 }
