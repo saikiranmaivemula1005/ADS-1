@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
 class InsertionSort {
-	void sort(int[] elements) {
+	void sort(String[] elements) {
 
 	}
 }
@@ -9,12 +9,12 @@ class Solution {
 	public static void main(String[] args) {
 		InsertionSort isort = new InsertionSort();
 		Scanner sc = new Scanner(System.in);
-		int[] elements = new int[10];
+		String[] elements = new String[10];
 		while (sc.hasNext()) {
 			String line = sc.next();
 			String[] tokens = line.split(",");
 			for (int i = 0; i < tokens.length; i++) {
-				elements[i] = Integer.parseInt(tokens[1]);
+				elements[i] = (tokens[1]);
 			}
 		}
 		System.out.println(Arrays.toString(elements));
