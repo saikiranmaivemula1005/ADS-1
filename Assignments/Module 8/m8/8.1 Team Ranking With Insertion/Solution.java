@@ -14,7 +14,7 @@ class Solution {
 			String line = sc.next();
 			String[] tokens = line.split(",");
 			for (int i = 0; i < tokens.length; i++) {
-				elements[i] = (tokens[1]);
+				elements[i] = (tokens[0]);
 			}
 		}
 		System.out.println(Arrays.toString(elements));
