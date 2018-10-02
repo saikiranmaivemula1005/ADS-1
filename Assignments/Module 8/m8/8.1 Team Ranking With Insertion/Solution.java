@@ -1,17 +1,23 @@
 import java.util.Scanner;
+import java.util.Arrays;
+class InsertionSort {
+	void sort(int[] elements) {
 
-
+	}
+}
 class Solution {
-	// InsertionSort i = new InsertionSort();
 	public static void main(String[] args) {
+		InsertionSort isort = new InsertionSort();
 		Scanner sc = new Scanner(System.in);
+		int[] elements = new int[10];
 		while (sc.hasNext()) {
 			String line = sc.next();
 			String[] tokens = line.split(",");
-			System.out.println(tokens[0]);
-			System.out.println(tokens[1]);
-			System.out.println(tokens[2]);
-			System.out.println(tokens[3]);
-		}
+			for (int i = 0; i < 10; i++) {
+				elements[i] = Integer.parseInt(tokens[1]);
+			}
 	}
+	System.out.println(Arrays.toString(elements));
+			isort.sort(elements);
+		}
 }
