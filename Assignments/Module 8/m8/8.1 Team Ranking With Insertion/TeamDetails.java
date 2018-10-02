@@ -15,23 +15,21 @@ class TeamDetails {
 		}
 		return s.substring(0, s.length() - 1);
 	}
-	public void exchange(Team[] teams, int i, int j) {
-		Team ct = teams[j];
-		teams[j] = teams[i];
-		teams[i] = ct; 
+	public void exchange(Team[] teamsArray, int i, int j) {
+		Team t = teamsArray[j];
+		teamsArray[j] = teamsArray[i];
+		teamsArray[i] = t; 
 	}
-	public void selectionSort() {
+	public void InsertionSort() {
 		for (int i = 0; i < size - 1; i++) {
-			int minimum = i;
-			for (int j = i + 1; j < size; j++) {
-				if (lessthan(teamsArray, j, minimum)) {
-					minimum = j;
+			for (int j = i + 1; j > 0; j--) {
+				if (lessthan(teamsArray, j - 1, j)) {
+					exchange(teamsArray, j -1, j);
 				} 
 			}
-			exchange(teamsArray, i, minimum);
         }
 	}
-	boolean lessthan(Team[] array, int i, int j) {
-		return  array[i].compareTo(array[j]) > 0;
+	public boolean lessthan(Team[] arr, int i, int j) {
+		return  arr[i].compareTo(arr[j]) < 0;
 	}
 }

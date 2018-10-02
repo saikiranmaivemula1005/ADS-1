@@ -23,7 +23,7 @@ final class Solution {
                 tokens[2], tokens[2 + 1]);
             teamDetails.addCricketTeam(team);
         }
-        teamDetails.selectionSort();
+        teamDetails.InsertionSort();
         System.out.println(teamDetails);
     }
 }
