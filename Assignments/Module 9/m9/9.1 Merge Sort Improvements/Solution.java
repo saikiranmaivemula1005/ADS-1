@@ -23,7 +23,8 @@ class MergeSort {
      * @param      mid    The middle value
      * @param      high     The higher value
      */
-    public void merge(final Comparable[] array, final Comparable[] auxiliaryArray,
+    public void merge(final Comparable[] array,
+     final Comparable[] auxiliaryArray,
         final int low, final int mid, final int high) {
         assert isSorted(array, low, mid);
         assert isSorted(array, mid + 1, high);
@@ -50,7 +51,8 @@ class MergeSort {
      * @param      low     The lower value
      * @param      high     The higher value
      */
-    public void sort(final Comparable[] array, final Comparable[] auxiliaryArray,
+    public void sort(final Comparable[] array,
+     final Comparable[] auxiliaryArray,
         final int low, final int high) {
         if (high <= low + x) {
             insertionSort(auxiliaryArray, low, high);
