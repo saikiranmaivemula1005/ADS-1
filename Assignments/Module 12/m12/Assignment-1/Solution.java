@@ -281,6 +281,11 @@ class Solution {
         }
         for (int i = object.length - openSeats; i > 0; i--) {
             for (int j = 0; j < stseats; j++) {
+                if (object[i].getCategory().equals("BC")) {
+                    System.out.println(object[i].show());
+                }
+            }
+            for (int j = 0; j < stseats; j++) {
                 if (object[i].getCategory().equals("ST")) {
                     System.out.println(object[i].show());
                 }

@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 divya,99,ST
 Deepak,98,Open
@@ -59,6 +59,8 @@ divya,99,ST
 Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
+tanvi,90,BC
+Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 ----------------------------------------
@@ -140,6 +142,8 @@ divya,99,ST
 Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
+tanvi,90,BC
+Raj,87,BC
 Aditya,80,ST
 priya,72,SC
 ----------------------------------------
