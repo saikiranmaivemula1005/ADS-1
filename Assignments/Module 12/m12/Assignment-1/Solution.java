@@ -128,7 +128,9 @@ class MergeSort<T> {
      * @param      hi    The higher
      * @param      cp    { comparator variable }
      */
-    public void merge(final T[] a, final int lo, final int mid, final int hi, final Comparator<T> cp) {
+    public void merge(final T[] a,
+     final int lo, final int mid,
+      final int hi, final Comparator<T> cp) {
         int i = lo, j = mid + 1;
         
         for (int k = lo; k <= hi; k++)
@@ -202,7 +204,8 @@ class Allotment {
         ms.sort(students, c);
     }
      void removeElement(Object[] arr, int removedIdx) {
-    System.arraycopy(arr, removedIdx + 1, arr, removedIdx, arr.length - 1 - removedIdx);
+    System.arraycopy(arr, removedIdx + 1
+        , arr, removedIdx, arr.length - 1 - removedIdx);
     }
 
 }
@@ -258,7 +261,11 @@ class Solution {
         for (int i = 0; i < qualifiedStudents; i++){
              students[i] = sc.next();
             String[] tokens = students[i].split(",");
-            object[i] = new Student(tokens[0], tokens[1], Integer.parseInt(tokens[2]), Integer.parseInt(tokens[3]), Integer.parseInt(tokens[4]), Integer.parseInt(tokens[5]), tokens[6]);
+            object[i] = new Student(tokens[0], tokens[1],
+             Integer.parseInt(tokens[2]),
+              Integer.parseInt(tokens[3]),
+               Integer.parseInt(tokens[4]),
+                Integer.parseInt(tokens[5]), tokens[6]);
             // System.out.println(object[i].show());
         }
         // System.out.println(student);
