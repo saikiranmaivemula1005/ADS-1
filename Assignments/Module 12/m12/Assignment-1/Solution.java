@@ -7,7 +7,7 @@ class Student {
 	/**
 	 * name variable.
 	 */
-	 String name;
+	 public String name;
 	 /**
 	  * age.
 	  */
