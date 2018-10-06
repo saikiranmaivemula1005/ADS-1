@@ -1,29 +1,45 @@
 import java.util.Scanner;
 import java.util.Comparator;
-
-
-
+/**
+ * Class for sort by marks.
+ */
 class sortByMarks implements Comparator<Student> {
 	public int compare(Student s1, Student s2) {
 		return s1.total - s2.total;
 	}
 }
+/**
+ * Class for sort by age.
+ */
 class sortByAge implements Comparator<Student> {
 	public int compare(Student s1, Student s2) {
 		return s1.dob.compareTo(s2.dob);
 	}
 }
+/**
+ * Class for sort by category.
+ */
 class sortByCategory implements Comparator<Student> {
 	public int compare(Student s1, Student s2) {
 		return s1.category.compareTo(s2.category);
 	}
 }
-
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
-	public static void main(String[] args) {
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int qualifiedStudents = sc.nextInt();
 		int vacancies = sc.nextInt();
