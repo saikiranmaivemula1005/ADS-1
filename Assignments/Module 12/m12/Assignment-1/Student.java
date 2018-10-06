@@ -96,5 +96,4 @@ class Student {
 	String show() {
 		return name + "," + getMarks() + "," + getCategory();
 	}
-
 }

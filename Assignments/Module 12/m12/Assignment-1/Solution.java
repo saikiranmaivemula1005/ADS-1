@@ -60,7 +60,24 @@ class Solution {
 		a.sortByMarks(new sortByMarks());
 		a.showStudents();
 		System.out.println();
-		a.sortByCategory(new sortByCategory());
-		a.showStudents();
+		for (int j = object.length - 1; j >= object.length - openSeats; j--) {
+			System.out.println(object[j].show());
+			object[j] = null;
+		}
+		for (int i = object.length - 1; i > 0; i--) {
+			for (int j = 0; j < stseats; j++) {
+				if ((object[i].getCategory().equals("null"))) {
+					i++;
+				}
+				if (object[i].getCategory().equals("ST")) {
+					System.out.println(object[i].show());
+				}
+				if (object[i].getCategory().equals("SC")) {
+					System.out.println(object[i].show());
+					return;
+				}
+			}
+		
+		}
 	}
 }
