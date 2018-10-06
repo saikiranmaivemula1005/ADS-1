@@ -1,16 +1,26 @@
 import java.util.Comparator;
-
+/**
+ * Class for allotment.
+ */
 class Allotment {
+	/**
+	 * students array.
+	 */
 	Student[] students;
 	// Student s = new Student();
 	MergeSort<Student> ms = new MergeSort<Student>();
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      students  The students
+	 */
 	Allotment(Student[] students) {
 		this.students = students;
 	}
-	void sortByMarks(Comparator<Student> c) {
+	void sortByMarks(final Comparator<Student> c) {
 		ms.sort(students, c);
 	}
-	void sortByAge(Comparator<Student> c) {
+	void sortByAge(final Comparator<Student> c) {
 		ms.sort(students, c);
 	}
 	void showStudents() {
@@ -18,7 +28,7 @@ class Allotment {
 			System.out.println(students[i].show());
 		}
 	}
-	void sortByCategory(Comparator<Student> c) {
+	void sortByCategory(final Comparator<Student> c) {
 		ms.sort(students, c);
 	}
 
