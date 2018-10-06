@@ -205,10 +205,10 @@ class Allotment {
     void sortByCategory(final Comparator<Student> c) {
         ms.sort(students, c);
     }
-     void removeElement(Object[] arr, int removedIdx) {
-    System.arraycopy(arr, removedIdx + 1
-        , arr, removedIdx, arr.length - 1 - removedIdx);
-    }
+    //  void removeElement(Object[] arr, int removedIdx) {
+    //     System.arraycopy(arr, removedIdx + 1
+    //     , arr, removedIdx, arr.length - 1 - removedIdx);
+    // }
 
 }
 /**
@@ -277,7 +277,7 @@ class Solution {
         System.out.println();
         for (int j = object.length - 1; j >= object.length - openSeats; j--) {
             System.out.println(object[j].show());
-            a.removeElement(object, j);
+            // a.removeElement(object, j);
         }
         for (int i = object.length - 1; i > 0; i--) {
             for (int j = 0; j < stseats; j++) {

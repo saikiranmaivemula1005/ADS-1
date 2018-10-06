@@ -39,10 +39,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:197:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:200:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:205:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:208:6: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:208:25: Parameter arr should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:208:39: Parameter removedIdx should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:210:8: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:217:8: Name 'sortByMarks' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:218:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:218:24: Parameter s1 should be final. [FinalParameters]
@@ -63,4 +59,4 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:270:53: '6' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:292: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 63 errors.
+Checkstyle ends with 59 errors.
