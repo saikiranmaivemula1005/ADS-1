@@ -284,12 +284,15 @@ class Solution {
                 if (object[i].getCategory().equals("ST")) {
                     System.out.println(object[i].show());
                 }
+            }
+            for (int k = 0; k < scSeats; k++) {
                 if (object[i].getCategory().equals("SC")) {
                     System.out.println(object[i].show());
                     return;
                 }
             }
+            }
         
-        }
+        
     }
 }
