@@ -268,12 +268,9 @@ class Solution {
         System.out.println();
         for (int j = object.length - 1; j >= object.length - openSeats; j--) {
             System.out.println(object[j].show());
-            object[j] = null;
+            a.removeElement(object, j);
         }
         for (int i = object.length - 1; i > 0; i--) {
-            if (object[i] == null) {
-                i++;
-            }
             for (int j = 0; j < stseats; j++) {
                 if (object[i].getCategory().equals("ST")) {
                     System.out.println(object[i].show());
