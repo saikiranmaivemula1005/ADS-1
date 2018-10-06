@@ -108,7 +108,7 @@ class MergeSort<T> {
     /**
      * auxiliary array.
      */
-    public  T[] aux;
+    private  T[] aux;
     /**
      * sort method
      *
