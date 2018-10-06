@@ -15,7 +15,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:51:37: 'marks3' hides a field. [HiddenField]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:52:20: 'total' hides a field. [HiddenField]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:52:40: 'category' hides a field. [HiddenField]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:112: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:131: Line is longer than 80 characters (found 103). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:133: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:134: 'for' construct must use '{}'s. [NeedBraces]
@@ -66,6 +65,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:261:141: '4' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:261:170: '5' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:261:182: '6' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:283: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Solution.java:286: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 68 errors.
+Checkstyle ends with 67 errors.

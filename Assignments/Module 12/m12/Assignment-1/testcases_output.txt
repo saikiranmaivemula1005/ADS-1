@@ -59,12 +59,8 @@ divya,99,ST
 Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
-divya,99,ST
-divya,99,ST
-divya,99,ST
-divya,99,ST
-Aditya,80,ST
-priya,72,SC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 23
+	at Solution.main(Solution.java:278)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -144,10 +140,10 @@ divya,99,ST
 Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
-Aditya,80,ST
-priya,72,SC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:278)
 ----------------------------------------
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 divya,99,Open
 tanvi,90,Open
@@ -176,8 +172,8 @@ Tanya,66,BC
 Abhishek,60,BC
 
 divya,99,Open
-Aditya,80,ST
-priya,76,SC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Solution.main(Solution.java:278)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -213,7 +209,8 @@ Abhishek,60,BC
 divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
-priya,76,SC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at Solution.main(Solution.java:278)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -300,6 +297,8 @@ Deepak,98,Open
 Ira,93,Open
 Raj,87,Open
 mahesh,87,Open
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:278)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -389,6 +388,6 @@ tanvi,90,BC
 Raj,87,BC
 mahesh,87,BC
 riya,83,Open
-Aditya,80,ST
-priya,72,SC
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 30
+	at Solution.main(Solution.java:278)
 ----------------------------------------

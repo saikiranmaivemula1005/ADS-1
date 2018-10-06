@@ -110,7 +110,7 @@ class MergeSort<T> {
      */
     private  T[] aux;
     /**
-     * sort method
+     * sort method.
      *
      * @param      a     { array }
      * @param      cp    { comparator variable }
@@ -268,9 +268,12 @@ class Solution {
         System.out.println();
         for (int j = object.length - 1; j >= object.length - openSeats; j--) {
             System.out.println(object[j].show());
-            a.removeElement(object, j);
+            object[j] = null;
         }
         for (int i = object.length - 1; i > 0; i--) {
+            if (object[i] == null) {
+                i++;
+            }
             for (int j = 0; j < stseats; j++) {
                 if (object[i].getCategory().equals("ST")) {
                     System.out.println(object[i].show());
