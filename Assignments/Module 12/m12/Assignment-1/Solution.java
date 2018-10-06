@@ -35,9 +35,6 @@ class Student {
      /**
       * Constructs the object.
       */
-    Student() {
-
-    }
     /**
      * Constructs the object.
      *

@@ -60,7 +60,7 @@ Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -141,7 +141,7 @@ Deepak,98,Open
 Ira,93,ST
 tanvi,90,BC
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -173,7 +173,7 @@ Abhishek,60,BC
 
 divya,99,Open
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -210,7 +210,7 @@ divya,99,Open
 tanvi,90,ST
 Aditya,80,Open
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -298,7 +298,7 @@ Ira,93,Open
 Raj,87,Open
 mahesh,87,Open
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -389,5 +389,5 @@ Raj,87,BC
 mahesh,87,BC
 riya,83,Open
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:275)
+	at Solution.main(Solution.java:272)
 ----------------------------------------
