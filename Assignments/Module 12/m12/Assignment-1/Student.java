@@ -1,3 +1,6 @@
+/**
+ * Class for student.
+ */
 class Student implements Comparable<Student> {
 	String name;
 	String dob;
@@ -6,6 +9,17 @@ class Student implements Comparable<Student> {
 	int s3;
 	int total;
 	String category;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name      The name
+	 * @param      dob       The dob
+	 * @param      s1        The s 1
+	 * @param      s2        The s 2
+	 * @param      s3        The s 3
+	 * @param      total     The total
+	 * @param      category  The category
+	 */
 	Student(String name, String dob, String s1, String s2, String s3, String total, String category) {
 		this.name = name;
 		this.dob = dob;
@@ -19,30 +33,67 @@ class Student implements Comparable<Student> {
 		this.total = Integer.parseInt(total);
 		this.category = category;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
         return name;
 	}
+	/**
+	 * Gets the total.
+	 *
+	 * @return     The total.
+	 */
 	public int getTotal() {
 		return total;
 	}
+	/**
+	 * Gets the category.
+	 *
+	 * @return     The category.
+	 */
 	public String getCategory() {
         return category;
 	}
+	/**
+	 * Gets the year.
+	 *
+	 * @return     The year.
+	 */
 	public int getYear() {
 		String[] date = dob.split("-");
 		int year = Integer.parseInt(date[2]);
 		return year;
 	}
+	/**
+	 * Gets the month.
+	 *
+	 * @return     The month.
+	 */
 	public int getMonth() {
 		String[] date = dob.split("-");
 		int month = Integer.parseInt(date[1]);
 		return month;
 	}
+	/**
+	 * Gets the day.
+	 *
+	 * @return     The day.
+	 */
 	public int getDay() {
 		String[] date = dob.split("-");
 		int day = Integer.parseInt(date[0]);
 		return day;
 	}
+	/**
+	 * compare to method.
+	 *
+	 * @param      s     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int compareTo(Student s) {
 		if (this.total > s.total) {
 			return 1;
@@ -82,6 +133,11 @@ class Student implements Comparable<Student> {
 		}
 		return 0;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		return this.name + "," + this.total + "," + this.category;
 	}
