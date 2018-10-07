@@ -40,13 +40,5 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:46:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:46:30: Parameter s should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:85:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:33: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:34: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:37: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:38: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:48: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:49: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:52: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 12\m12\Assignment-1\Student.java:86:53: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 49 errors.
+Checkstyle ends with 41 errors.

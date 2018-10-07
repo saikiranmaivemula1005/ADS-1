@@ -15,7 +15,7 @@ class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         Merit m = new Merit();
             int noOfapplied = Integer.parseInt(sc.nextLine());

@@ -83,6 +83,6 @@ class Student implements Comparable<Student> {
 		return 0;
 	}
 	public String toString() {
-		return this.name+","+this.total+","+this.category;
+		return this.name + "," + this.total + "," + this.category;
 	}
 }

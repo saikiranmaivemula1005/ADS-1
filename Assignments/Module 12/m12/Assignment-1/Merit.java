@@ -77,11 +77,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
 
                 }   
             } catch(Exception e) {
-
             }
-
-                
-
             }
         }
 
