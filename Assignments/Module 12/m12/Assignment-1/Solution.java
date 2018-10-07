@@ -1,11 +1,20 @@
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Collections;
-
-    
+/**
+ * Class for solution.
+ */   
 class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
     }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Merit m = new Merit();
@@ -24,10 +33,8 @@ class Solution {
         System.out.println(m);
         m.sort(noOfvacancies,noOfunres,noOfBC,noOfSC,noOfST);
         // System.out.println(m);
-        for (int i = 0;i<noOfvacancies ;i++ ) {
-            System.out.println(m.students1[i]);
-            
+        for (int i = 0; i < noOfvacancies; i++) {
+            System.out.println(m.students1[i]);       
         }
-    }
-    
+    }   
 }
