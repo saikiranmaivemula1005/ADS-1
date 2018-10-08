@@ -67,9 +67,9 @@ public final class Solution {
             int n = Integer.parseInt(sc.nextLine());
             for (int i = 0; i < n; i++) {
                 String[] tokens = sc.nextLine().split(",");
-                IsMinHeap<String> isobj
+                IsMinHeap<String> isMinHeapobj
                 = new IsMinHeap<String>(tokens);
-                System.out.println(isobj.isMinHeap());
+                System.out.println(isMinHeapobj.isMinHeap());
             }
             break;
         case "Integer":
@@ -80,9 +80,9 @@ public final class Solution {
                 for (int j = 0; j < tokens.length; j++) {
                     elementInt[j] = Integer.parseInt(tokens[j]);
                 }
-                IsMinHeap<Integer> isobj
+                IsMinHeap<Integer> isMinHeapobj
                 = new IsMinHeap<Integer>(elementInt);
-                System.out.println(isobj.isMinHeap());
+                System.out.println(isMinHeapobj.isMinHeap());
             }
             break;
         case "Double":
@@ -93,9 +93,9 @@ public final class Solution {
                 for (int j = 0; j < tokens.length; j++) {
                     elementDouble[j] = Double.parseDouble(tokens[j]);
                 }
-                IsMinHeap<Double> isobj
+                IsMinHeap<Double> isMinHeapobj
                 = new IsMinHeap<Double>(elementDouble);
-                System.out.println(isobj.isMinHeap());
+                System.out.println(isMinHeapobj.isMinHeap());
             }
             break;
         case "Float":
@@ -111,9 +111,9 @@ public final class Solution {
                     for (int j = 0; j < tokens.length; j++) {
                         elementFloat[j] = Float.parseFloat(tokens[j]);
                     }
-                    IsMinHeap<Float> isobj
+                    IsMinHeap<Float> isMinHeapobj
                      = new IsMinHeap<Float>(elementFloat);
-                    System.out.println(isobj.isMinHeap());
+                    System.out.println(isMinHeapobj.isMinHeap());
                 }
             }
             break;
