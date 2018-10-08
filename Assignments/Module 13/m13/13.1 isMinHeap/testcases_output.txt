@@ -1,17 +1,16 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 true
 false
 true
 false
 Your Output: 
+true
 false
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at IsMinHeap.less(Solution.java:42)
-	at IsMinHeap.isMinHeap(Solution.java:27)
-	at Solution.main(Solution.java:72)
+true
+false
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 false
 false
@@ -20,12 +19,14 @@ false
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
-	at IsMinHeap.less(Solution.java:42)
-	at IsMinHeap.isMinHeap(Solution.java:27)
-	at Solution.main(Solution.java:72)
+false
+false
+false
+false
+false
+false
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -36,33 +37,32 @@ false
 true
 false
 Your Output: 
+true
+true
+true
 false
 false
 false
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at IsMinHeap.less(Solution.java:42)
-	at IsMinHeap.isMinHeap(Solution.java:27)
-	at Solution.main(Solution.java:85)
+true
+false
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 324
-	at IsMinHeap.less(Solution.java:42)
-	at IsMinHeap.isMinHeap(Solution.java:27)
-	at Solution.main(Solution.java:98)
+true
+false
+false
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at IsMinHeap.less(Solution.java:42)
-	at IsMinHeap.isMinHeap(Solution.java:27)
-	at Solution.main(Solution.java:116)
+true
+true
+false
 ----------------------------------------
