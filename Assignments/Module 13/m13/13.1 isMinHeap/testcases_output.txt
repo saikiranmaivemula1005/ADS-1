@@ -1,0 +1,68 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+true
+false
+true
+false
+Your Output: 
+false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
+	at IsMinHeap.less(Solution.java:42)
+	at IsMinHeap.isMinHeap(Solution.java:27)
+	at Solution.main(Solution.java:72)
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+false
+false
+false
+false
+false
+false
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 11
+	at IsMinHeap.less(Solution.java:42)
+	at IsMinHeap.isMinHeap(Solution.java:27)
+	at Solution.main(Solution.java:72)
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+true
+true
+true
+false
+false
+false
+true
+false
+Your Output: 
+false
+false
+false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at IsMinHeap.less(Solution.java:42)
+	at IsMinHeap.isMinHeap(Solution.java:27)
+	at Solution.main(Solution.java:85)
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+true
+false
+false
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 324
+	at IsMinHeap.less(Solution.java:42)
+	at IsMinHeap.isMinHeap(Solution.java:27)
+	at Solution.main(Solution.java:98)
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+true
+true
+false
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at IsMinHeap.less(Solution.java:42)
+	at IsMinHeap.isMinHeap(Solution.java:27)
+	at Solution.main(Solution.java:116)
+----------------------------------------
