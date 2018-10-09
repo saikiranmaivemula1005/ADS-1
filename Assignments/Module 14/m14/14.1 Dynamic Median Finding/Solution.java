@@ -1,8 +1,20 @@
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
 
-    public static void main(String[] args) {
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         int[] a = new int[n];
@@ -10,26 +22,20 @@ public class Solution {
         int[] maxHeap = new int[n];
         int minHeapSize = 0;
         int maxHeapSize = 0;
-
         float currentMedian = 0;
-
         for (int a_i = 0; a_i < n; a_i++) {
             a[a_i] = in.nextInt();
             if (a[a_i] < currentMedian) {
                 maxHeap[maxHeapSize++] = a[a_i];
-                // making sure the max heap has maximum value at the top
                 if (maxHeap[maxHeapSize - 1] > maxHeap[0]) {
                     swap(maxHeap, maxHeapSize - 1, 0);
                 }
             } else {
                 minHeap[minHeapSize++] = a[a_i];
-                // making sure the min heap has minimum value at the top
                 if (minHeap[minHeapSize - 1] < minHeap[0]) {
                     swap(minHeap, minHeapSize - 1, 0);
                 }
             }
-
-            // if the difference is more than one
             if (Math.abs(maxHeapSize - minHeapSize) > 1) {
                 if (maxHeapSize > minHeapSize) {
                     swap(maxHeap, maxHeapSize - 1, 0);
@@ -43,8 +49,6 @@ public class Solution {
                     buildMinHeap(minHeap, minHeapSize);
                 }
             }
-
-            // calculate the median
             if (maxHeapSize == minHeapSize) {
                 currentMedian = (minHeap[0] + maxHeap[0]);
                 currentMedian = currentMedian / 2;
@@ -59,70 +63,85 @@ public class Solution {
         }
 
     }
-
+    /**
+     * Builds a maximum heap.
+     *
+     * @param      input     The input
+     * @param      heapSize  The heap size
+     */
     static void buildMaxHeap(int[] input, int heapSize) {
         int depth = (heapSize - 1) / 2;
         for (int i = depth; i >= 0; i--) {
             maxHeapify(input, i, heapSize);
         }
     }
-
+    /**
+     * max heap method.
+     *
+     * @param      input     The input
+     * @param      i         { integer variable }
+     * @param      heapSize  The heap size
+     */
     static void maxHeapify(int[] input, int i, int heapSize) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
-
-        // find the largest
         int largest = i;
-
         if (left < heapSize && input[left] > input[largest]) {
             largest = left;
         }
-
         if (right < heapSize && input[right] > input[largest]) {
             largest = right;
         }
-
         if (largest != i) {
-            //swap
             swap(input, i, largest);
-            //recursive call
             maxHeapify(input, largest, heapSize);
         }
     }
-
+    /**
+     * Builds a minimum heap.
+     *
+     * @param      input     The input
+     * @param      heapSize  The heap size
+     */
     static void buildMinHeap(int[] input, int heapSize) {
         int depth = (heapSize - 1) / 2;
         for (int i = depth; i >= 0; i--) {
             minHeapify(input, i, heapSize);
         }
     }
-
+    /**
+     * min heap method.
+     *
+     * @param      input     The input
+     * @param      i         { integer variable }
+     * @param      heapSize  The heap size
+     */
     static void minHeapify(int[] input, int i, int heapSize) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
-
-        // find the smallest
         int smallest = i;
-
         if (left < heapSize && input[left] < input[smallest]) {
             smallest = left;
         }
-
         if (right < heapSize && input[right] < input[smallest]) {
             smallest = right;
         }
-
         if (smallest != i) {
-            //swap
             swap(input, i, smallest);
-            //recursive call
             minHeapify(input, smallest, heapSize);
         }
     }
-
+    /**
+     * swap method.
+     *
+     * @param      input  The input
+     * @param      i      { integer variable }
+     * @param      j      { integer variable }
+     */
     static void swap(int[] input, int i, int j) {
-        if (i == j)
+        if (i == j) {
             return;
+        }
         int temp = input[i];
         input[i] = input[j];
         input[j] = temp;
