@@ -1,19 +1,12 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:5:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:6:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:6:16: Variable 'dob' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:7:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:7:13: Variable 's1' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:8:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:8:13: Variable 's2' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:9:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:9:13: Variable 's3' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:10:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:10:13: Variable 'total' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:11:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:11:16: Variable 'category' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:23: Line is longer than 80 characters (found 106). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:23:17: Parameter name should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:23:24: 'name' hides a field. [HiddenField]
@@ -31,4 +24,4 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:23:96: 'category' hides a field. [HiddenField]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:97:30: Parameter s should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 24 errors.

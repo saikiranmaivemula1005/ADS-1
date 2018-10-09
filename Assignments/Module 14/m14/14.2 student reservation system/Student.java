@@ -2,13 +2,13 @@
  * Class for student.
  */
 class Student implements Comparable<Student> {
-	String name;
-	String dob;
-	int s1;
-	int s2;
-	int s3;
-	int total;
-	String category;
+	private String name;
+	private String dob;
+	private int s1;
+	private int s2;
+	private int s3;
+	private int total;
+	private String category;
 	/**
 	 * Constructs the object.
 	 *
