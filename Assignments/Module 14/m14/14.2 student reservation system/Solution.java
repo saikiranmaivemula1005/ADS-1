@@ -27,12 +27,13 @@ class Solution {
             for (int i = 0; i < noOfapplied; i++) {
                 String data = sc.nextLine();
                 String[] tokens = data.split(",");
-                m.addStudent(new Student(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4], tokens[5], tokens[6]));
+                m.addStudent(new Student(tokens[0],
+                 tokens[1], tokens[2], tokens[3],
+                  tokens[4], tokens[5], tokens[6]));
             }
         m.InsertionSort();
         System.out.println(m);
         m.sort(noOfvacancies,noOfunres,noOfBC,noOfSC,noOfST);
-        // System.out.println(m);
         for (int i = 0; i < noOfvacancies; i++) {
             System.out.println(m.students1[i]);       
         }
