@@ -30,10 +30,10 @@ public class Merit {
      *
      * @param      st    { student }
      */
-    public void addStudent(Student st) {
+    public void addStudent(final Student st) {
         students[size++] = st;
     }
-    public Student getnewStudents(int i) {
+    public Student getnewStudents(final int i) {
         return newstudents[i];
     }
     /**
@@ -79,7 +79,8 @@ public class Merit {
      * @param      i         { parameter_description }
      * @param      j         { parameter_description }
      */
-    public void exch(Student[] students, int i, int j) {
+    public void exch(final Student[] students,
+    final int i, final int j) {
         Student stu = students[j];
         students[j] = students[i];
         students[i] = stu;
@@ -89,9 +90,9 @@ public class Merit {
      *
      * @param      obj   The object
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns true if the object is in array }
      */
-    boolean contains(Student obj) {
+    boolean contains(final Student obj) {
         for (Student stu : newstudents) {
             try {
                 if(stu.equals(obj)) {
@@ -113,7 +114,9 @@ public class Merit {
      * @param      noOfSC         No of sc
      * @param      noOfST         No of st
      */
-public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfST) {
+public void sort(final int noOfvacancies,
+    final int noOfunres, final int noOfBC,
+     final int noOfSC, final int noOfST) {
         int z = 0;
         for(int i = 0; i < noOfunres; i++){
             newstudents[z++] = students[i];
@@ -216,7 +219,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
          *
          * @return     { returns the result of less method. }
          */
-    public boolean less(Student[] arr, int i, int j) {
+    public boolean less(final Student[] arr, final int i, final int j) {
         return  arr[i].compareTo(arr[j]) < 0;
     }
 }
