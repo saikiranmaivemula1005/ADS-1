@@ -6,7 +6,7 @@ public class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    protected Solution() {
 
     }
     /**
@@ -23,15 +23,15 @@ public class Solution {
         int minHeapSize = 0;
         int maxHeapSize = 0;
         float currentMedian = 0;
-        for (int a_i = 0; a_i < n; a_i++) {
-            a[a_i] = in.nextInt();
-            if (a[a_i] < currentMedian) {
-                maxHeap[maxHeapSize++] = a[a_i];
+        for (int i = 0; i < n; i++) {
+            a[i] = in.nextInt();
+            if (a[i] < currentMedian) {
+                maxHeap[maxHeapSize++] = a[i];
                 if (maxHeap[maxHeapSize - 1] > maxHeap[0]) {
                     swap(maxHeap, maxHeapSize - 1, 0);
                 }
             } else {
-                minHeap[minHeapSize++] = a[a_i];
+                minHeap[minHeapSize++] = a[i];
                 if (minHeap[minHeapSize - 1] < minHeap[0]) {
                     swap(minHeap, minHeapSize - 1, 0);
                 }
@@ -69,7 +69,7 @@ public class Solution {
      * @param      input     The input
      * @param      heapSize  The heap size
      */
-    static void buildMaxHeap(int[] input, int heapSize) {
+    static void buildMaxHeap(final int[] input, final int heapSize) {
         int depth = (heapSize - 1) / 2;
         for (int i = depth; i >= 0; i--) {
             maxHeapify(input, i, heapSize);
@@ -82,7 +82,7 @@ public class Solution {
      * @param      i         { integer variable }
      * @param      heapSize  The heap size
      */
-    static void maxHeapify(int[] input, int i, int heapSize) {
+    static void maxHeapify(final int[] input, final int i, final int heapSize) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
         int largest = i;
@@ -103,7 +103,7 @@ public class Solution {
      * @param      input     The input
      * @param      heapSize  The heap size
      */
-    static void buildMinHeap(int[] input, int heapSize) {
+    static void buildMinHeap(final int[] input, final int heapSize) {
         int depth = (heapSize - 1) / 2;
         for (int i = depth; i >= 0; i--) {
             minHeapify(input, i, heapSize);
@@ -116,7 +116,7 @@ public class Solution {
      * @param      i         { integer variable }
      * @param      heapSize  The heap size
      */
-    static void minHeapify(int[] input, int i, int heapSize) {
+    static void minHeapify(final int[] input, final int i, final int heapSize) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
         int smallest = i;
@@ -138,7 +138,7 @@ public class Solution {
      * @param      i      { integer variable }
      * @param      j      { integer variable }
      */
-    static void swap(int[] input, int i, int j) {
+    static void swap(final int[] input, final int i, final int j) {
         if (i == j) {
             return;
         }

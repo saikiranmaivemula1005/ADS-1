@@ -1,19 +1,2 @@
 Starting audit...
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:26:18: Name 'a_i' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:72:30: Parameter input should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:72:43: Parameter heapSize should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:85:28: Parameter input should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:85:41: Parameter i should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:85:48: Parameter heapSize should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:106:30: Parameter input should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:106:43: Parameter heapSize should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:119:28: Parameter input should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:119:41: Parameter i should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:119:48: Parameter heapSize should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:141:22: Parameter input should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:141:35: Parameter i should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.1 Dynamic Median Finding\Solution.java:141:42: Parameter j should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 16 errors.
