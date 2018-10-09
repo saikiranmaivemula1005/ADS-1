@@ -1,19 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:36:12: Unused @param tag for 'name'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:37:12: Unused @param tag for 'dob'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:38:12: Unused @param tag for 's1'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:39:12: Unused @param tag for 's2'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:40:12: Unused @param tag for 's3'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:41:12: Unused @param tag for 'total'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:42:12: Unused @param tag for 'category'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:44:30: Expected @param tag for 'n'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:45:23: Expected @param tag for 'd'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:45:39: Expected @param tag for 'sOne'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:46:23: Expected @param tag for 'sTwo'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:46:42: Expected @param tag for 'sThree'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:47:24: Expected @param tag for 't'. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:47:40: Expected @param tag for 'c'. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 14\m14\14.2 student reservation system\Student.java:121:30: Parameter s should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 2 errors.

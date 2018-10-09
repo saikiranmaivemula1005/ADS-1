@@ -33,13 +33,13 @@ class Student implements Comparable<Student> {
 	/**
 	 * Constructs the object.
 	 *
-	 * @param      name      The name
-	 * @param      dob       The dob
-	 * @param      s1        The s 1
-	 * @param      s2        The s 2
-	 * @param      s3        The s 3
-	 * @param      total     The total
-	 * @param      category  The category
+	 * @param      n      The name
+	 * @param      d       The dob
+	 * @param      sOne        The s 1
+	 * @param      sTwo        The s 2
+	 * @param      sThree      The s 3
+	 * @param      t     The total
+	 * @param      c  The category
 	 */
 	Student(final String n,
 	final  String d, final String sOne,
