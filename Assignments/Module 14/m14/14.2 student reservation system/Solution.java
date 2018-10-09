@@ -33,7 +33,7 @@ class Solution {
         System.out.println(m);
         m.sort(noOfvacancies, noOfunres, noOfBC, noOfSC, noOfST);
         for (int i = 0; i < noOfvacancies; i++) {
-            System.out.println(m.students1[i]);       
+            System.out.println(m.getnewStudents());       
         }
     }   
 }

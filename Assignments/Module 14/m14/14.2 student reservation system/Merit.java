@@ -3,16 +3,25 @@ import java.util.Collections;
 /**
  * Class for merit.
  */
-class Merit {
-    Student[] students;
-    Student[] students1;
-    int size;
+public class Merit {
+    /**
+     * student array.
+     */
+    private Student[] students;
+    /**
+     * new array.
+     */
+    private Student[] newstudents;
+    /**
+     * size variable.
+     */
+    private int size;
     /**
      * Constructs the object.
      */
     Merit() {
         students = new Student[50];
-        students1 = new Student[50];
+        newstudents = new Student[50];
 
         size = 0;
     }
@@ -23,6 +32,9 @@ class Merit {
      */
     public void addStudent(Student st) {
         students[size++] = st;
+    }
+    public Student[] getnewStudents() {
+        return newstudents;
     }
     /**
      * Gets the size.
@@ -40,7 +52,9 @@ class Merit {
     public String toString() {
         String str = "";
         for (int i = 0; i < size; i++) {
-            str += students[i].name + "," + students[i].total + "," + students[i].category + "\n";
+            str += students[i].name + ","
+             + students[i].total + "," +
+              students[i].category + "\n";
         }
         return str;
     }
@@ -52,7 +66,9 @@ class Merit {
     public String toString1() {
         String str = "";
         for (int i = 0; i < size; i++) {
-            str += students[i].name+","+students[i].total+","+students[i].category+"\n";
+            str += students[i].name 
+            + "," + students[i].total + 
+            "," + students[i].category + "\n";
         }
         return str;
     }
@@ -76,7 +92,7 @@ class Merit {
      * @return     { description_of_the_return_value }
      */
     boolean contains(Student obj) {
-        for (Student stu : students1) {
+        for (Student stu : newstudents) {
             try {
                 if(stu.equals(obj)) {
                     return true;
@@ -100,14 +116,14 @@ class Merit {
 public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfST) {
         int z = 0;
         for(int i = 0; i < noOfunres; i++){
-            students1[z++] = students[i];
+            newstudents[z++] = students[i];
         }
         int bc = 0;
         if(noOfBC != 0) {
             for (int i = noOfunres; i < students.length; i++) {
                 try {
                     if (students[i].category.equals("BC")) {
-                        students1[z++] = students[i];
+                        newstudents[z++] = students[i];
                         bc++;
                     if(bc == noOfBC){
                         break;
@@ -121,7 +137,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if (noOfSC != 0) {
             for (int i = noOfunres ; i<size; i++ ) {
                 if (students[i].category.equals("SC")) {
-                    students1[z++] = students[i];
+                    newstudents[z++] = students[i];
                     sc++;
                     if(sc == noOfSC) {
                         break;
@@ -133,7 +149,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if (noOfST != 0) {
             for (int i = noOfunres ; i<size; i++ ) {
                 if (students[i].category.equals("ST")) {
-                        students1[z++] = students[i];
+                        newstudents[z++] = students[i];
                         st++;
                         if(st == noOfST) {
                             break;
@@ -144,7 +160,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if(bc != noOfBC) {
             for (int i = noOfunres; i<students.length; i++ ) {
                 if (!contains(students[i])) {
-                        students1[z++] = students[i];
+                        newstudents[z++] = students[i];
                         bc++;
                     if(bc == noOfBC) {
                         break;
@@ -155,7 +171,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if(sc != noOfSC) {
             for (int i = noOfunres; i<students.length; i++ ) {
                 if (!contains(students[i])){
-                        students1[z++] = students[i];
+                        newstudents[z++] = students[i];
                         sc++;
                     if(sc == noOfSC) {
                         break;
@@ -166,7 +182,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if(st != noOfST) {
             for (int i = noOfunres; i<students.length; i++ ) {
                 if (!contains(students[i])){
-                        students1[z++] = students[i];
+                        newstudents[z++] = students[i];
                         st++;
                         if(st == noOfST){
                             break;
@@ -174,8 +190,8 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
                 }
             }
         }
-        students1 = Arrays.copyOf(students1, z);
-        Arrays.sort(students1, Collections.reverseOrder());
+        newstudents = Arrays.copyOf(newstudents, z);
+        Arrays.sort(newstudents, Collections.reverseOrder());
     }
     /**
      * insertion sort.
