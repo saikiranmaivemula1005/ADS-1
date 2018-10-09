@@ -6,7 +6,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    protected Solution() {
     }
     /**
      * main method.
@@ -31,7 +31,7 @@ class Solution {
             }
         m.InsertionSort();
         System.out.println(m);
-        m.sort(noOfvacancies,noOfunres,noOfBC,noOfSC,noOfST);
+        m.sort(noOfvacancies, noOfunres, noOfBC, noOfSC, noOfST);
         for (int i = 0; i < noOfvacancies; i++) {
             System.out.println(m.students1[i]);       
         }
