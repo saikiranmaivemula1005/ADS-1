@@ -41,7 +41,10 @@ class Student implements Comparable<Student> {
 	 * @param      total     The total
 	 * @param      category  The category
 	 */
-	Student(String name, String dob, String s1, String s2, String s3, String total, String category) {
+	Student(final String name,
+	final  String dob, final String s1,
+	 final String s2, final String s3,
+	 final  String total, final String category) {
 		this.name = name;
 		this.dob = dob;
 		String[] date = dob.split("-");
