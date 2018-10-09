@@ -41,21 +41,21 @@ class Student implements Comparable<Student> {
 	 * @param      total     The total
 	 * @param      category  The category
 	 */
-	Student(final String name,
-	final  String dob, final String s1,
-	 final String s2, final String s3,
-	 final  String total, final String category) {
-		this.name = name;
-		this.dob = dob;
-		String[] date = dob.split("-");
+	Student(final String n,
+	final  String d, final String sOne,
+	 final String sTwo, final String sThree,
+	 final  String t, final String c) {
+		this.name = n;
+		this.dob = d;
+		String[] date = d.split("-");
 		int year = Integer.parseInt(date[2]);
 		int month = Integer.parseInt(date[1]);
 		int day = Integer.parseInt(date[0]);
-		this.s1 = Integer.parseInt(s1);
-		this.s2 = Integer.parseInt(s2);
-		this.s3 = Integer.parseInt(s3);
-		this.total = Integer.parseInt(total);
-		this.category = category;
+		this.s1 = Integer.parseInt(sOne);
+		this.s2 = Integer.parseInt(sTwo);
+		this.s3 = Integer.parseInt(sThree);
+		this.total = Integer.parseInt(t);
+		this.category = c;
 	}
 	/**
 	 * Gets the name.
