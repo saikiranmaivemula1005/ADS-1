@@ -1,0 +1,8 @@
+TYPE 		INSERT 		DELMAX
+ordered		N		1
+unordered	1		N
+Heap		logN		1(logN)
+
+
+So, for large insertion operations and few delmax, 
+we use unordered array.
