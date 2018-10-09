@@ -33,8 +33,8 @@ public class Merit {
     public void addStudent(Student st) {
         students[size++] = st;
     }
-    public Student[] getnewStudents() {
-        return newstudents;
+    public Student getnewStudents(int i) {
+        return newstudents[i];
     }
     /**
      * Gets the size.
