@@ -32,8 +32,8 @@ class Solution {
         m.InsertionSort();
         System.out.println(m);
         m.sort(noOfvacancies, noOfunres, noOfBC, noOfSC, noOfST);
-        for (int i = 0; i < noOfvacancies; i++) {
+        // for (int i = 0; i < noOfvacancies; i++) {
             System.out.println(m.getnewStudents());       
-        }
+        
     }   
 }

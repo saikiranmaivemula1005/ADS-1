@@ -56,11 +56,6 @@ Aryan,32,ST
 Shreya,23,SC
 
 [LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -136,13 +131,6 @@ Aryan,32,ST
 Shreya,23,SC
 
 [LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -172,8 +160,6 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-[LStudent;@1324409e
-[LStudent;@1324409e
 [LStudent;@1324409e
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -207,11 +193,6 @@ Priyanka,70,Open
 Tanya,66,BC
 Abhishek,60,BC
 
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
 [LStudent;@1324409e
 ----------------------------------------
 ########## Testcase 4: Failed ##########
@@ -292,18 +273,6 @@ Aryan,32,Open
 shyam,23,Open
 Shreya,23,Open
 
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
 [LStudent;@1324409e
 ----------------------------------------
 ########## Testcase 5: Failed ##########
@@ -386,19 +355,5 @@ Manoj,32,SC
 Aryan,32,ST
 Shreya,23,SC
 
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
-[LStudent;@1324409e
 [LStudent;@1324409e
 ----------------------------------------
