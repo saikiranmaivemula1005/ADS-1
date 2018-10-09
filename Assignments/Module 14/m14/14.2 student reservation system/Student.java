@@ -118,7 +118,7 @@ class Student implements Comparable<Student> {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int compareTo(Student s) {
+	public int compareTo(final Student s) {
 		if (this.total > s.total) {
 			return 1;
 		}
