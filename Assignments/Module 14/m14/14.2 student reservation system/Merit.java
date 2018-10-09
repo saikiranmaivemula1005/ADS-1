@@ -52,9 +52,9 @@ public class Merit {
     public String toString() {
         String str = "";
         for (int i = 0; i < size; i++) {
-            str += students[i].name + ","
-             + students[i].total + "," +
-              students[i].category + "\n";
+            str += students[i].getName() + ","
+             + students[i].getTotal() + "," +
+              students[i].getCategory() + "\n";
         }
         return str;
     }
@@ -66,9 +66,9 @@ public class Merit {
     public String toString1() {
         String str = "";
         for (int i = 0; i < size; i++) {
-            str += students[i].name 
-            + "," + students[i].total + 
-            "," + students[i].category + "\n";
+            str += students[i].getName() 
+            + "," + students[i].getTotal() + 
+            "," + students[i].getCategory() + "\n";
         }
         return str;
     }
@@ -122,7 +122,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         if(noOfBC != 0) {
             for (int i = noOfunres; i < students.length; i++) {
                 try {
-                    if (students[i].category.equals("BC")) {
+                    if (students[i].getCategory().equals("BC")) {
                         newstudents[z++] = students[i];
                         bc++;
                     if(bc == noOfBC){
@@ -136,7 +136,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         int sc = 0;
         if (noOfSC != 0) {
             for (int i = noOfunres ; i<size; i++ ) {
-                if (students[i].category.equals("SC")) {
+                if (students[i].getCategory().equals("SC")) {
                     newstudents[z++] = students[i];
                     sc++;
                     if(sc == noOfSC) {
@@ -148,7 +148,7 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
         int st = 0;
         if (noOfST != 0) {
             for (int i = noOfunres ; i<size; i++ ) {
-                if (students[i].category.equals("ST")) {
+                if (students[i].getCategory().equals("ST")) {
                         newstudents[z++] = students[i];
                         st++;
                         if(st == noOfST) {
@@ -211,10 +211,10 @@ public void sort(int noOfvacancies,int noOfunres,int noOfBC,int noOfSC,int noOfS
          * less method.
          *
          * @param      arr   The arr
-         * @param      i     { parameter_description }
-         * @param      j     { parameter_description }
+         * @param      i     { integer variable }
+         * @param      j     { integer variable }
          *
-         * @return     { description_of_the_return_value }
+         * @return     { returns the result of less method. }
          */
     public boolean less(Student[] arr, int i, int j) {
         return  arr[i].compareTo(arr[j]) < 0;
