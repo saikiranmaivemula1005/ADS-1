@@ -19,7 +19,7 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
 	}
 	public Key max() {
 		if (isEmpty()) {
-			System.out.println(("called max() with empty symbol table"));
+			throw new NoSuchElementException(("called max() with empty symbol table"));
 		}
         return keys[size-1];
 	}

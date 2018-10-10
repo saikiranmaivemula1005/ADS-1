@@ -10,7 +10,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:9:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:17:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:22: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:22: Line is longer than 80 characters (found 99). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:24:25: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:24:26: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:26:9: Missing a Javadoc comment. [JavadocMethod]
