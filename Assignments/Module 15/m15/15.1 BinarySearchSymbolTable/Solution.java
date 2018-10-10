@@ -20,15 +20,9 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
         return size;
     }
     public Key max() {
-        if (isEmpty()) {
-            throw new NoSuchElementException(("called max() with empty symbol table"));
-        }
         return keys[size - 1];
     }
     public Key floor(final Key key) {
-         if (key == null) {
-            throw new IllegalArgumentException("argument to flowor() is null");
-         }
         int i = rank(key);
         if (i < size && key.compareTo(keys[i]) == 0) {
             return keys[i];
@@ -39,13 +33,18 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
             return keys[i-1];
         }
     }
+    public Key ceiling(Key key) {
+        int i = rank(key);
+        if (i == size) {
+            return null;
+        } else {
+            return keys[i];
+        }
+    }
     public boolean isEmpty() {
         return size() == 0;
     }
     public int rank(final Key key) {
-        if (key == null) {
-            throw new IllegalArgumentException("argument to rank() is null");
-        }
         int low = 0, high = size - 1; 
         while (low <= high) { 
             int mid = low + (high - low) / 2; 
@@ -88,13 +87,13 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
     }
      public void resize(int capacity) {
         Key[] temporaykey = (Key[]) new Comparable[capacity];
-        Value[] temporarval = (Value[]) new Object[capacity];
+        Value[] temporaryval = (Value[]) new Object[capacity];
         for (int i = 0; i < size; i++) {
             temporaykey[i] = keys[i];
-            temporarval[i] = vals[i];
+            temporaryval[i] = vals[i];
         }
 
-        vals = temporarval;
+        vals = temporaryval;
         keys = temporaykey;
     }
     public Key min() {
@@ -130,34 +129,31 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
     public List<String> keys() {
         return keys(min(), max());
     }
-    public List<String> keys(Key loww, Key highgh) {
-        if (loww == null) {
+    public List<String> keys(Key low, Key high) {
+        if (low == null) {
             throw new IllegalArgumentException("first argument to keys() is null"); 
         }
 
-        if (highgh == null) {
+        if (high == null) {
             throw new IllegalArgumentException("last argument to keys() is null"); 
         }
 
         List<String> list = new List<>();
-        if (loww.compareTo(highgh) > 0) {
+        if (low.compareTo(high) > 0) {
             return list;
         }
 
-        for (int i = rank(loww); i < rank(highgh); i++) {
+        for (int i = rank(low); i < rank(high); i++) {
             list.add((String)keys[i]);
         }
 
-        if (contains(highgh)) {
-            list.add((String)keys[rank(highgh)]);
+        if (contains(high)) {
+            list.add((String)keys[rank(high)]);
         }
 
         return list;
     }
-    public Value get(final Key key) {
-        if (key == null) {
-            throw new IllegalArgumentException("Key is null");
-        } 
+    public Value get(final Key key) { 
         if (isEmpty()) {
             return null;
         }

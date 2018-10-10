@@ -18,7 +18,7 @@ Your Output:
 S
 S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:194)
+	at Solution.main(Solution.java:190)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -40,9 +40,9 @@ null
 Your Output: 
 E
 Exception in thread "main" java.lang.IllegalArgumentException: argument to delete() is null
-	at BinarySearchST.delete(Solution.java:69)
-	at BinarySearchST.deleteMin(Solution.java:65)
-	at Solution.main(Solution.java:200)
+	at BinarySearchST.delete(Solution.java:68)
+	at BinarySearchST.deleteMin(Solution.java:64)
+	at Solution.main(Solution.java:196)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -69,10 +69,10 @@ T
 Your Output: 
 S
 S
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:24)
-	at BinarySearchST.keys(Solution.java:131)
-	at Solution.main(Solution.java:206)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchST.max(Solution.java:23)
+	at BinarySearchST.keys(Solution.java:130)
+	at Solution.main(Solution.java:202)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -96,10 +96,10 @@ true
 P
 Your Output: 
 B
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:24)
-	at BinarySearchST.keys(Solution.java:131)
-	at Solution.main(Solution.java:206)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchST.max(Solution.java:23)
+	at BinarySearchST.keys(Solution.java:130)
+	at Solution.main(Solution.java:202)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -119,5 +119,5 @@ Y 1
 Your Output: 
 S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:194)
+	at Solution.main(Solution.java:190)
 ----------------------------------------
