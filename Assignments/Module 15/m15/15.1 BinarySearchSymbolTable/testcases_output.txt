@@ -15,9 +15,10 @@ S 0
 X 7
 null
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:22)
-	at Solution.main(Solution.java:150)
+S
+S
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:194)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -37,9 +38,11 @@ O
 false
 null
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Symbol table underflow error
-	at BinarySearchST.deleteMin(Solution.java:64)
-	at Solution.main(Solution.java:159)
+E
+Exception in thread "main" java.lang.IllegalArgumentException: argument to delete() is null
+	at BinarySearchST.delete(Solution.java:69)
+	at BinarySearchST.deleteMin(Solution.java:65)
+	at Solution.main(Solution.java:200)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -64,9 +67,12 @@ true
 5
 T
 Your Output: 
+S
+S
 Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:22)
-	at Solution.main(Solution.java:150)
+	at BinarySearchST.max(Solution.java:24)
+	at BinarySearchST.keys(Solution.java:131)
+	at Solution.main(Solution.java:206)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -89,9 +95,11 @@ true
 13
 P
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: Symbol table underflow error
-	at BinarySearchST.deleteMin(Solution.java:64)
-	at Solution.main(Solution.java:159)
+B
+Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
+	at BinarySearchST.max(Solution.java:24)
+	at BinarySearchST.keys(Solution.java:131)
+	at Solution.main(Solution.java:206)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -109,6 +117,7 @@ S 0
 T 6
 Y 1
 Your Output: 
+S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:153)
+	at Solution.main(Solution.java:194)
 ----------------------------------------
