@@ -11,7 +11,6 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
 	 * constructor for the class.
 	 */
 	BinarySearchST() {
-
 	}
 	public int size() {
 		return size;
@@ -109,28 +108,11 @@ class BinarySearchST<Key extends Comparable<Key>, Value>{
 		}
         return get(key) != null;
 	}
-	// public Iterable<Key> keys() {
-	// 	return keys(min(), max());
-	// }
-	//  public Iterable<Key> keys(Key lo, Key hi) {
- //        if (lo == null) {
- //        	throw new IllegalArgumentException("first argument to keys() is null");
- //        } 
- //        if (hi == null) {
- //        	throw new IllegalArgumentException("second argument to keys() is null");
- //        }
- //        Queue<Key> queue = new Queue<Key>(); 
- //        if (lo.compareTo(hi) > 0) {
- //        	return queue;
- //        }
- //        for (int i = rank(lo); i < rank(hi); i++) {
- //            queue.enqueue(keys[i]);
- //        }
- //        if (contains(hi)) {
- //        	queue.enqueue(keys[rank(hi)]);
- //        }
- //        return queue; 
- //    }
+	public void keys() {
+		for (int i = 0; i < keys.length; i++) {
+			System.out.println(keys[i] + " " + vals[i]);
+		}
+	}
 	public Value get(final Key key) {
 		if (key == null) {
 			throw new IllegalArgumentException("argument to get() is null");
@@ -174,9 +156,9 @@ class Solution {
 				case "contains":
 					bst.contains(cases[1]);
 					break;
-				// case "keys":
-				// 	bst.keys();
-				// 	break;
+				case "keys":
+					bst.keys();
+					break;
 				case "get":
 					bst.get(cases[1]);
 					break;
