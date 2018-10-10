@@ -15,8 +15,9 @@ S 0
 X 7
 null
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:20)
+called max() with empty symbol table
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.max(Solution.java:22)
 	at Solution.main(Solution.java:145)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
@@ -64,8 +65,9 @@ true
 5
 T
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: called max() with empty symbol table
-	at BinarySearchST.max(Solution.java:20)
+called max() with empty symbol table
+Exception in thread "main" java.lang.NullPointerException
+	at BinarySearchST.max(Solution.java:22)
 	at Solution.main(Solution.java:145)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
