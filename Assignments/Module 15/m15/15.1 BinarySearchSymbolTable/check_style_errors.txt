@@ -8,8 +8,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:7:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:8:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:9:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:14:47: '10' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:15:45: '10' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:17:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:22: Line is longer than 80 characters (found 85). [LineLength]
@@ -64,4 +62,4 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:138: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:145: switch without "default" clause. [MissingSwitchDefault]
 Audit done.
-Checkstyle ends with 64 errors.
+Checkstyle ends with 62 errors.
