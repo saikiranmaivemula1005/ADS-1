@@ -1,62 +1,111 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+/**
+ * Class for binarysearch st.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarysearchST<Key extends Comparable<Key>, Value> {
+    /**
+     * keys array.
+     */
     private Key[] keys;
+    /**
+     * values array.
+     */
     private Value[] vals;
+    /**
+     * size variable.
+     */
     private int size;
+    /**
+     * empty constructor.
+     */
     BinarysearchST() {
-        //Empty constructor.
+
     }
-    BinarysearchST(int capacity) {
+    /**
+     * overloaded constructor.
+     *
+     * @param      capacity  The capacity
+     */
+    BinarysearchST(final int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
-
-    public void resize(int capacity) {
+    /**
+     * resize method.
+     *
+     * @param      capacity  The capacity
+     */
+    public void resize(final int capacity) {
         Key[] tempkey = (Key[]) new Comparable[capacity];
         Value[] tempval = (Value[]) new Object[capacity];
         for (int i = 0; i < size; i++) {
             tempkey[i] = keys[i];
             tempval[i] = vals[i];
         }
-
         vals = tempval;
         keys = tempkey;
     }
-
+    /**
+     * size method.
+     *
+     * @return     {returns size.}
+     */
     public int size() {
         return size;
     }
-
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return size() == 0;
     }
-
-    public boolean contains(Key key) {
+    /**
+     * contains method.
+     *
+     * @param      key   The key
+     *
+     * @return     { returns true if key is in array. }
+     */
+    public boolean contains(final Key key) {
         return get(key) != null;
     }
-
-    public Value get(Key key) {
+    /**
+     * gets the value of key.
+     *
+     * @param      key   The key
+     *
+     * @return     {returns the value of given key}
+     */
+    public Value get(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("Key is null");
         }
-
         if (isEmpty()) {
             return null;
         }
-
         int i = rank(key);
         if (i < size && keys[i].compareTo(key) == 0) {
             return vals[i];
         }
         return null;
     }
-
-    public int rank(Key key) {
+    /**
+     * rank method.
+     *
+     * @param      key   The key
+     *
+     * @return     { returns rank. }
+     */
+    public int rank(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to rank() is null");
         }
-
         int low = 0; int high = size - 1;
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -71,78 +120,88 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
         return low;
     }
-
-    public void put(Key key, Value val) {
+    /**
+     * adds value and key into list.
+     *
+     * @param      key   The key
+     * @param      val   The value
+     */
+    public void put(final Key key, final Value val) {
         if (key == null) {
             throw new IllegalArgumentException("Null key");
         }
-
         if (val == null) {
             delete(key);
             return ;
         }
-
         int i = rank(key);
-
         if (i < size && keys[i].compareTo(key) == 0) {
             vals[i] = val;
             return ;
         }
-
         if (size == keys.length) {
             resize(2 * keys.length);
         }
-
         for (int j = size; j > i; j--) {
             keys[j] = keys[j - 1];
             vals[j] = vals[j - 1];
         }
-
         keys[i] = key;
         vals[i] = val;
         size++;
     }
-
-    public void delete(Key key) {
+    /**
+     * deletes the key and value.
+     *
+     * @param      key   The key
+     */
+    public void delete(final Key key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to delete() is null");
         }
-
         if (isEmpty()) {
             return ;
         }
-
         int i = rank(key);
-
         if (i == size || keys[i].compareTo(key) != 0) {
             return ;
         }
-
         for (int j = i; j < size - 1; j++) {
             keys[j] = keys[j + 1];
             vals[j] = vals[j + 1];
         }
-
         size--;
         keys[size] = null;
         vals[size] = null;
-
         if (size > 0 && size == keys.length / 4) {
             resize(keys.length / 2);
         }
     }
-
-    public Key select(int k) {
+    /**
+     * select method
+     *
+     * @param      k     { integer variable. }
+     *
+     * @return     { returns the key }
+     */
+    public Key select(final int k) {
         if (k < 0 || k >= size()) {
             throw new IllegalArgumentException("Invalid argument");
         }
 
         return keys[k];
     }
-
-    public Key floor(Key key) {
+    /**
+     * floor method.
+     *
+     * @param      key   The key
+     *
+     * @return     { returns floor value }
+     */
+    public Key floor(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to floor() is null");
+            throw new 
+            IllegalArgumentException("argument to floor() is null");
         }
         int i = rank(key);
         if (i < size && keys[i].compareTo(key) == 0) {
@@ -154,10 +213,17 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             return keys[i - 1];
         }
     }
-
-    public Key ceiling(Key key) {
+    /**
+     * ceiling method.
+     *
+     * @param      key   The key
+     *
+     * @return     { returns ceiling value }
+     */
+    public Key ceiling(final Key key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to ceiling() is null");
+            throw new
+             IllegalArgumentException("argument to ceiling() is null");
         }
         int i = rank(key);
         if (i == size) {
@@ -166,40 +232,46 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             return keys[i];
         }
     }
-
+    /**
+     * keys method.
+     *
+     * @return     { returns keys in the list. }
+     */
     public ArrayList<String> keys() {
         return keys(min(), max());
     }
-
+    /**
+     * min method.
+     *
+     * @return     { returns minimum key }
+     */
     public Key min() {
-        // if (isEmpty()) {
-        //     throw new Exception("There is no element");
-        // }
-
         return keys[0];
     }
-
+    /**
+     * max method.
+     *
+     * @return     { returns maximum key }
+     */
     public Key max() {
-        // if (isEmpty()) {
-        //     throw new Exception("There is no element");
-        // }
-
         return keys[size - 1];
     }
-
+    /**
+     * delete minimum method.
+     */
     public void deleteMin() {
         delete(min());
     }
-
-    public ArrayList<String> keys(Key low, Key high) {
-        if (low == null) {
-            throw new IllegalArgumentException("first argument to keys() is null"); 
-        }
-
-        if (high == null) {
-            throw new IllegalArgumentException("last argument to keys() is null"); 
-        }
-
+    /**
+     * keys method.
+     *
+     * @param      low   The low
+     * @param      high  The high
+     *
+     * @return     { returns keys and values list }
+     */
+    public ArrayList<String> keys(
+        final Key low, final Key high) {
         ArrayList<String> limit = new ArrayList<>();
         if (low.compareTo(high) > 0) {
             return limit;
@@ -215,17 +287,25 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
 
         return limit;
     }
-
-    // public boolean isEmpty() {
-    //     return size == 0;
-    // }
 }
-
+/**
+ * Class for solution.
+ */
 class Solution {
-    public static void main(String[] args) {
+    /**
+     * Constructs the object.
+     */
+    protected Solution() {
+
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         BinarysearchST<String, Integer> bst = new BinarysearchST<String, Integer>();
-
         String[] input = sc.nextLine().split(" ");
         bst = new BinarysearchST<String, Integer>(input.length);
         for (int i = 0; i < input.length; i++) {
@@ -242,19 +322,9 @@ class Solution {
                 break;
                 case "max":
                 System.out.println(bst.max());
-                // try {
-                    
-                // } catch (Exception e) {
-                //     System.out.println("No such element");
-                // }
                 break;
                 case "min":
                 System.out.println(bst.min());
-                // try {
-                    
-                // } catch (Exception e) {
-                //     System.out.println("No such element");
-                // }
                 break;
                 case "floor":
                 System.out.println(bst.floor(tokens[1]));
