@@ -111,7 +111,7 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             int mid = low + (high - low) / 2;
             int comp = key.compareTo(keys[mid]);
             if (comp < 0) {
-                high = mid - 1; 
+                high = mid - 1;
             } else if (comp > 0) {
                 low = mid + 1;
             } else {
@@ -132,12 +132,12 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
         if (val == null) {
             delete(key);
-            return ;
+            return;
         }
         int i = rank(key);
         if (i < size && keys[i].compareTo(key) == 0) {
             vals[i] = val;
-            return ;
+            return;
         }
         if (size == keys.length) {
             resize(2 * keys.length);
@@ -160,11 +160,11 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
             throw new IllegalArgumentException("argument to delete() is null");
         }
         if (isEmpty()) {
-            return ;
+            return;
         }
         int i = rank(key);
         if (i == size || keys[i].compareTo(key) != 0) {
-            return ;
+            return;
         }
         for (int j = i; j < size - 1; j++) {
             keys[j] = keys[j + 1];
@@ -173,12 +173,13 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         size--;
         keys[size] = null;
         vals[size] = null;
-        if (size > 0 && size == keys.length / 4) {
+        final int four = 4;
+        if (size > 0 && size == keys.length / four) {
             resize(keys.length / 2);
         }
     }
     /**
-     * select method
+     * select method.
      *
      * @param      k     { integer variable. }
      *
@@ -200,7 +201,7 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
      */
     public Key floor(final Key key) {
         if (key == null) {
-            throw new 
+            throw new
             IllegalArgumentException("argument to floor() is null");
         }
         int i = rank(key);
@@ -278,11 +279,11 @@ class BinarysearchST<Key extends Comparable<Key>, Value> {
         }
 
         for (int i = rank(low); i < rank(high); i++) {
-            limit.add((String)keys[i]);
+            limit.add((String) keys[i]);
         }
 
         if (contains(high)) {
-            limit.add((String)keys[rank(high)]);
+            limit.add((String) keys[rank(high)]);
         }
 
         return limit;
@@ -305,13 +306,14 @@ class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        BinarysearchST<String, Integer> bst = new BinarysearchST<String, Integer>();
+        BinarysearchST<String, Integer> bst
+         = new BinarysearchST<String, Integer>();
         String[] input = sc.nextLine().split(" ");
         bst = new BinarysearchST<String, Integer>(input.length);
         for (int i = 0; i < input.length; i++) {
             bst.put(input[i], i);
         }
-        while(sc.hasNextLine()) {
+        while (sc.hasNextLine()) {
             String[] tokens = sc.nextLine().split(" ");
             switch (tokens[0]) {
                 case "contains":
@@ -338,7 +340,9 @@ class Solution {
                 case "keys":
                 ArrayList<String> limit = bst.keys();
                 for (int i = 0; i < limit.size(); i++) {
-                    System.out.println(limit.get(i) + " " + bst.get(limit.get(i)));
+                    System.out.println(
+                        limit.get(i) + " "
+                         + bst.get(limit.get(i)));
                 }
                 break;
                 default:
