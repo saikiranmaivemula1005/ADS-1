@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 class BinarySearchST<Key extends Comparable<Key>, Value>{
 	private Key[] keys;
     private Value[] vals;
-    private int size = 1;
+    private int size = 0;
 	/**
 	 * constructor for the class.
 	 */
