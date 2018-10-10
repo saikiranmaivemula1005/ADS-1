@@ -16,9 +16,8 @@ X 7
 null
 Your Output: 
 S
-S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:190)
+	at Solution.main(Solution.java:189)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -38,11 +37,10 @@ O
 false
 null
 Your Output: 
-E
 Exception in thread "main" java.lang.IllegalArgumentException: argument to delete() is null
 	at BinarySearchST.delete(Solution.java:68)
 	at BinarySearchST.deleteMin(Solution.java:64)
-	at Solution.main(Solution.java:196)
+	at Solution.main(Solution.java:195)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -68,11 +66,10 @@ true
 T
 Your Output: 
 S
-S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at BinarySearchST.max(Solution.java:23)
 	at BinarySearchST.keys(Solution.java:130)
-	at Solution.main(Solution.java:202)
+	at Solution.main(Solution.java:201)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -95,11 +92,10 @@ true
 13
 P
 Your Output: 
-B
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at BinarySearchST.max(Solution.java:23)
 	at BinarySearchST.keys(Solution.java:130)
-	at Solution.main(Solution.java:202)
+	at Solution.main(Solution.java:201)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -117,7 +113,6 @@ S 0
 T 6
 Y 1
 Your Output: 
-S
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:190)
+	at Solution.main(Solution.java:189)
 ----------------------------------------

@@ -176,10 +176,9 @@ class Solution {
             String[] tokens = inputWord.split(" ");
             bst = new BinarySearchST<String, Integer>(tokens.length);
             for (int i = 0; i < tokens.length; i++) {
-                System.out.println(tokens[i]);
                 bst.put(tokens[i], i);
             }
-        while (sc.hasNext()) {
+        while (sc.hasNextLine()) {
             String line = sc.next();
             String[] cases = line.split(" ");
             switch (cases[0]) {
@@ -207,6 +206,7 @@ class Solution {
                 case "get":
                     System.out.println(bst.get(cases[1]));
                     break;
+                default:
             }
         }
     }

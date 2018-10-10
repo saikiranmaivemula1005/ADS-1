@@ -67,7 +67,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:169:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:172:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:173: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:185: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:204: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:184: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 15\m15\15.1 BinarySearchSymbolTable\Solution.java:203: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 70 errors.
