@@ -16,9 +16,9 @@ X 7
 null
 Your Output: 
 called max() with empty symbol table
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.max(Solution.java:22)
-	at Solution.main(Solution.java:145)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchST.max(Solution.java:24)
+	at Solution.main(Solution.java:147)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -39,8 +39,8 @@ false
 null
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: Symbol table underflow error
-	at BinarySearchST.deleteMin(Solution.java:62)
-	at Solution.main(Solution.java:154)
+	at BinarySearchST.deleteMin(Solution.java:64)
+	at Solution.main(Solution.java:156)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -66,9 +66,9 @@ true
 T
 Your Output: 
 called max() with empty symbol table
-Exception in thread "main" java.lang.NullPointerException
-	at BinarySearchST.max(Solution.java:22)
-	at Solution.main(Solution.java:145)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at BinarySearchST.max(Solution.java:24)
+	at Solution.main(Solution.java:147)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -92,8 +92,8 @@ true
 P
 Your Output: 
 Exception in thread "main" java.util.NoSuchElementException: Symbol table underflow error
-	at BinarySearchST.deleteMin(Solution.java:62)
-	at Solution.main(Solution.java:154)
+	at BinarySearchST.deleteMin(Solution.java:64)
+	at Solution.main(Solution.java:156)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -112,5 +112,5 @@ T 6
 Y 1
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:148)
+	at Solution.main(Solution.java:150)
 ----------------------------------------
