@@ -78,10 +78,10 @@ class Solution {
 	}
 	public static void main(String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
-		Scanner sc = new Scanner(System.in);	
+		Scanner sc = new Scanner(System.in);
+		String[] tokens = sc.next().split(",");
+		Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));	
 		while (sc.hasNext()) {
-			String[] tokens = sc.next().split(",");
-			Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
 			switch (tokens[0]) {
 				case "put":
 					String value = tokens[4];
