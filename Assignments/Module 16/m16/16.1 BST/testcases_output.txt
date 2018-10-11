@@ -3,7 +3,7 @@ Expected Output:
 1
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -24,6 +24,6 @@ null
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at BinarySearchTree$Node.access$300(Solution.java:28)
-	at BinarySearchTree.get(Solution.java:68)
-	at Solution.main(Solution.java:92)
+	at BinarySearchTree.get(Solution.java:65)
+	at Solution.main(Solution.java:89)
 ----------------------------------------
