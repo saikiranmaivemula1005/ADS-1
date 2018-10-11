@@ -16,17 +16,22 @@ class Book {
 	 */
 	private float price;
 	/**
-	 * constructor 
+	 * constructor.
 	 *
 	 * @param      n     { name }
 	 * @param      a     { author }
 	 * @param      p     { price }
 	 */
-	Book(String n, String a, float p) {
+	Book(final String n, final String a, final float p) {
 		this.name = n;
 		this.author = a;
 		this.price = p;
 	}
+	/**
+	 * Gets the name.
+	 *
+	 * @return     The name.
+	 */
 	public String getName() {
 		return this.name;
 	}
@@ -38,13 +43,31 @@ class Book {
  * @param      <Value>  The value
  */
 class BinarySearchTree<Key extends Comparable<Key>, Value> {
+	/**
+	 * Constructs the object.
+	 */
 	BinarySearchTree() {
 
 	}
+	/**
+	 * root node.
+	 */
 	private Node root;
+	/**
+	 * Class for node.
+	 */
 	private class Node {
+		/**
+		 * key of book type.
+		 */
 		private Book key;
+		/**
+		 * value of integer type.
+		 */
 		private int value;
+		/**
+		 * left and right nodes.
+		 */
 		private Node left, right;
 		/**
 		 * Constructs the object.
@@ -52,7 +75,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		 * @param      k     { book }
 		 * @param      v     { value }
 		 */
-		Node(Book k, int v) {
+		Node(final Book k, final int v) {
 			this.key = k;
 			this.value = v;
 		}
@@ -75,7 +98,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	 *
 	 * @return     { returns the node }
 	 */
-	private Node put(Node x, Book key, int value) {
+	private Node put(final Node x,
+	 final Book key, final int value) {
 		if (x == null) {
 			return new Node(key, value);
 		}
@@ -98,7 +122,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	 *
 	 * @return     { returns integer value }
 	 */
-	public Integer get(Book key) {
+	public Integer get(final Book key) {
 		Node x = root;
 		while (x != null) {
 			int cmp = key.getName().compareTo(x.key.getName());
@@ -130,19 +154,23 @@ class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
-		Scanner sc = new Scanner(System.in);	
+		Scanner sc = new Scanner(System.in);
+		final int three = 3, four = 4;	
 		while (sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(",");
 			switch (tokens[0]) {
 				case "put":
-					Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
-					int value = Integer.parseInt(tokens[4]);
+					Book key = new Book(
+						tokens[1], tokens[2],
+						 Float.parseFloat(tokens[three]));
+					int value = Integer.parseInt(tokens[four]);
 					bst.put(key, value);
 					break;
 				case "get":
-				    key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
+				    key = new Book(tokens[1], tokens[2],
+				     Float.parseFloat(tokens[three]));
 					System.out.println(bst.get(key));
 					break;
 				default:
