@@ -18,22 +18,21 @@ class Book {
 		return this.price;
 	}
 }
-
+class Node {
+		 Book key;
+		 String value;
+		 Node left, right;
+		Node(Book k, String v) {
+			this.key = k;
+			this.value = v;
+		}
+	}
 
 class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	BinarySearchTree() {
 
 	}
 	private Node root;
-	private class Node {
-		private Book key;
-		private String value;
-		private Node left, right;
-		Node(Book k, String v) {
-			this.key = k;
-			this.value = v;
-		}
-	}
 	public void put(Book key, String value) {
 		 root = put(root, key, value);
 	}
