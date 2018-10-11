@@ -1,8 +1,27 @@
 import java.util.Scanner;
+/**
+ * Class for book.
+ */
 class Book {
+	/**
+	 * name of the book.
+	 */
 	String name;
+	/**
+	 * name of the author.
+	 */
 	String author;
+	/**
+	 * price of the book.
+	 */
 	float price;
+	/**
+	 * constructor 
+	 *
+	 * @param      n     { name }
+	 * @param      a     { author }
+	 * @param      p     { price }
+	 */
 	Book(String n, String a, float p) {
 		this.name = n;
 		this.author = a;
@@ -11,15 +30,13 @@ class Book {
 	public String getName() {
 		return this.name;
 	}
-	public String getAuthor() {
-		return this.author;
-	}
-	public float getprice() {
-		return this.price;
-	}
 }
-
-
+/**
+ * Class for binary search tree.
+ *
+ * @param      <Key>    The key
+ * @param      <Value>  The value
+ */
 class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	BinarySearchTree() {
 
@@ -29,14 +46,35 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		private Book key;
 		private int value;
 		private Node left, right;
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      k     { book }
+		 * @param      v     { value }
+		 */
 		Node(Book k, int v) {
 			this.key = k;
 			this.value = v;
 		}
 	}
+	/**
+	 * put method
+	 *
+	 * @param      key    The key
+	 * @param      value  The value
+	 */
 	public void put(Book key, int value) {
 		 root = put(root, key, value);
 	}
+	/**
+	 * put overloaded method
+	 *
+	 * @param      x      { Node }
+	 * @param      key    The key
+	 * @param      value  The value
+	 *
+	 * @return     { returns the node }
+	 */
 	private Node put(Node x, Book key, int value) {
 		if (x == null) {
 			return new Node(key, value);
@@ -52,6 +90,13 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		}
 		return x;
 	}
+	/**
+	 * get method.
+	 *
+	 * @param      key   The key
+	 *
+	 * @return     { returns integer value }
+	 */
 	public Integer get(Book key) {
 		Node x = root;
 		while (x != null) {
@@ -68,11 +113,21 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 			return null;
 		}
 	}
-
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	protected Solution() {
 
 	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
 		Scanner sc = new Scanner(System.in);	
