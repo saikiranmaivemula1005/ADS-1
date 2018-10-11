@@ -81,9 +81,9 @@ class Solution {
 		Scanner sc = new Scanner(System.in);	
 		while (sc.hasNext()) {
 			String[] tokens = sc.next().split(",");
+			Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
 			switch (tokens[0]) {
 				case "put":
-					Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
 					String value = tokens[4];
 					bst.put(key, value);
 					break;

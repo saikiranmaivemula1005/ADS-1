@@ -3,7 +3,7 @@ Expected Output:
 1
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at Solution.main(Solution.java:86)
+	at Solution.main(Solution.java:84)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
