@@ -23,6 +23,6 @@ null
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at BinarySearchTree$Node.access$300(Solution.java:45)
-	at BinarySearchTree.get(Solution.java:110)
-	at Solution.main(Solution.java:144)
+	at BinarySearchTree.get(Solution.java:113)
+	at Solution.main(Solution.java:147)
 ----------------------------------------
