@@ -6,15 +6,15 @@ class Book {
 	/**
 	 * name of the book.
 	 */
-	String name;
+	private String name;
 	/**
 	 * name of the author.
 	 */
-	String author;
+	private String author;
 	/**
 	 * price of the book.
 	 */
-	float price;
+	private float price;
 	/**
 	 * constructor 
 	 *

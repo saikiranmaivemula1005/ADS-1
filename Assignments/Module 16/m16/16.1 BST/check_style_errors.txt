@@ -1,9 +1,6 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:9:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:13:16: Variable 'author' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:17:15: Variable 'price' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:18: First sentence should end with a period. [JavadocStyle]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:19: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:25:14: Parameter n should be final. [FinalParameters]
@@ -35,4 +32,4 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:145: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:145:98: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 32 errors.
