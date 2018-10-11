@@ -33,7 +33,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:40:34: Parameter key should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:40:44: Parameter value should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:55:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:55:24: Parameter key should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:55:27: Parameter key should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:75: Missing a Javadoc comment. [JavadocType]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:76:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:79:9: Missing a Javadoc comment. [JavadocMethod]
@@ -41,7 +41,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:81: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:86: Line is longer than 80 characters (found 111). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:86:107: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:87:77: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:87:63: '4' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:91: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:91:98: '3' is a magic number. [MagicNumber]
 Audit done.
