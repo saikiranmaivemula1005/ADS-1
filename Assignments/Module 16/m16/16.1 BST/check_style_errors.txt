@@ -1,13 +1,5 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:83: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:89:25: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:89:35: Parameter value should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:92: First sentence should end with a period. [JavadocStyle]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:134: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:160: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:167: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:168: Line is longer than 80 characters (found 83). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 2 errors.
