@@ -18,25 +18,26 @@ class Book {
 		return this.price;
 	}
 }
-class Node {
-		 Book key;
-		 String value;
-		 Node left, right;
-		Node(Book k, String v) {
-			this.key = k;
-			this.value = v;
-		}
-	}
+
 
 class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	BinarySearchTree() {
 
 	}
 	private Node root;
-	public void put(Book key, String value) {
+	private class Node {
+		private Book key;
+		private int value;
+		private Node left, right;
+		Node(Book k, int v) {
+			this.key = k;
+			this.value = v;
+		}
+	}
+	public void put(Book key, int value) {
 		 root = put(root, key, value);
 	}
-	private Node put(Node x, Book key, String value) {
+	private Node put(Node x, Book key, int value) {
 		if (x == null) {
 			return new Node(key, value);
 		}
@@ -51,7 +52,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 		}
 		return x;
 	}
-	public String get(Book key) {
+	public Integer get(Book key) {
 		Node x = root;
 		if (x == null) {
 			System.out.println("null");
@@ -83,7 +84,7 @@ class Solution {
 			switch (tokens[0]) {
 				case "put":
 					Book key = new Book(tokens[1], tokens[2], Float.parseFloat(tokens[3]));
-					String value = tokens[4];
+					int value = Integer.parseInt(tokens[4]);
 					bst.put(key, value);
 					break;
 				case "get":
