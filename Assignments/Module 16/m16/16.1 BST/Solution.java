@@ -81,7 +81,7 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
         }
     }
     /**
-     * put method
+     * put method.
      *
      * @param      key    The key
      * @param      value  The value
