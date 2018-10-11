@@ -26,12 +26,13 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:78:34: Parameter key should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:78:44: Parameter value should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:100:28: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:134:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:136: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:141: Line is longer than 80 characters (found 111). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:141:107: '3' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:142:77: '4' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:146: Line is longer than 80 characters (found 102). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:146:98: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:109: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:132:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:134: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:139: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:139:107: '3' is a magic number. [MagicNumber]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:140:77: '4' is a magic number. [MagicNumber]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:144: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 16\m16\16.1 BST\Solution.java:144:98: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 35 errors.

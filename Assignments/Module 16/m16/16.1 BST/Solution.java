@@ -99,9 +99,6 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 	 */
 	public Integer get(Book key) {
 		Node x = root;
-		if (x == null) {
-			System.out.println("null");
-		}
 		while (x != null) {
 			int cmp = key.getName().compareTo(x.key.getName());
 				if (cmp < 0) {
@@ -109,7 +106,8 @@ class BinarySearchTree<Key extends Comparable<Key>, Value> {
 				}
 				if (cmp > 0) {
 					x = x.right;
-				} else {
+				} 
+				if (cmp == 0) {
 					return x.value;
 				}
 			}
