@@ -14,8 +14,8 @@ class Taxicab implements Comparable<Taxicab> {
     /**
      * Constructs the object.
      *
-     * @param      i     { integer variable }
-     * @param      j     { integer variable }
+     * @param      i1    I 1
+     * @param      j1    The j 1
      */
     Taxicab(final int i1, final int j1) {
         this.sum = (long) i1 * i1 * i1 + (long) j1 * j1 * j1;
@@ -92,7 +92,7 @@ class Solution {
             String[] input = sc.nextLine().split(" ");
             int num = Integer.parseInt(input[0]);
             int m = Integer.parseInt(input[1]);
-            int n = 1000;
+            final int n = 1000;
             MinPQ<Taxicab> pq = new MinPQ<Taxicab>();
             for (int i = 1; i <= n; i++) {
                 pq.insert(new Taxicab(i, i));
@@ -105,7 +105,7 @@ class Solution {
                 if (prev.getsum() == curr.getsum()) {
                     pair++;
                     if (pair == m) {
-                        pairCount = pairCount+1;
+                        pairCount = pairCount + 1;
                     }
                     if (pairCount == num) {
                         System.out.println(prev.getsum());
