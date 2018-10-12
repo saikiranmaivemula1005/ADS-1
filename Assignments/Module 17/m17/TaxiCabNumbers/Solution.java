@@ -118,7 +118,7 @@ class Solution {
 	                pair = 1;
 	            }
 	            prev = curr;
-	            if (curr.getJ() < n) pq.insert(new Taxicab(curr.getJ(), curr.getJ() + 1));
+	            if (curr.getJ() < n) pq.insert(new Taxicab(curr.getI(), curr.getJ() + 1));
 	        }
     }
 	}
