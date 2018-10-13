@@ -60,7 +60,7 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		int numberOfStocks = sc.nextInt();
 		int x = 6;
-		while (x != 0) {
+		while (sc.hasNextLine()) {
 			for (int i = 0; i < numberOfStocks; i++) {
 				String data = sc.nextLine();
 				System.out.println(data);
