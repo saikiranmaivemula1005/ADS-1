@@ -26,5 +26,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:58:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:58:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:62:25: '6' is a magic number. [MagicNumber]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:65:69: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 28 errors.
