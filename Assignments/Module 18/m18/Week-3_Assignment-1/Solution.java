@@ -60,7 +60,7 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		int numberOfStocks = sc.nextInt();
 		int x = 6;
-		for (int i = 0; i < x * numberOfStocks; i++) {
+		while (sc.hasNextLine()) {
 				String data = sc.nextLine();
 				System.out.println(data);
 				String[] tokens = data.split(",");
