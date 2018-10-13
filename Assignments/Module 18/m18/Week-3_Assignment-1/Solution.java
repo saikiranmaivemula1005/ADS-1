@@ -53,8 +53,7 @@ class Solution {
 		StockPercentage sp = new StockPercentage();
 		Scanner sc = new Scanner(System.in);
 		int numberOfStocks = sc.nextInt();
-		for (int i = 0; i < numberOfStocks; i++) {
-			// String[] tokens = sc.nextLine().split(",");
+		while (sc.hasNext()) {
 			String[] tokens = sc.nextLine().split(",");
 			String name = tokens[0];
 			float percentage = Float.parseFloat(tokens[1]);
