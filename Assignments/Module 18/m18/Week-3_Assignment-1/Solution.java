@@ -61,7 +61,7 @@ class Solution {
 		int numberOfStocks = sc.nextInt();
 		int x = 6;
 		for (int i = 0; i < x * numberOfStocks; i++) {
-				String data = sc.next();
+				String data = sc.nextLine();
 				System.out.println(data);
 				String[] tokens = data.split(",");
 				String name = tokens[0];
