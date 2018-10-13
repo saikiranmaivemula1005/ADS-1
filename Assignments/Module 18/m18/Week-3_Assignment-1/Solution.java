@@ -62,7 +62,9 @@ class Solution {
 		int x = 6;
 		while (x != 0) {
 			for (int i = 0; i < numberOfStocks; i++) {
-				String[] tokens = sc.nextLine().split(",");
+				String data = sc.nextLine();
+				System.out.println(data);
+				String[] tokens = data.split(",");
 				String name = tokens[0];
 				System.out.println(tokens[0]);
 				String percentage = tokens[1];
