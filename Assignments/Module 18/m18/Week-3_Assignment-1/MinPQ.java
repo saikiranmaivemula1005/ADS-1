@@ -76,6 +76,9 @@ public class MinPQ<Key> {
     public int size() {
         return n;
     }
+    public Key get(int index) {
+        return pq[index];
+    } 
     /**
      * Returns a smallest key on this priority queue.
      * @return a smallest key on this priority queue.
