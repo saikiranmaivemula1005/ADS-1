@@ -67,7 +67,6 @@ class Solution {
 			String name = tokens[0];
 			System.out.println(tokens[0] + " " + tokens[1]);
 			float percentage = Float.parseFloat(tokens[1]);
-			System.out.println(percentage);
 			Stock stock = new Stock(name, percentage);
 			sp.insert(stock);
 			}
