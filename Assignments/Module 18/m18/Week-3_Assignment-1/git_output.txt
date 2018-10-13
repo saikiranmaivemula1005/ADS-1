@@ -1,5 +1,0 @@
-[master d350067] "ads1_week3_exam: 0/5 testcases passed. Cannot run hidden testcases as Server is unreachablecheck_style score: 0/1 "
- 4 files changed, 7 insertions(+), 13 deletions(-)
- rewrite Assignments/Module 18/m18/Week-3_Assignment-1/Solution.class (88%)
- rewrite Assignments/Module 18/m18/Week-3_Assignment-1/result/score.json (62%)
-fatal: unable to access 'https://github.com/saikiranmaivemula1005/ADS-1.git/': Received HTTP code 307 from proxy after CONNECT

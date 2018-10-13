@@ -72,7 +72,9 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-
+MRF
+0.48
+3M
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:59)
 ----------------------------------------
@@ -150,7 +152,7 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-
+Larsen
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:59)
 ----------------------------------------
@@ -233,7 +235,9 @@ WABCO India 0.33
 1
 3
 Your Output: 
-
+MRF
+0.48
+3M
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:59)
 ----------------------------------------
@@ -316,7 +320,7 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-
+Larsen
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:59)
 ----------------------------------------
@@ -414,7 +418,9 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-
+MRF
+0.48
+3M
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:59)
 ----------------------------------------
