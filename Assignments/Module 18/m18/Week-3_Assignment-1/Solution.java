@@ -54,11 +54,13 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		int numberOfStocks = sc.nextInt();
 		while (sc.hasNext()) {
+			for (int i = 0; i < numberOfStocks; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			String name = tokens[0];
 			float percentage = Float.parseFloat(tokens[1]);
 			Stock stock = new Stock(name, percentage);
 			sp.insert(stock);
+			}
 		}
 		sp.print();
 	}
