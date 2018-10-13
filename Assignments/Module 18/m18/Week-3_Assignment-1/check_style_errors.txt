@@ -31,6 +31,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:50:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:50:33: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:54:37: '6' is a magic number. [MagicNumber]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:66:23: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:68:23: 'switch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 33 errors.

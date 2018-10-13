@@ -55,7 +55,9 @@ class Solution {
 			// String[] tokens = sc.nextLine().split(",");
 			String[] tokens = sc.next().split(",");
 			String name = tokens[0];
+			System.out.println(tokens[0]);
 			float percentage = Float.parseFloat(tokens[1]);
+			System.out.println(tokens[1]);
 			Stock stock = new Stock(name, percentage);
 			sp.insert(stock);
 		}
