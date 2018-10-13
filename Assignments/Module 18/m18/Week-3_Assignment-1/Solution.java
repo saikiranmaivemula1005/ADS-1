@@ -61,7 +61,6 @@ class Solution {
 		int numberOfStocks = sc.nextInt();
 		int x = 6;
 		while (sc.hasNextLine()) {
-			for (int i = 0; i < numberOfStocks; i++) {
 				String data = sc.nextLine();
 				System.out.println(data);
 				String[] tokens = data.split(",");
@@ -71,8 +70,6 @@ class Solution {
 				System.out.println(tokens[1]);
 				Stock stock = new Stock(name, percentage);
 				sp.insert(stock);
-			}
-			x--;
 		}
 		sp.printmin();
 		sp.printmax();
