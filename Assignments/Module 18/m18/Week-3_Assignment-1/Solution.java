@@ -1,25 +1,25 @@
 import java.util.Scanner;
 class Stock {
 	String name;
-	float percentage;
-	Stock(String n, float p) {
+	String percentage;
+	Stock(String n, String p) {
 	this.name = n;
 	this.percentage = p;
 	}
 	String getName() {
 		return name;
 	}
-	float getPercentage() {
+	String getPercentage() {
 		return percentage;
 	}
 }
 
 class StockPercentage {
-	private MinPQ<Float> minObj;
-    private MaxPQ<Float> maxObj;
+	private MinPQ<String> minObj;
+    private MaxPQ<String> maxObj;
     StockPercentage() {
-    	minObj = new MinPQ<Float>();
-		maxObj = new MaxPQ<Float>();
+    	minObj = new MinPQ<String>();
+		maxObj = new MaxPQ<String>();
     }
     public void insert(Stock stock) {
     	minObj.insert(stock.getPercentage());
@@ -65,7 +65,7 @@ class Solution {
 			String[] tokens = sc.nextLine().split(",");
 			String name = tokens[0];
 			System.out.println(tokens[0] + " " + tokens[1]);
-			float percentage = Float.parseFloat(tokens[1]);
+			String percentage = (tokens[1]);
 			Stock stock = new Stock(name, percentage);
 			sp.insert(stock);
 			}

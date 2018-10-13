@@ -5,7 +5,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:3:16: Variable 'name' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:4:15: Variable 'percentage' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:4:16: Variable 'percentage' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:5:15: Parameter n should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 18\m18\Week-3_Assignment-1\Solution.java:5:25: Parameter p should be final. [FinalParameters]
