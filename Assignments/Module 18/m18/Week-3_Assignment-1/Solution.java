@@ -62,12 +62,13 @@ class Solution {
 		int x = 6;
 		while (x != 0) {
 			for (int i = 0; i < numberOfStocks; i++) {
-			String[] tokens = sc.nextLine().split(",");
-			String name = tokens[0];
-			String percentage = tokens[1];
-			System.out.println(tokens[0]);
-			Stock stock = new Stock(name, percentage);
-			sp.insert(stock);
+				String[] tokens = sc.nextLine().split(",");
+				String name = tokens[0];
+				System.out.println(tokens[0]);
+				String percentage = tokens[1];
+				System.out.println(tokens[1]);
+				Stock stock = new Stock(name, percentage);
+				sp.insert(stock);
 			}
 			x--;
 		}
