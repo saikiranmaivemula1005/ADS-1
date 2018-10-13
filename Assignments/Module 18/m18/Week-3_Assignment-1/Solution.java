@@ -57,6 +57,7 @@ class Solution {
 			for (int i = 0; i < numberOfStocks; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			String name = tokens[0];
+			System.out.println(name);
 			float percentage = Float.parseFloat(tokens[1]);
 			System.out.println(percentage);
 			Stock stock = new Stock(name, percentage);
