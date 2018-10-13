@@ -53,7 +53,7 @@ class Solution {
 		int numberOfStocks = sc.nextInt();
 		for (int i = 0; i < 6 * numberOfStocks; i++) {
 			// String[] tokens = sc.nextLine().split(",");
-			String[] tokens = sc.nextLine().split(",");
+			String[] tokens = sc.next().split(",");
 			String name = tokens[0];
 			System.out.println(tokens[0]);
 			float percentage = Float.parseFloat(tokens[1]);
