@@ -84,10 +84,8 @@ public class MaxPQ<Key> {
         }
         return pq[1];
     }
-    public void print() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(pq[i]);
-        }
+    public Key get(int index) {
+        return pq[index];
     }
     // helper function to double the size of the heap array
     private void resize(final int capacity) {

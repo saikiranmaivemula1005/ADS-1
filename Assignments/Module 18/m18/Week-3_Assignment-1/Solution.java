@@ -23,10 +23,16 @@ class StockPercentage {
     }
     public void insert(Stock stock) {
     	minObj.insert(stock);
+    	maxObj.insert(stock);
     }
-    public void print() {
+    public void printmin() {
     	for (int i = 0; i < 5; i++) {
     		minObj.get(i);
+    	}
+    }
+    public void printmax() {
+    	for (int  i = 0; i < 5; i++) {
+    		maxObj.get(i);
     	}
     }
 }
@@ -53,7 +59,8 @@ class Solution {
 		StockPercentage sp = new StockPercentage();
 		Scanner sc = new Scanner(System.in);
 		int numberOfStocks = sc.nextInt();
-		while (sc.hasNextLine()) {
+		int x = 6;
+		while (x != 0) {
 			for (int i = 0; i < numberOfStocks; i++) {
 			String[] tokens = sc.nextLine().split(",");
 			String name = tokens[0];
@@ -63,7 +70,9 @@ class Solution {
 			Stock stock = new Stock(name, percentage);
 			sp.insert(stock);
 			}
+			x--;
 		}
-		sp.print();
+		sp.printmin();
+		sp.printmax();
 	}
 }
