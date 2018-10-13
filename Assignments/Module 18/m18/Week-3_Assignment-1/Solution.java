@@ -15,15 +15,15 @@ class Stock {
 }
 
 class StockPercentage {
-	private MinPQ<Stock> minObj;
-    private MaxPQ<Stock> maxObj;
+	private MinPQ<Float> minObj;
+    private MaxPQ<Float> maxObj;
     StockPercentage() {
-    	minObj = new MinPQ<Stock>();
-		maxObj = new MaxPQ<Stock>();
+    	minObj = new MinPQ<Float>();
+		maxObj = new MaxPQ<Float>();
     }
     public void insert(Stock stock) {
-    	minObj.insert(stock);
-    	maxObj.insert(stock);
+    	minObj.insert(stock.getPercentage());
+    	maxObj.insert(stock.getPercentage());
     }
     public void printmin() {
     	for (int i = 0; i < 5; i++) {
