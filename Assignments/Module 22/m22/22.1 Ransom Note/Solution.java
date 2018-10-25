@@ -38,10 +38,10 @@ class Solution {
 		String[] mag = lineOne.split(" ");
 		String lineTwo = sc.next();
 		String[] ran = lineTwo.split(" ");
-		for (int i = 1; i < lineOne.length(); i++) {
+		for (int i = 1; i < lineOne.length() + 1; i++) {
 			magazine.put(mag[i], i);
 		}
-		for (int i = 1; i < lineTwo.length(); i++) {
+		for (int i = 1; i < lineTwo.length() + 1; i++) {
 			ransom.put(ran[i], i);
 		}
 		System.out.println(magazine);
