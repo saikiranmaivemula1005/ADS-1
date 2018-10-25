@@ -2,7 +2,7 @@
 Expected Output: 
 Yes
 Your Output: 
-0
+give
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
@@ -11,7 +11,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 Expected Output: 
 No
 Your Output: 
-0
+two
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
@@ -20,7 +20,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 Expected Output: 
 No
 Your Output: 
-0
+ive
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
@@ -29,7 +29,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 Expected Output: 
 No
 Your Output: 
-0
+wi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
@@ -38,7 +38,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 Expected Output: 
 Yes
 Your Output: 
-0
+h
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
@@ -47,7 +47,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 Expected Output: 
 Yes
 Your Output: 
-0
+aabkl
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:57)
