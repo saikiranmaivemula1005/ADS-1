@@ -56,11 +56,12 @@ class Solution {
 		}
 		String lineTwo = sc.nextLine();
 		String[] ran = lineTwo.split(" ");
-		for (int i = 0; i < mag.length; i++) {
+		for (int i = 0; i <= mag.length; i++) {
 			System.out.println(mag[i]);
 			magazine.put(mag[i], i);
 		}
-		for (int i = 0; i < ran.length; i++) {
+		for (int i = 0; i <= ran.length; i++) {
+			System.out.println(ran[i]);
 			ransom.put(ran[i], i);
 		}
 		System.out.println(magazine);
