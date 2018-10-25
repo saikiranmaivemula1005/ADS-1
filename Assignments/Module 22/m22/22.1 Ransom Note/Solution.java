@@ -9,5 +9,10 @@ class Solution {
 		int n = sc.nextInt();
 		String lineOne = sc.next();
 		String lineTwo = sc.next();
+		if (lineOne.equals(lineTwo)) {
+			System.out.println("Yes");
+		} else {
+			System.out.println("No");
+		}
 	}
 }
