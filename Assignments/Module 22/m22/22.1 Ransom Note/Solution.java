@@ -54,7 +54,8 @@ class Solution {
 		for (int  i = 0; i < mag.length; i++) {
 			System.out.println(mag[i]);
 		}
-		String lineTwo = sc.next();
+		sc.nextLine();
+		String lineTwo = sc.nextLine();
 		String[] ran = lineTwo.split(" ");
 		for (int i = 0; i < mag.length; i++) {
 			System.out.println(mag[i]);

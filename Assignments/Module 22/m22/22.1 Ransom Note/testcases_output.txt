@@ -8,10 +8,9 @@ one
 grand
 today
 night
-give
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -23,10 +22,9 @@ three
 is
 not
 four
-two
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -39,10 +37,9 @@ lovely
 bunch
 of
 coconuts
-ive
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -148,10 +145,9 @@ zl
 qrd
 e
 ieqym
-wi
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -169,10 +165,9 @@ h
 h
 anjst
 wdnr
-h
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -30178,8 +30173,7 @@ aabza
 aabza
 aabza
 aabza
-aabkl
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
-	at SeparateChainingHashST.put(Solution.java:20)
-	at Solution.main(Solution.java:61)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
