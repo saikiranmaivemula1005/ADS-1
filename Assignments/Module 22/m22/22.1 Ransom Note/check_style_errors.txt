@@ -11,7 +11,6 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:10: Line has trailing spaces. [RegexpSingleline]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:11:10: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:11:27: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:34: '0x7fffffff' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:14:6: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:14:22: Parameter key should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:14:34: Parameter val should be final. [FinalParameters]
@@ -29,4 +28,4 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:45:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:45:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 28 errors.

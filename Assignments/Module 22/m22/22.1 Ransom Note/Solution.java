@@ -9,7 +9,7 @@ import java.util.LinkedList;
  		n = 1;
     } 
 	 private int hash(String key) {
-        return (key.hashCode() & 0x7fffffff) % m;
+        return (key.hashCode()) % m;
     }
      public void put(String key, Integer val) {
         if (val == null) {
