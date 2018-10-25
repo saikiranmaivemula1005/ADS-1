@@ -1,71 +1,45 @@
 import java.util.Scanner;
-import java.util.LinkedList;
- class SeparateChainingHashST {
- 	private int n, m;
- 	private SequentialSearchST<String, Integer>[] st;
- 	public SeparateChainingHashST() {
- 		st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
-    } 
-	 private int hash(String key) {
-        return (key.hashCode()) % m;
-    }
-     public void put(String key, Integer val) {
-        if (val == null) {
-            delete(key);
-            return;
-        }
-        int i = hash(key);
-        if (!st[i].contains(key))  {
-        	n++;
-        }
-        st[i].put(key, val);
-    }
-    public void delete(String key) {
-        int i = hash(key);
-        if (st[i].contains(key)) {
-        	n--;
-        }
-        st[i].delete(key);
-    }
-     public Integer get(String key) {
-        int i = hash(key);
-        return st[i].get(key);
-    } 
-     public boolean contains(String key) {
-        return get(key) != null;
-    }
-    
-}
 class Solution {
-	Solution() {
-
-	}
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		SeparateChainingHashST magazine = new SeparateChainingHashST();
-		SeparateChainingHashST ransom = new SeparateChainingHashST();
-		int m = sc.nextInt();
-		int n = sc.nextInt();
-		sc.nextLine();
-		String lineOne = sc.nextLine();
-		String[] mag = lineOne.split(" ");
-		// for (int  i = 0; i < mag.length; i++) {
-		// 	System.out.println(mag[i]);
-		// }
-		String lineTwo = sc.nextLine();
-		String[] ran = lineTwo.split(" ");
-		// for (int  i = 0; i < ran.length; i++) {
-		// 	System.out.println(ran[i]);
-		// }
-		for (int i = 0; i < mag.length; i++) {
-			System.out.println(mag[i]);
-			magazine.put(mag[i], i);
-		}
-		for (int i = 0; i < ran.length; i++) {
-			System.out.println(ran[i]);
-			ransom.put(ran[i], i);
-		}
-		// System.out.println(magazine);
-		// System.out.println(ransom);
-	}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] inp = sc.nextLine().split(" ");
+        int m = Integer.parseInt(inp[0]);
+        int n = Integer.parseInt(inp[1]);
+        String[] magazine = sc.nextLine().split(" ");
+        String[] note = sc.nextLine().split(" ");
+        SeparateChainingHashST<String, Integer> mag = new SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer> ransom = new SeparateChainingHashST<String, Integer>();
+        for (int i = 0; i < m; i++) {
+            mag.put(magazine[i], 0);
+        }
+        for (int j = 0; j < n; j++) {
+            ransom.put(note[j], 0);
+        }
+        for (int i = 0; i < m; i++) {
+            int count = mag.get(magazine[i]);
+            if (mag.contains(magazine[i])) {
+                mag.put(magazine[i], count + 1);
+            } else {
+                mag.put(magazine[i], 1);
+            }
+        }
+        for (int j = 0; j < n; j++) {
+            if (!mag.contains(note[j])) {
+                System.out.println("No");
+                return;
+            } else if (mag.contains(note[j])) {
+                int count = ransom.get(note[j]);
+                if (ransom.contains(note[j])) {
+                    ransom.put(note[j], count + 1);
+                } else {
+                    ransom.put(note[j], 1);
+                }
+                if (ransom.get(note[j]) > mag.get(note[j])) {
+                    System.out.println("No");
+                    return;
+                }
+            }
+        }
+        System.out.println("Yes");
+    }
 }

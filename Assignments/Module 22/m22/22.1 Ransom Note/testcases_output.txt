@@ -1,60 +1,36 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-give
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+Yes
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 No
 Your Output: 
-two
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+No
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 No
 Your Output: 
-ive
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+No
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 No
 Your Output: 
-wi
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+No
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-h
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+Yes
 ----------------------------------------
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Yes
 Your Output: 
-aabkl
-Exception in thread "main" java.lang.ArithmeticException: / by zero
-	at SeparateChainingHashST.hash(Solution.java:10)
-	at SeparateChainingHashST.put(Solution.java:17)
-	at Solution.main(Solution.java:62)
+Yes
 ----------------------------------------
