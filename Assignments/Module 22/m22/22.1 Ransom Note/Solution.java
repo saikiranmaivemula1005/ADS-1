@@ -50,9 +50,9 @@ class Solution {
 		int n = sc.nextInt();
 		String lineOne = sc.nextLine();
 		String[] mag = lineOne.split(" ");
+		System.out.println(mag.length);
 		String lineTwo = sc.next();
 		String[] ran = lineTwo.split(" ");
-		System.out.println(mag.length);
 		for (int i = 0; i < mag.length; i++) {
 			System.out.println(mag[i]);
 			magazine.put(mag[i], i);
