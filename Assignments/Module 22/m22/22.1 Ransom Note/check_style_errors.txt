@@ -23,5 +23,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:31:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:31:33: Parameter args should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:41:54: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:44:54: '-' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 26 errors.
