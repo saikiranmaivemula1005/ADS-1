@@ -29,6 +29,14 @@ import java.util.LinkedList;
         }
         st[i].delete(key);
     }
+     public Integer get(String key) {
+        int i = hash(key);
+        return st[i].get(key);
+    } 
+     public boolean contains(String key) {
+        return get(key) != null;
+    }
+    
 }
 class Solution {
 	Solution() {
