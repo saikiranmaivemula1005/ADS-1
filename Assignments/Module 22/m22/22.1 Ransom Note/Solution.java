@@ -5,8 +5,6 @@ import java.util.LinkedList;
  	private SequentialSearchST<String, Integer>[] st;
  	public SeparateChainingHashST() {
  		st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
- 		m = 1;
- 		n = 0;
     } 
 	 private int hash(String key) {
         return (key.hashCode()) % m;
