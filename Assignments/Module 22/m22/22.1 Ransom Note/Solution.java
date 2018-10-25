@@ -1,15 +1,15 @@
 import java.util.Scanner;
 import java.util.LinkedList;
- class SeparateChainingHashST<Key, Value> {
+ class SeparateChainingHashST {
  	private int n, m;
- 	private SequentialSearchST<Key, Value>[] st;
+ 	private SequentialSearchST<String, Integer>[] st;
  	public SeparateChainingHashST() {
 
     } 
-	 private int hash(Key key) {
+	 private int hash(String key) {
         return (key.hashCode() & 0x7fffffff) % m;
     }
-     public void put(Key key, Value val) {
+     public void put(String key, Integer val) {
         if (val == null) {
             delete(key);
             return;
@@ -18,7 +18,7 @@ import java.util.LinkedList;
         if (!st[i].contains(key)) n++;
         st[i].put(key, val);
     }
-    public void delete(Key key) {
+    public void delete(String key) {
         int i = hash(key);
         if (st[i].contains(key)) n--;
         st[i].delete(key);
@@ -38,10 +38,10 @@ class Solution {
 		String[] mag = lineOne.split(" ");
 		String lineTwo = sc.next();
 		String[] ran = lineTwo.split(" ");
-		for (int i = 1; i <= lineOne.length()- 1; i++) {
+		for (int i = 1; i <= lineOne.length(); i++) {
 			magazine.put(mag[i], i);
 		}
-		for (int i = 1; i <= lineTwo.length()- 1; i++) {
+		for (int i = 1; i <= lineTwo.length(); i++) {
 			ransom.put(ran[i], i);
 		}
 		System.out.println(magazine);

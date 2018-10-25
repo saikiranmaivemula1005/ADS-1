@@ -13,7 +13,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:10:34: '0x7fffffff' is a magic number. [MagicNumber]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:6: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:22: Parameter key should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:31: Parameter val should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:34: Parameter val should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:18: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:21:24: Parameter key should be final. [FinalParameters]
@@ -23,7 +23,5 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:31:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:31:33: Parameter args should be final. [FinalParameters]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:41:54: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:44:54: '-' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 24 errors.
