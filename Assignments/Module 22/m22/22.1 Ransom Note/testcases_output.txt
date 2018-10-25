@@ -3,7 +3,7 @@ Expected Output:
 Yes
 Your Output: 
 1
-give
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)
@@ -13,7 +13,7 @@ Expected Output:
 No
 Your Output: 
 1
-two
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)
@@ -23,7 +23,7 @@ Expected Output:
 No
 Your Output: 
 1
-ive
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)
@@ -33,7 +33,7 @@ Expected Output:
 No
 Your Output: 
 1
-wi
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)
@@ -43,7 +43,7 @@ Expected Output:
 Yes
 Your Output: 
 1
-h
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)
@@ -53,7 +53,7 @@ Expected Output:
 Yes
 Your Output: 
 1
-aabkl
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
 	at SeparateChainingHashST.put(Solution.java:20)
 	at Solution.main(Solution.java:58)

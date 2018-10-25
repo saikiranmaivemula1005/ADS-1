@@ -48,7 +48,7 @@ class Solution {
 		SeparateChainingHashST ransom = new SeparateChainingHashST();
 		int m = sc.nextInt();
 		int n = sc.nextInt();
-		String lineOne = sc.next();
+		String lineOne = sc.nextLine();
 		String[] mag = lineOne.split(" ");
 		String lineTwo = sc.next();
 		String[] ran = lineTwo.split(" ");
