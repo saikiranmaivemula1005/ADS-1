@@ -53,6 +53,7 @@ class Solution {
 		String lineTwo = sc.next();
 		String[] ran = lineTwo.split(" ");
 		for (int i = 0; i < mag.length; i++) {
+			System.out.println(i);
 			magazine.put(mag[i], i);
 		}
 		for (int i = 0; i < ran.length; i++) {
