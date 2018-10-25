@@ -1,14 +1,25 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
-    public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	protected Solution() {
+
+	}
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] inp = sc.nextLine().split(" ");
         int m = Integer.parseInt(inp[0]);
         int n = Integer.parseInt(inp[1]);
         String[] magazine = sc.nextLine().split(" ");
         String[] note = sc.nextLine().split(" ");
-        SeparateChainingHashST<String, Integer> mag = new SeparateChainingHashST<String, Integer>();
-        SeparateChainingHashST<String, Integer> ransom = new SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer> mag
+         = new SeparateChainingHashST<String, Integer>();
+        SeparateChainingHashST<String, Integer> ransom
+         = new SeparateChainingHashST<String, Integer>();
         for (int i = 0; i < m; i++) {
             mag.put(magazine[i], 0);
         }
