@@ -5,8 +5,8 @@ import java.util.LinkedList;
  	private SequentialSearchST<String, Integer>[] st;
  	public SeparateChainingHashST() {
  		st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
- 		m = 0;
- 		n = 0;
+ 		m = 1;
+ 		n = 1;
     } 
 	 private int hash(String key) {
         return (key.hashCode() & 0x7fffffff) % m;
@@ -17,12 +17,16 @@ import java.util.LinkedList;
             return;
         }
         int i = hash(key);
-        if (!st[i].contains(key)) n++;
+        if (!st[i].contains(key))  {
+        	n++;
+        }
         st[i].put(key, val);
     }
     public void delete(String key) {
         int i = hash(key);
-        if (st[i].contains(key)) n--;
+        if (st[i].contains(key)) {
+        	n--;
+        }
         st[i].delete(key);
     }
 }
@@ -43,7 +47,7 @@ class Solution {
 		for (int i = 0; i < mag.length; i++) {
 			magazine.put(mag[i], i);
 		}
-		for (int i = 0; i <= ran.length; i++) {
+		for (int i = 0; i < ran.length; i++) {
 			ransom.put(ran[i], i);
 		}
 		System.out.println(magazine);
