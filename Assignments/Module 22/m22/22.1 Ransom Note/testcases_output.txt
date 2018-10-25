@@ -2,41 +2,53 @@
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
 No
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
 No
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
 No
 Your Output: 
-SeparateChainingHashST@6bdf28bb
-SeparateChainingHashST@6b71769e
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
 	at Solution.main(Solution.java:45)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
 Yes
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at SeparateChainingHashST.hash(Solution.java:10)
+	at SeparateChainingHashST.put(Solution.java:17)
 	at Solution.main(Solution.java:42)
 ----------------------------------------
