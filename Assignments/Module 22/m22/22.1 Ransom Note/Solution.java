@@ -3,17 +3,17 @@ import java.util.Scanner;
  * Class for solution.
  */
 class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	protected Solution() {
+    /**
+     * Constructs the object.
+     */
+    protected Solution() {
 
-	}
-	/**
-	 * main method.
-	 *
-	 * @param      args  The arguments
-	 */
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] inp = sc.nextLine().split(" ");
