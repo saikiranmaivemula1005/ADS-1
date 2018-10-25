@@ -16,9 +16,9 @@ class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        String[] inp = sc.nextLine().split(" ");
-        int m = Integer.parseInt(inp[0]);
-        int n = Integer.parseInt(inp[1]);
+        String[] input = sc.nextLine().split(" ");
+        int m = Integer.parseInt(input[0]);
+        int n = Integer.parseInt(input[1]);
         String[] magazine = sc.nextLine().split(" ");
         String[] note = sc.nextLine().split(" ");
         SeparateChainingHashST<String, Integer> mag
