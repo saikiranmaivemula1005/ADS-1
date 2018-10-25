@@ -9,6 +9,11 @@ class Solution {
 	protected Solution() {
 
 	}
+	/**
+	 * main method.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] inp = sc.nextLine().split(" ");

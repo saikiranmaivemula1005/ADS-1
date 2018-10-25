@@ -1,5 +1,4 @@
 Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 22\m22\22.1 Ransom Note\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
