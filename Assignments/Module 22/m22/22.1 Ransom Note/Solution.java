@@ -4,7 +4,9 @@ import java.util.LinkedList;
  	private int n, m;
  	private SequentialSearchST<String, Integer>[] st;
  	public SeparateChainingHashST() {
-
+ 		st = (SequentialSearchST<String, Integer>[]) new SequentialSearchST[m];
+ 		m = 1;
+ 		n = 1;
     } 
 	 private int hash(String key) {
         return (key.hashCode() & 0x7fffffff) % m;
