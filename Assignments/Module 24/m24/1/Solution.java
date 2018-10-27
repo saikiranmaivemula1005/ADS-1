@@ -44,6 +44,7 @@ class Solution {
 					System.out.println("Student doesn't exists...");
 				}
 				if (data[2].equals(1)) {
+					System.out.println("kk");
 					System.out.println(bst.get(i).getname());
 				}
 				if (data[2].equals(2)) {
