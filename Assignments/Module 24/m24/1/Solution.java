@@ -28,7 +28,7 @@ class Solution {
 			for (int i = 0; i < numberOfStudents; i++) {
 				sc.next();
 				String[] data = sc.nextLine().split(",");
-				// System.out.println(data[0]);
+				System.out.println(data[1]);
 				// sc.nextLine();
 				Student student = new Student();
 				student = new Student(data[1], Double.parseDouble(data[2]));
