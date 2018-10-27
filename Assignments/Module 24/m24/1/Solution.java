@@ -32,22 +32,25 @@ class Solution {
 				sc.nextLine();
 				// sc.nextLine();
 				Student student = new Student();
+				System.out.println(tokens[1]);
+				System.out.println(tokens[2]);
 				student = new Student(tokens[1], Double.parseDouble(tokens[2]));
 				bst.put(Integer.parseInt(tokens[0]), student);
 			}
 			String queries = sc.next();
 			for (int i = 0; i < Integer.parseInt(queries); i++) {
 				sc.next();
-				String[] data = sc.nextLine().split(" ");
+				String data = sc.nextLine();
+				String[] tokens = data.split(" ");
 				// System.out.println(data[0]);
 				// System.out.println(data[2]);
-				if (data[1].equals(null)) {
+				if (tokens[1].equals(null)) {
 					System.out.println("Student doesn't exists...");
 				}
-				if (data[2].equals(1)) {
+				if (tokens[2].equals(1)) {
 					System.out.println(bst.get(i).getname());
 				}
-				if (data[2].equals(2)) {
+				if (tokens[2].equals(2)) {
 					System.out.println(bst.get(i).getpercentage());
 				}
 				
