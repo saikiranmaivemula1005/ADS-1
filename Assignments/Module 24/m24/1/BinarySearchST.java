@@ -1,4 +1,27 @@
-
+/******************************************************************************
+ *  Compilation:  javac BinarySearchST.java
+ *  Execution:    java BinarySearchST
+ *  Dependencies: StdIn.java StdOut.java
+ *  Data files:   https://algs4.cs.princeton.edu/31elementary/tinyST.txt  
+ *  
+ *  Symbol table implementation with binary search in an ordered array.
+ *
+ *  % more tinyST.txt
+ *  S E A R C H E X A M P L E
+ *  
+ *  % java BinarySearchST < tinyST.txt
+ *  A 8
+ *  C 4
+ *  E 12
+ *  H 5
+ *  L 11
+ *  M 9
+ *  P 10
+ *  R 3
+ *  S 0
+ *  X 7
+ *
+ ******************************************************************************/
 
 
 import java.util.NoSuchElementException;
@@ -336,9 +359,9 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      *
      * @return all keys in this symbol table
      */
-    // public Iterable<Key> keys() {
-    //     return keys(min(), max());
-    // }
+    public Iterable<Key> keys() {
+        return keys(min(), max());
+    }
 
     /**
      * Returns all keys in this symbol table in the given range,
@@ -351,17 +374,17 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *         is {@code null}
      */
-    // public Iterable<Key> keys(Key lo, Key hi) {
-    //     if (lo == null) throw new IllegalArgumentException("first argument to keys() is null"); 
-    //     if (hi == null) throw new IllegalArgumentException("second argument to keys() is null"); 
+    public Iterable<Key> keys(Key lo, Key hi) {
+        if (lo == null) throw new IllegalArgumentException("first argument to keys() is null"); 
+        if (hi == null) throw new IllegalArgumentException("second argument to keys() is null"); 
 
-    //     Queue<Key> queue = new Queue<Key>(); 
-    //     if (lo.compareTo(hi) > 0) return queue;
-    //     for (int i = rank(lo); i < rank(hi); i++) 
-    //         queue.enqueue(keys[i]);
-    //     if (contains(hi)) queue.enqueue(keys[rank(hi)]);
-    //     return queue; 
-    // }
+        Queue<Key> queue = new Queue<Key>(); 
+        if (lo.compareTo(hi) > 0) return queue;
+        for (int i = rank(lo); i < rank(hi); i++) 
+            queue.enqueue(keys[i]);
+        if (contains(hi)) queue.enqueue(keys[rank(hi)]);
+        return queue; 
+    }
 
 
    /***************************************************************************
@@ -387,8 +410,44 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
             if (keys[i].compareTo(select(rank(keys[i]))) != 0) return false;
         return true;
     }
+
+
+    // /**
+    //  * Unit tests the {@code BinarySearchST} data type.
+    //  *
+    //  * @param args the command-line arguments
+    //  */
+    // public static void main(String[] args) { 
+    //     BinarySearchST<String, Integer> st = new BinarySearchST<String, Integer>();
+    //     for (int i = 0; !StdIn.isEmpty(); i++) {
+    //         String key = StdIn.readString();
+    //         st.put(key, i);
+    //     }
+    //     for (String s : st.keys())
+    //         StdOut.println(s + " " + st.get(s));
+    // }
 }
 
-
-
-
+/******************************************************************************
+ *  Copyright 2002-2018, Robert Sedgewick and Kevin Wayne.
+ *
+ *  This file is part of algs4.jar, which accompanies the textbook
+ *
+ *      Algorithms, 4th edition by Robert Sedgewick and Kevin Wayne,
+ *      Addison-Wesley Professional, 2011, ISBN 0-321-57351-X.
+ *      http://algs4.cs.princeton.edu
+ *
+ *
+ *  algs4.jar is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  algs4.jar is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with algs4.jar.  If not, see http://www.gnu.org/licenses.
+ ******************************************************************************/

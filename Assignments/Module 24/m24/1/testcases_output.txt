@@ -9,7 +9,46 @@ Alice
 Bob
 John
 Your Output: 
-
+88.7
+Student@3ac3fd8b
+100.7
+Student@5594a1b5
+91.6
+Student@6a5fc7f7
+100.5
+Student@3b6eb2ec
+78.4
+Student@1e643faf
+98.3
+Student@6e8dacdf
+99.2
+Student@7a79be86
+17.3
+Student@34ce8af7
+56.4
+Student@b684286
+65.4
+Student@880ec60
+88.5
+Student@3f3afe78
+45.0
+Student@7f63425a
+44.1
+Student@36d64342
+35.4
+Student@39ba5a14
+23.3
+Student@511baa65
+49.4
+Student@340f438e
+76.7
+Student@30c7da1e
+11.1
+Student@5b464ce8
+76.3
+Student@57829d67
+23.4
+Student@19dfb72a
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -27,6 +66,48 @@ Expected Output:
 45.4
 99.3
 Your Output: 
+88.3
+Student@3ac3fd8b
+100.0
+Student@5594a1b5
+91.2
+Student@6a5fc7f7
+100.1
+Student@3b6eb2ec
+78.2
+Student@1e643faf
+98.3
+Student@6e8dacdf
+99.4
+Student@7a79be86
+17.5
+Student@34ce8af7
+56.7
+Student@b684286
+65.7
+Student@880ec60
+88.8
+Student@3f3afe78
+45.9
+Student@7f63425a
+44.7
+Student@36d64342
+35.5
+Student@39ba5a14
+23.4
+Student@511baa65
+49.3
+Student@340f438e
+76.4
+Student@30c7da1e
+11.2
+Student@5b464ce8
+45.4
+Student@57829d67
+94.5
+Student@19dfb72a
+85.6
+Student@17c68925
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
@@ -50,6 +131,48 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
+88.3
+Student@3ac3fd8b
+100.0
+Student@5594a1b5
+91.2
+Student@6a5fc7f7
+100.1
+Student@3b6eb2ec
+78.2
+Student@1e643faf
+98.3
+Student@6e8dacdf
+99.4
+Student@7a79be86
+17.5
+Student@34ce8af7
+56.7
+Student@b684286
+65.7
+Student@880ec60
+88.8
+Student@3f3afe78
+45.9
+Student@7f63425a
+44.7
+Student@36d64342
+35.5
+Student@39ba5a14
+23.4
+Student@511baa65
+49.3
+Student@340f438e
+76.4
+Student@30c7da1e
+11.2
+Student@5b464ce8
+45.4
+Student@57829d67
+94.5
+Student@19dfb72a
+85.6
+Student@17c68925
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
@@ -556,6 +679,8 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
+97.83
+Student@3ac3fd8b
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
