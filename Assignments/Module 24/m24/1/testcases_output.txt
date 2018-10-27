@@ -29,12 +29,8 @@ Your Output:
 142
 143
 145
-Exception in thread "main" java.util.InputMismatchException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at java.base/java.util.Scanner.nextInt(Unknown Source)
-	at Solution.main(Solution.java:40)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 

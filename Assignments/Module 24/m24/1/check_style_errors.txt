@@ -18,7 +18,7 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:24:41: Parameter args should be final. [FinalParameters]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:27: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:36: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:44: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:43: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\1\Solution.java:45: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 21 errors.

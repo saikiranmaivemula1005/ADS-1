@@ -36,7 +36,6 @@ class Solution {
 				student = new Student(data[1], Double.parseDouble(data[2]));
 				bst.put(Integer.parseInt(data[0]), student);
 			}
-			sc.nextLine();
 			int queries = sc.nextInt();
 			for (int i = 0; i < queries; i++) {
 				String[] data = sc.nextLine().split(" ");
