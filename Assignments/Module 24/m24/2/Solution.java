@@ -7,7 +7,7 @@ class Student {
      /**
      * roll number of student.
      */
-    private int rollnumber;
+    private Double rollnumber;
      /**
      * name of student.
      */
@@ -41,7 +41,7 @@ class Student {
      * @param      n      name of  student
      * @param      p       percentage of  student
      */
-    Student(final int r, final String n, final double p) {
+    Student(final Double r, final String n, final double p) {
         this.rollnumber = r;
         this.name = n;
         this.percentage = p;
@@ -65,32 +65,32 @@ class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        LinearProbingHashST<Integer, Student> lphst =
+        LinearProbingHashST<Double, Student> lphst =
             new LinearProbingHashST();
-        int numberOfStudents = Integer.parseInt(scan.nextLine());
+        Double numberOfStudents = Double.parseDouble(scan.nextLine());
         for (int i = 0; i < numberOfStudents; i++) {
             String[] tokens = scan.nextLine().split(",");
-            Integer rollnumber = Integer.parseInt(tokens[0]);
+            Double rollnumber = Double.parseDouble(tokens[0]);
             lphst.put(rollnumber,
             new Student(rollnumber, tokens[1], Double.parseDouble(tokens[2])));
         }
-        int queries = Integer.parseInt(scan.nextLine());
+        Double queries = Double.parseDouble(scan.nextLine());
         for (int i = 0; i < queries; i++) {
             String[] tokens = scan.nextLine().split(" ");
              switch (tokens[0]) {
             case "GE":
-                Student student1 = lphst.get(Integer.parseInt(tokens[1]));
-                Student student2 = lphst.get(Integer.parseInt(tokens[2]));
+                Student student1 = lphst.get(Double.parseDouble(tokens[1]));
+                Student student2 = lphst.get(Double.parseDouble(tokens[2]));
                 for (double j = student1.getpercentage(); j < student2.getpercentage(); j++) {
                 	System.out.println(student1.getName());
                 }
                 break;
             case "BE":
-                 Student student = lphst.get(Integer.parseInt(tokens[1]));
+                 Student student = lphst.get(Double.parseDouble(tokens[1]));
                 
                 break;
             case "LE":
-                  student = lphst.get(Integer.parseInt(tokens[1]));
+                  student = lphst.get(Double.parseDouble(tokens[1]));
                 if (student != null) {
                     System.out.println(student.getpercentage());
                 } else {

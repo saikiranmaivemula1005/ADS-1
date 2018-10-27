@@ -5,11 +5,7 @@ Rivest
 Dan
 Abegg
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "76.7"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:89)
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -59,11 +55,8 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "70.1"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:89)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -130,10 +123,8 @@ Neil Cadigan
 Megon
 Meili Cady
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "69.12"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -30
+	at LinearProbingHashST.get(LinearProbingHashST.java:181)
 	at Solution.main(Solution.java:93)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -853,9 +844,9 @@ Marianna Palk
 Thelma Page
 Vicky Hales-Dutton
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "95.96"
-	at java.base/java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at java.base/java.lang.Integer.parseInt(Unknown Source)
-	at Solution.main(Solution.java:82)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -128
+	at LinearProbingHashST.put(LinearProbingHashST.java:156)
+	at LinearProbingHashST.resize(LinearProbingHashST.java:117)
+	at LinearProbingHashST.put(LinearProbingHashST.java:152)
+	at Solution.main(Solution.java:74)
 ----------------------------------------
