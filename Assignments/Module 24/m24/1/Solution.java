@@ -38,7 +38,7 @@ class Solution {
 			}
 			int queries = sc.nextInt();
 			for (int i = 0; i < queries; i++) {
-				String[] data = sc.nextLine().split(" ");
+				String[] data = sc.next().split(" ");
 				if (data[2] == "1") {
 					System.out.println(bst.get(i).getname());
 				}
