@@ -9,26 +9,7 @@ Alice
 Bob
 John
 Your Output: 
-Alice
-Bob
-Adams
-Knuth
-Rivest
-Wayne
-Charles
-Megon
-John
-Abegg
-Peter
-Douglas
-Tony
-Simon
-Daniel
-Fred
-Clark
-Dan
-Neil
-Tim
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -46,28 +27,6 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-Alice
-Bob
-Adams
-Knuth
-Rivest
-Wayne
-Charles
-Megon
-John
-Abegg
-Peter
-Douglas
-Tony
-Simon
-Daniel
-Fred
-Clark
-Hank
-Keith
-Yassi
-Access
-Maria
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
@@ -91,28 +50,6 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-Alice
-Bob
-Adams
-Knuth
-Rivest
-Wayne
-Charles
-Megon
-John
-Abegg
-Peter
-Douglas
-Tony
-Simon
-Daniel
-Fred
-Clark
-Hank
-Keith
-Yassi
-Access
-Maria
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
@@ -619,8 +556,6 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-H3CZ
-Michael
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:34)
 ----------------------------------------
