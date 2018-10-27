@@ -29,7 +29,6 @@ class Solution {
 				String data = sc.nextLine();
 				String[] tokens = data.split(",");
 				// System.out.println(data[1]);
-				sc.nextLine();
 				// sc.nextLine();
 				// Student student = new Student();
 				System.out.println(tokens[1]);
