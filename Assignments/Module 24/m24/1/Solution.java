@@ -31,7 +31,7 @@ class Solution {
 			for (int i = 0; i < numberOfStudents; i++) {
 				String[] data = sc.nextLine().split(",");
 				// System.out.println(data[0]);
-				sc.nextLine();
+				// sc.nextLine();
 				Student student = new Student();
 				student = new Student(data[1], Double.parseDouble(data[2]));
 				bst.put(Integer.parseInt(data[0]), student);
