@@ -38,7 +38,7 @@ class Solution {
 			}
 			int queries = sc.nextInt();
 			for (int i = 0; i < queries; i++) {
-				String[] data = sc.next().split(" ");
+				String[] data = sc.nextLine().split(" ");
 				System.out.println(data[0]);
 				System.out.println(data[1]);
 				sc.nextLine();
