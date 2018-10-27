@@ -31,9 +31,9 @@ class Solution {
 				String[] data = sc.next().split(",");
 				// System.out.println(data[1]);
 				// sc.nextLine();
-				System.out.println(data[2]);
+				// System.out.println(data[2]);
 				students[i] = new Student(data[1], Double.parseDouble(data[2]));
-				System.out.println(students[i]);
+				// System.out.println(students[i]);
 				bst.put(Integer.parseInt(data[0]), students[i]);
 			}
 			String queries = sc.next();
