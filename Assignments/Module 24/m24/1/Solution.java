@@ -28,11 +28,11 @@ class Solution {
 			int[] rollnumbers = new int[numberOfStudents];
 			String[] names = new String[numberOfStudents];
 			double[] percentages = new double[numberOfStudents];
+			Student student = new Student();
 			for (int i = 0; i < numberOfStudents; i++) {
 				String[] data = sc.next().split(",");
 				// System.out.println(data[0]);
 				sc.next();
-				Student student = new Student();
 				student = new Student(data[1], Double.parseDouble(data[2]));
 				bst.put(Integer.parseInt(data[0]), student);
 			}
