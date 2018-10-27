@@ -30,8 +30,8 @@ class Solution {
 				// System.out.println(data[1]);
 				sc.nextLine();
 				// sc.nextLine();
-				Student student = new Student();
-				student = new Student(data[1], Double.parseDouble(data[2]));
+				// Student student = new Student();
+				Student student = new Student(data[1], Double.parseDouble(data[2]));
 				bst.put(Integer.parseInt(data[0]), student);
 			}
 			String queries = sc.next();
