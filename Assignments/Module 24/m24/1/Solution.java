@@ -37,11 +37,17 @@ class Solution {
 				bst.put(Integer.parseInt(data[0]), student);
 			}
 			int queries = sc.nextInt();
+			sc.next();
 			for (int i = 0; i < queries; i++) {
 				String[] data = sc.nextLine().split(" ");
-				sc.nextLine();
+				if (data[1].equals(null)) {
+					System.out.println("Student doesn't exists...");
+				}
 				if (data[2].equals(1)) {
 					System.out.println(bst.get(i).getname());
+				}
+				if (data[2].equals(2)) {
+					System.out.println(bst.get(i).getpercentage());
 				}
 				
 			}

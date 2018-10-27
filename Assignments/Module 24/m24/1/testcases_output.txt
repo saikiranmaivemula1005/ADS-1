@@ -9,8 +9,7 @@ Alice
 Bob
 John
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:43)
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
