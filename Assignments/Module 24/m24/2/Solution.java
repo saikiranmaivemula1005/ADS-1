@@ -79,15 +79,14 @@ class Solution {
             String[] tokens = scan.nextLine().split(" ");
              switch (tokens[0]) {
             case "GE":
+                Student student = lphst.get(Double.parseDouble(tokens[1]));
+                break;
+            case "BE":
                 Student student1 = lphst.get(Double.parseDouble(tokens[1]));
                 Student student2 = lphst.get(Double.parseDouble(tokens[2]));
                 for (double j = student1.getpercentage(); j < student2.getpercentage(); j++) {
                 	System.out.println(student1.getName());
                 }
-                break;
-            case "BE":
-                 Student student = lphst.get(Double.parseDouble(tokens[1]));
-                
                 break;
             case "LE":
                   student = lphst.get(Double.parseDouble(tokens[1]));

@@ -5,7 +5,8 @@ Rivest
 Dan
 Abegg
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:87)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -55,8 +56,8 @@ Tim Cahill
 Abegg
 Brian Caffrey
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Solution.main(Solution.java:83)
+Exception in thread "main" java.lang.NullPointerException
+	at Solution.main(Solution.java:87)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -125,7 +126,7 @@ Meili Cady
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -30
 	at LinearProbingHashST.get(LinearProbingHashST.java:181)
-	at Solution.main(Solution.java:93)
+	at Solution.main(Solution.java:92)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
