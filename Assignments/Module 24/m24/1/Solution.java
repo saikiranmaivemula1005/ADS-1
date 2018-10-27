@@ -30,7 +30,7 @@ class Solution {
 			double[] percentages = new double[numberOfStudents];
 			for (int i = 0; i < numberOfStudents; i++) {
 				String[] data = sc.next().split(",");
-				// System.out.println(data[0]);
+				System.out.println(data[0]);
 				sc.nextLine();
 				Student student = new Student();
 				student = new Student(data[1], Double.parseDouble(data[2]));
@@ -40,9 +40,7 @@ class Solution {
 			for (int i = 0; i < queries; i++) {
 				String[] data = sc.next().split(" ");
 				System.out.println(data[0]);
-				sc.nextLine();
 				System.out.println(data[1]);
-				sc.nextLine();
 				if (data[1].equals(null)) {
 					System.out.println("Student doesn't exists...");
 				}
