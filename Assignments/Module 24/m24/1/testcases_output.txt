@@ -9,26 +9,7 @@ Alice
 Bob
 John
 Your Output: 
-101
-102
-103
-104
-118
-107
-108
-119
-110
-111
-113
-114
-115
-120
-125
-135
-141
-142
-143
-145
+
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -46,28 +27,6 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-101
-102
-103
-104
-118
-107
-108
-119
-110
-111
-113
-114
-115
-120
-125
-135
-141
-132
-133
-134
-135
-150
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -91,28 +50,6 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-101
-102
-103
-104
-118
-107
-108
-119
-110
-111
-113
-114
-115
-120
-125
-135
-141
-132
-133
-134
-135
-150
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:33)
 ----------------------------------------
@@ -619,8 +556,6 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-10001
-10002
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:33)
 ----------------------------------------
