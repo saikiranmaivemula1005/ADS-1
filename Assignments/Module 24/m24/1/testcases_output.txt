@@ -9,8 +9,26 @@ Alice
 Bob
 John
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+Alice
+Bob
+Adams
+Knuth
+Rivest
+Wayne
+Charles
+Megon
+John
+Abegg
+Peter
+Douglas
+Tony
+Simon
+Daniel
+Fred
+Clark
+Dan
+Neil
+Tim
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,8 +46,30 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+Alice
+Bob
+Adams
+Knuth
+Rivest
+Wayne
+Charles
+Megon
+John
+Abegg
+Peter
+Douglas
+Tony
+Simon
+Daniel
+Fred
+Clark
+Hank
+Keith
+Yassi
+Access
+Maria
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -51,8 +91,30 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+Alice
+Bob
+Adams
+Knuth
+Rivest
+Wayne
+Charles
+Megon
+John
+Abegg
+Peter
+Douglas
+Tony
+Simon
+Daniel
+Fred
+Clark
+Hank
+Keith
+Yassi
+Access
+Maria
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -557,6 +619,8 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:30)
+H3CZ
+Michael
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at Solution.main(Solution.java:34)
 ----------------------------------------
