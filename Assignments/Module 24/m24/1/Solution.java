@@ -38,7 +38,7 @@ class Solution {
 				sc.next();
 				String[] data = sc.nextLine().split(" ");
 				// System.out.println(data[0]);
-				System.out.println(data[1]);
+				System.out.println(data[2]);
 				if (data[1].equals(null)) {
 					System.out.println("Student doesn't exists...");
 				}
