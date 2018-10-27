@@ -24,15 +24,15 @@ class Solution {
 		public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			int numberOfStudents = sc.nextInt();
-			Student[] student = new Student[numberOfStudents];
 			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
-			for (int i = 0; i < numberOfStudents; i++) {
+			while(sc.hasNext()) {
 				String[] data = sc.next().split(",");
 				// System.out.println(data[1]);
 				sc.nextLine();
 				// sc.nextLine();
-				student[i] = new Student(data[1], Double.parseDouble(data[2]));
-				bst.put(Integer.parseInt(data[0]), student[i]);
+				Student student = new Student();
+				student = new Student(data[1], Double.parseDouble(data[2]));
+				bst.put(Integer.parseInt(data[0]), student);
 			}
 			String queries = sc.next();
 			for (int i = 0; i < Integer.parseInt(queries); i++) {
