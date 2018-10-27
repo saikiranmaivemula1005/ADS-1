@@ -29,7 +29,7 @@ class Solution {
 			String[] names = new String[numberOfStudents];
 			double[] percentages = new double[numberOfStudents];
 			for (int i = 0; i < numberOfStudents; i++) {
-				String[] data = sc.next().split(",");
+				String[] data = sc.nextLine().split(",");
 				// System.out.println(data[0]);
 				sc.nextLine();
 				Student student = new Student();
