@@ -26,13 +26,14 @@ class Solution {
 			int numberOfStudents = sc.nextInt();
 			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
 			while(sc.hasNext()) {
-				String[] data = sc.next().split(",");
+				String data = sc.nextLine();
+				String[] tokens = data.split(",");
 				// System.out.println(data[1]);
 				sc.nextLine();
 				// sc.nextLine();
 				Student student = new Student();
-				student = new Student(data[1], Double.parseDouble(data[2]));
-				bst.put(Integer.parseInt(data[0]), student);
+				student = new Student(tokens[1], Double.parseDouble(tokens[2]));
+				bst.put(Integer.parseInt(tokens[0]), student);
 			}
 			String queries = sc.next();
 			for (int i = 0; i < Integer.parseInt(queries); i++) {
@@ -44,7 +45,6 @@ class Solution {
 					System.out.println("Student doesn't exists...");
 				}
 				if (data[2].equals(1)) {
-					System.out.println("kk");
 					System.out.println(bst.get(i).getname());
 				}
 				if (data[2].equals(2)) {
