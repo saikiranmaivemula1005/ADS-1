@@ -29,22 +29,9 @@ Your Output:
 142
 143
 145
-g
-e
-g
-e
-g
-e
-g
-e
-g
-e
-g
-e
-g
-e
-g
-e
+get
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:44)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
