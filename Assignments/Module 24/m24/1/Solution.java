@@ -26,7 +26,7 @@ class Solution {
 			int numberOfStudents = sc.nextInt();
 			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
 			for (int i = 0; i < numberOfStudents; i++) {
-				String[] data = sc.next().split(",");
+				String[] data = sc.nextLine().split(",");
 				System.out.println(data[1]);
 				sc.next();
 				// sc.nextLine();
