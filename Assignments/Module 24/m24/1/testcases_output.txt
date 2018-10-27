@@ -9,8 +9,9 @@ Alice
 Bob
 John
 Your Output: 
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,8 +29,9 @@ Expected Output:
 45.4
 99.3
 Your Output: 
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -51,8 +53,9 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -557,6 +560,7 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
+
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:35)
+	at Solution.main(Solution.java:36)
 ----------------------------------------
