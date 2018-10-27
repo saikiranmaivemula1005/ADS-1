@@ -20,9 +20,8 @@ Starting audit...
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:34: Line is longer than 80 characters (found 100). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:44: Line is longer than 80 characters (found 123). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:47: Line is longer than 80 characters (found 107). [LineLength]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:50: Line is longer than 80 characters (found 107). [LineLength]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:50: Line is longer than 80 characters (found 106). [LineLength]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:50:95: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:50:99: '.' is followed by whitespace. [NoWhitespaceAfter]
 [ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Assignments\Module 24\m24\2\Solution.java:52: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 24 errors.

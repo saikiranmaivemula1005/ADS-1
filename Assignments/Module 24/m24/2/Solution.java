@@ -25,7 +25,7 @@ class Solution {
 			Scanner sc = new Scanner(System.in);
 			int numberOfStudents = sc.nextInt();
 			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
-			for (int i = 0; i < numberOfStudents; i++) {
+			for (int i = 0; i <= numberOfStudents; i++) {
 				String[] data = sc.next().split(",");
 				// System.out.println(data[1]);
 				sc.nextLine();
@@ -47,7 +47,7 @@ class Solution {
 					System.out.println(bst.keys(Integer.parseInt(data[1]), bst.max()));
 				}
 				if (data[0].equals("LE")) {
-					System.out.println(bst.keys(Integer.parseInt(data[1]),bst. min()));
+					System.out.println(bst.keys(Integer.parseInt(data[1]),bst.min()));
 				}
 				
 			}

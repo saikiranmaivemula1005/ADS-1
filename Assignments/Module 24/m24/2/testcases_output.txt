@@ -5,7 +5,8 @@ Rivest
 Dan
 Abegg
 Your Output: 
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Solution.main(Solution.java:34)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
