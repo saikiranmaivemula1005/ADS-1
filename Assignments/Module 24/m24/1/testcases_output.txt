@@ -31,7 +31,7 @@ Your Output:
 145
 get
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:43)
+	at Solution.main(Solution.java:44)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
