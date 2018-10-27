@@ -37,6 +37,7 @@ class Solution {
 				bst.put(Integer.parseInt(data[0]), student);
 			}
 			int queries = sc.nextInt();
+			sc.nextLine();
 			for (int i = 0; i < queries; i++) {
 				String[] data = sc.next().split(" ");
 				if (data[2] == "1") {
