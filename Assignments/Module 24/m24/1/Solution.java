@@ -31,10 +31,10 @@ class Solution {
 				// System.out.println(data[1]);
 				sc.nextLine();
 				// sc.nextLine();
-				Student student = new Student();
+				// Student student = new Student();
 				System.out.println(tokens[1]);
 				System.out.println(tokens[2]);
-				student = new Student(tokens[1], Double.parseDouble(tokens[2]));
+				Student student = new Student(tokens[1], Double.parseDouble(tokens[2]));
 				bst.put(Integer.parseInt(tokens[0]), student);
 			}
 			String queries = sc.next();
