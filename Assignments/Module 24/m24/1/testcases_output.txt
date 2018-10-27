@@ -37,10 +37,6 @@ Your Output:
 101
 102
 110
-Exception in thread "main" java.util.NoSuchElementException
-	at java.base/java.util.Scanner.throwFor(Unknown Source)
-	at java.base/java.util.Scanner.next(Unknown Source)
-	at Solution.main(Solution.java:38)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
