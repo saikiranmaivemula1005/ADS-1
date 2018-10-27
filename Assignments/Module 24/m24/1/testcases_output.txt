@@ -29,9 +29,18 @@ Your Output:
 142
 143
 145
-get
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:45)
+g
+e
+g
+e
+g
+e
+g
+e
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at Solution.main(Solution.java:42)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
