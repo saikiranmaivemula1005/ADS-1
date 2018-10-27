@@ -25,9 +25,6 @@ class Solution {
 			Scanner sc = new Scanner(System.in);
 			int numberOfStudents = sc.nextInt();
 			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
-			int[] rollnumbers = new int[numberOfStudents];
-			String[] names = new String[numberOfStudents];
-			double[] percentages = new double[numberOfStudents];
 			for (int i = 0; i < numberOfStudents; i++) {
 				String[] data = sc.next().split(",");
 				System.out.println(data[0]);
@@ -39,7 +36,7 @@ class Solution {
 			String queries = sc.next();
 			for (int i = 0; i <= Integer.parseInt(queries); i++) {
 				sc.nextLine();
-				String[] data = sc.nextLine().split(" ");
+				String[] data = sc.next().split(" ");
 				System.out.println(data[0]);
 				System.out.println(data[1]);
 				if (data[1].equals(null)) {
