@@ -29,21 +29,13 @@ Your Output:
 142
 143
 145
-
 141
-
 118
-
 111
-
 135
-
 107
-
 101
-
 102
-
 110
 Exception in thread "main" java.util.NoSuchElementException
 	at java.base/java.util.Scanner.throwFor(Unknown Source)
