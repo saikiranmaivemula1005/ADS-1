@@ -1,55 +1,104 @@
+
 import java.util.Scanner;
+ /**
+ * Class for student.
+ */
 class Student {
-	String name;
-	double marks;
-	Student() {
+     /**
+     * roll number of student.
+     */
+    private int rollnumber;
+     /**
+     * name of student.
+     */
+    private String name;
+     /**
+     * percentage of the student.
+     */
+    private double percentage;
+     /**
+     * Gets the name of the student.
+     *
+     * @return     The name.
+     *
+     */
+    String getName() {
+        return this.name;
+    }
+     /**
+     * Gets the percentage of the student.
+     *
+     * @return     The percentage.
+     */
+    double getpercentage() {
+        return this.percentage;
+    }
 
-	}
-	Student(String n, double m) {
-		this.name = n;
-		this.marks = m;
-	}
-	public String getname() {
-		return this.name;
-	}
-	public double getmarks() {
-		return this.marks;
-	}
-}
+     /**
+     * Constructs the object.
+     *
+     * @param      r   rollnumber of  student
+     * @param      n      name of  student
+     * @param      p       percentage of  student
+     */
+    Student(final int r, final String n, final double p) {
+        this.rollnumber = r;
+        this.name = n;
+        this.percentage = p;
+    }
+ }
 
 
+/**
+ * Solution class.
+ */
 class Solution {
-	Solution() {
-	}
-		public static void main(String[] args) {
-			Scanner sc = new Scanner(System.in);
-			int numberOfStudents = sc.nextInt();
-			BinarySearchST<Integer, Student> bst = new BinarySearchST<Integer, Student>();
-			for (int i = 0; i <= numberOfStudents; i++) {
-				String[] data = sc.next().split(",");
-				// System.out.println(data[1]);
-				sc.nextLine();
-				// sc.nextLine();
-				// Student student = new Student();
-				Student student = new Student(data[1], Double.parseDouble(data[2]));
-				bst.put(Integer.parseInt(data[0]), student);
-			}
-			String queries = sc.next();
-			for (int i = 0; i < Integer.parseInt(queries); i++) {
-				sc.next();
-				String[] data = sc.nextLine().split(" ");
-				// System.out.println(data[0]);
-				// System.out.println(data[2]);
-				if (data[0].equals("BE")) {
-					System.out.println(bst.keys(Integer.parseInt(data[1]), Integer.parseInt(data[2])));
-				}
-				if (data[0].equals("GE")) {
-					System.out.println(bst.keys(Integer.parseInt(data[1]), bst.max()));
-				}
-				if (data[0].equals("LE")) {
-					System.out.println(bst.keys(Integer.parseInt(data[1]),bst.min()));
-				}
-				
-			}
-		}
-	}
+     /**
+     * Constructs the object.
+     */
+    protected Solution() {
+    }
+    /**
+     * main method.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner scan = new Scanner(System.in);
+        LinearProbingHashST<Integer, Student> lphst =
+            new LinearProbingHashST();
+        int numberOfStudents = Integer.parseInt(scan.nextLine());
+        for (int i = 0; i < numberOfStudents; i++) {
+            String[] tokens = scan.nextLine().split(",");
+            Integer rollnumber = Integer.parseInt(tokens[0]);
+            lphst.put(rollnumber,
+            new Student(rollnumber, tokens[1], Double.parseDouble(tokens[2])));
+        }
+        int queries = Integer.parseInt(scan.nextLine());
+        for (int i = 0; i < queries; i++) {
+            String[] tokens = scan.nextLine().split(" ");
+             switch (tokens[0]) {
+            case "GE":
+                Student student1 = lphst.get(Integer.parseInt(tokens[1]));
+                Student student2 = lphst.get(Integer.parseInt(tokens[2]));
+                for (double j = student1.getpercentage(); j < student2.getpercentage(); j++) {
+                	System.out.println(student1.getName());
+                }
+                break;
+            case "BE":
+                 Student student = lphst.get(Integer.parseInt(tokens[1]));
+                
+                break;
+            case "LE":
+                  student = lphst.get(Integer.parseInt(tokens[1]));
+                if (student != null) {
+                    System.out.println(student.getpercentage());
+                } else {
+                    System.out.println("Student doesn't exists...");
+                }
+                break;
+            default:
+            }
+        }
+     }
+}
