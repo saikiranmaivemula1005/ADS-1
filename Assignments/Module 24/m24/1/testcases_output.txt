@@ -29,9 +29,13 @@ Your Output:
 142
 143
 145
-8
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:33)
+141
+111
+107
+102
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:39)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
