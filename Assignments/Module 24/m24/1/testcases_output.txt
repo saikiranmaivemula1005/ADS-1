@@ -9,9 +9,32 @@ Alice
 Bob
 John
 Your Output: 
-
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:36)
+101
+102
+103
+104
+118
+107
+108
+119
+110
+111
+113
+114
+115
+120
+125
+135
+141
+142
+143
+145
+Exception in thread "main" java.util.InputMismatchException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:40)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -29,8 +52,29 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+101
+102
+103
+104
+118
+107
+108
+119
+110
+111
+113
+114
+115
+120
+125
+135
+141
+132
+133
+134
+135
+150
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
@@ -53,8 +97,29 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+101
+102
+103
+104
+118
+107
+108
+119
+110
+111
+113
+114
+115
+120
+125
+135
+141
+132
+133
+134
+135
+150
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:36)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
@@ -560,7 +625,8 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+10001
+10002
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Solution.main(Solution.java:36)
 ----------------------------------------
