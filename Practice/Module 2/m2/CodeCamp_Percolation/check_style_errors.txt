@@ -1,0 +1,22 @@
+Starting audit...
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:4:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:5:28: Parameter n should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:16:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:19:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:19:34: Parameter a should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:19:41: Parameter b should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:22:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:22:25: Parameter a should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:28:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:28:21: Name 'Union' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:28:27: Parameter a should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:28:34: Parameter b should be final. [FinalParameters]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:33:47: Empty statement. [EmptyStatement]
+[ERROR] C:\Users\sai kiranmai\Documents\ADS-1\ADS-1\Practice\Module 2\m2\CodeCamp_Percolation\WeightedQuickUnion.java:36:47: Empty statement. [EmptyStatement]
+Audit done.
+Checkstyle ends with 19 errors.

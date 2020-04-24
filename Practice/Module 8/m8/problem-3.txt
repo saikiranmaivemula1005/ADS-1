@@ -1,0 +1,2 @@
+Insertion sort method runs faster for an array with all keys identical.
+It has no exchanges.

@@ -1,0 +1,1 @@
+For an array in reverse order, basic selection sort runs faster as there are less number of exchanges and comparisions.
